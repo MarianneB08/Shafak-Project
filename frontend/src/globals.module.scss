@@ -1,6 +1,6 @@
 // VARIABLES
 
-// $color-1: 
+$color-1: black; 
 // $color-2:
 // $color-3:
 // $color-4:
@@ -20,6 +20,11 @@ $font-family-1: sans-serif;
 
 
 // STYLES GLOBAUX APPLIQUÉS À L'ENSEMBLE DU SITE
+
+:root {
+  // 1rem = 10px
+  font-size: 62.5%;
+}
 
 *,
 ::before,
@@ -43,13 +48,13 @@ body {
 
 a {
   text-decoration: none;
-  // color: $primary-color;
+  color: $color-1;
   cursor: pointer;
 }
 
-// a:visited {
-//   color: $primary-color;
-// }
+a:visited {
+  color: $color-1;
+}
 
 li {
   list-style-type: none;

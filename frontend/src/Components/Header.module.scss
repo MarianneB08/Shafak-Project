@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 3rem;
+    font-size: 4rem;
+    margin: 3rem 0;
+  }
+  .nav {
+    width: 90%;
+    .navItems {
+      font-size: 2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
