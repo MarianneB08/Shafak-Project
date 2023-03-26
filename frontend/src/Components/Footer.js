@@ -11,16 +11,30 @@ import {
 const Footer = () => {
   return (
     <footer className={styles.container}>
-      <p>© 2023 Compagnie Shafak. Tous droits réservés.</p>
-      <p>Mentions légales</p>
+      <section className={styles.legals}>
+        <p>© 2023 Compagnie Shafak. Tous droits réservés.</p>
+        <p>Mentions légales</p>
+      </section>
       <section className={styles.social}>
-        <a href={`https://www.instagram.com/compagnie.shafak/?hl=fr`} target="_blank" rel="noreferrer noopener">
+        <a
+          href={`https://www.instagram.com/compagnie.shafak/?hl=fr`}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <FontAwesomeIcon icon={faInstagramSquare} />
         </a>
-        <a href={`https://www.facebook.com/cieshafak/?locale=hi_IN`} target="_blank" rel="noreferrer noopener">
+        <a
+          href={`https://www.facebook.com/cieshafak/?locale=hi_IN`}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <FontAwesomeIcon icon={faFacebookSquare} />
         </a>
-        <a href={`https://vimeo.com/user9763163`} target="_blank" rel="noreferrer noopener">
+        <a
+          href={`https://vimeo.com/user9763163`}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <FontAwesomeIcon icon={faVimeoSquare} />
         </a>
       </section>
