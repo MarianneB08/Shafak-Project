@@ -1,16 +1,3 @@
-import React from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-
-// Composant Layout constitué des composants Header.js et Footer.js et appelé une fois pour toutes dans le composant général App.js
-const Layout = (props) => {
-  return (
-    <div>
-      <Header />
-      {props.children}
-      <Footer />
-    </div>
-  );
-};
-
-export default Layout;
+version https://git-lfs.github.com/spec/v1
+oid sha256:9441f62cda1c9f34f7fe11119673fa8b813e76ae6b4578c595c51e6b31cd7fe0
+size 375
