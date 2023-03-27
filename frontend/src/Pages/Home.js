@@ -1,9 +1,10 @@
 import React from 'react';
+import BackgroundVideo from '../components/BackgroundVideo';
 
 const Home = () => {
     return (
         <div>
-            Hello from Home !
+            <BackgroundVideo/>
         </div>
     );
 };
