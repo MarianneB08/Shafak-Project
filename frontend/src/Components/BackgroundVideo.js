@@ -6,6 +6,11 @@ const BackgroundVideo = () => {
   return (
     <section className={styles.container}>
       <video src={video} autoPlay loop muted />
+      <p className={styles.text}>
+        Compagnie de danse contemporaine et arts performatifs ayant pour but la
+        production, l’exploration, la promotion et la diffusion des créations de
+        artistes chorégraphiques Larbi Namouchi & Margot Libanga.
+      </p>
     </section>
   );
 };

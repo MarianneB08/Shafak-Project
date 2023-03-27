@@ -1,75 +1,76 @@
 // DESKTOP //
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 3rem;
+    font-size: 4rem;
+    font-weight: 200;
+    margin: 3rem 0;
+  }
+  .nav {
+    width: 90%;
     margin-bottom: 3rem;
+    .navItems {
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+// SMALL SCREENS, LAPTOPS //
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
     h1 {
-      text-transform: uppercase;
-      letter-spacing: 3rem;
-      font-size: 4rem;
-      font-weight: 200;
-      margin: 3rem 0;
+      letter-spacing: 2rem;
+      font-size: 3rem;
+    }
+    .nav {
+      .navItems {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+// IPADS, TABLETS //
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    h1 {
+      letter-spacing: 1.5rem;
+      font-size: 2rem;
+    }
+    .nav {
+      .navItems {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+// MOBILE DEVICES //
+
+@media screen and (max-width: 480px) {
+  .container {
+    h1 {
+      display: inline;
+      letter-spacing: 1.5rem;
+      font-size: 2rem;
+      text-align: center;
     }
     .nav {
       width: 90%;
       .navItems {
-        font-size: 2rem;
-        display: flex;
-        justify-content: space-between;
-      }
-    }
-  }
-  
-  // SMALL SCREENS, LAPTOPS //
-  
-  @media screen and (min-width: 769px) and (max-width : 1024px) {
-    .container {
-      h1 {
-        letter-spacing: 2rem;
-        font-size: 3rem;
-      }
-      .nav{
-        .navItems {
-          font-size: 1.5rem;
-        }
-      }
-    }
-  }
-  
-  // IPADS, TABLETS //
-  
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    .container {
-      h1 {
-        letter-spacing: 1.5rem;
-        font-size: 2rem;
-      }
-      .nav {
-        .navItems {
-          font-size: 1.2rem;
-        }
-      }
-    }
-  }
-  
-  // MOBILE DEVICES //
-  
-  @media screen and (max-width: 480px) {
-    .container {
-      h1 {
-        display: inline;
-        letter-spacing: 1.5rem;
-        font-size: 2rem;
+        font-size: 1rem;
         text-align: center;
-      }
-      .nav {
-        .navItems {
-          font-size: 1rem;
-          text-align: center;
-          white-space: wrap;
-        }
+        white-space: wrap;
       }
     }
   }
+}
