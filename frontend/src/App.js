@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa9360c98cc40f1ba10b6f2739c1d8fe9b106139d03114f32149abee5635fb18
-size 506
+import { BrowserRouter } from "react-router-dom";
+import styles from "./globals.module.scss";
+import Router from "./Router";
+import Layout from "./components/Layout";
+
+// Composant global qui contient l'ensemble des routes de l'application et le layout général (Header & Footer) défini dans Layout.js
+function App() {
+  return (
+    <div className={styles.main}>
+      <BrowserRouter>
+        <Layout>
+          <Router />
+        </Layout>
+      </BrowserRouter>
+    </div>
+  );
+}
+
+export default App;
