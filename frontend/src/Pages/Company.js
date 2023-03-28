@@ -42,9 +42,13 @@ const Company = () => {
         <div className={styles.sectionsContainer}>
           <section className={styles.larbiSection}>
             <h3>Larbi Namouchi</h3>
-            <div className={styles.picture}>
-              <img src={PhotoLarbi} alt="Larbi Namouchi chorégraphe" />
-              <p>Crédits : Isabelle Chapuis</p>
+            <div className={styles.pictureContainer}>
+              <div className={styles.img}>
+                <img src={PhotoLarbi} alt="Larbi Namouchi chorégraphe" />
+              </div>
+              <div className={styles.legals}>
+                <p>Crédits : Isabelle Chapuis</p>
+              </div>
             </div>
             <p>
               Né en 1984 à Tunis, fasciné très tôt par le Cirque et les arts
@@ -70,9 +74,13 @@ const Company = () => {
           </section>
           <section className={styles.margotSection}>
             <h3>Margot Libanga</h3>
-            <div className={styles.picture}>
-              <img src={PhotoLarbi} alt="Larbi Namouchi chorégraphe" />
-              <p>Crédits : Isabelle Chapuis</p>
+            <div className={styles.pictureContainer}>
+              <div className={styles.img}>
+                <img src={PhotoLarbi} alt="Larbi Namouchi chorégraphe" />
+              </div>
+              <div className={styles.legals}>
+                <p>Crédits : Isabelle Chapuis</p>
+              </div>
             </div>
             <p>
               Versatile, elle s’intéresse très tôt à diverses formes d’arts

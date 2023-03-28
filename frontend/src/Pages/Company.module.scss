@@ -57,6 +57,7 @@
       margin: 0 auto;
       .larbiSection,
       .margotSection {
+        background-color: orange;
         width: 30%;
         position: relative;
         h3 {
@@ -72,28 +73,62 @@
         }
       }
       .larbiSection {
-        .picture {
+        position: relative;
+        .pictureContainer {
           position: absolute;
+          width: 12rem;
+          height: 12rem;
           top: 4.5rem;
-          left: -15rem;
-          img {
-            border: 2px solid globals.$color-1;
+          left: -14rem;
+          .legals {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 11.5rem;
+            height: 11.5rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            visibility: hidden;
+            cursor: pointer;
+            p {
+              font-size: 0.9rem;
+              color: globals.$color-2;
+            }
           }
-          p {
-            font-size: 0.9rem;
+          &:hover .legals {
+            visibility: visible;
           }
         }
       }
       .margotSection {
-        .picture {
+        position: relative;
+        .pictureContainer {
           position: absolute;
+          width: 12rem;
+          height: 12rem;
           top: 4.5rem;
-          right: -15rem;
-          img {
-            border: 2px solid globals.$color-1;
+          right: -14rem;
+          .legals {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 11.5rem;
+            height: 11.5rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            visibility: hidden;
+            cursor: pointer;
+            p {
+              font-size: 0.9rem;
+              color: globals.$color-2;
+            }
           }
-          p {
-            font-size: 0.9rem;
+          &:hover .legals {
+            visibility: visible;
           }
         }
       }
