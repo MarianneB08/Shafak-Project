@@ -1,13 +1,19 @@
+@use "../globals.module.scss" as globals;
+
+// DESKTOP //
+
 .container {
   width: 100%;
-  height: fit-content;
+  margin-bottom: 5rem;
   padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: yellow;
   .aboutCompany {
-    width: 100%;
     position: relative;
+    background-color: aqua;
+    padding: 0 10rem;
     h2 {
       text-align: center;
       text-transform: uppercase;
@@ -17,17 +23,16 @@
       margin-bottom: 5rem;
     }
     p {
-      width: 80%;
       font-size: 1.5rem;
       text-align: justify;
       margin: 0 auto;
       margin-bottom: 1.5rem;
       &:last-child {
-        width: auto;
         margin-top: 2rem;
-        position: absolute;
-        right: 12rem;
+        float: right;
         text-transform: uppercase;
+        font-family: serif;
+        background-color: violet;
       }
       span {
         font-style: italic;
@@ -46,21 +51,198 @@
       margin-bottom: 5rem;
     }
     .sectionsContainer {
+      background-color: aquamarine;
       display: flex;
       justify-content: space-around;
-      background-color: aqua;
       margin: 0 auto;
-      .larbiSection, .margotSection {
+      .larbiSection,
+      .margotSection {
         width: 30%;
+        position: relative;
         h3 {
           font-weight: 300;
           font-size: 2rem;
+          font-family: serif;
           margin-bottom: 2rem;
         }
         p {
           text-align: justify;
           font-size: 1.5rem;
           margin-bottom: 1.5rem;
+        }
+      }
+      .larbiSection {
+        .picture {
+          position: absolute;
+          top: 4.5rem;
+          left: -15rem;
+          img {
+            border: 2px solid globals.$color-1;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      .margotSection {
+        .picture {
+          position: absolute;
+          top: 4.5rem;
+          right: -15rem;
+          img {
+            border: 2px solid globals.$color-1;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// SMALL SCREENS, LAPTOPS //
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    .aboutCompany {
+      padding: 0 5rem;
+      h2 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    .aboutDancers {
+      margin-top: 12rem;
+      h2 {
+        font-size: 2.2rem;
+      }
+      .sectionsContainer {
+        width: 90%;
+        .larbiSection,
+        .margotSection {
+          width: 40%;
+          p {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// INTERMEDIATE QUERIES //
+
+@media screen and (min-width: 300px) and (max-width: 650px) {
+  .container {
+    .aboutDancers {
+      .sectionsContainer {
+        padding: 0;
+        margin-top: 15rem;
+        .larbiSection {
+          width: 100%;
+          .picture {
+            position: absolute;
+            top: -10rem;
+            left: 16rem;
+          }
+        }
+        .margotSection {
+          margin-top: 10rem;
+          width: 100%;
+          .picture {
+            position: absolute;
+            top: -10rem;
+            left: 16rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// IPADS, TABLETS // & // MOBILE DEVICES //
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 3rem 3rem;
+    .aboutCompany {
+      padding: 0 3rem;
+      h2 {
+        font-size: 1.8rem;
+        letter-spacing: 1.8rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .aboutDancers {
+      margin-top: 12rem;
+      h2 {
+        font-size: 1.8rem;
+        letter-spacing: 1.8rem;
+      }
+      .sectionsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .larbiSection,
+        .margotSection {
+          width: 50%;
+          margin-bottom: 2rem;
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// MOBILE DEVICES //
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 3rem 3rem;
+    .aboutCompany {
+      padding: 0 3rem;
+      h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1.5rem;
+        margin-bottom: 3rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .aboutDancers {
+      margin-top: 12rem;
+      h2 {
+        font-size: 1.8rem;
+        letter-spacing: 1.8rem;
+      }
+      .sectionsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .larbiSection,
+        .margotSection {
+          width: 50%;
+          margin-bottom: 2rem;
+          p {
+            font-size: 1.2rem;
+          }
+          .picture {
+            img {
+              width: 10rem;
+            }
+            p {
+              display: block;
+              width: 8rem;
+            }
+          }
         }
       }
     }

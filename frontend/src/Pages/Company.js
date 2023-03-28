@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Company.module.scss";
+import PhotoLarbi from "../assets/portrait_Larbi.jpg";
 
 const Company = () => {
   return (
@@ -7,9 +8,9 @@ const Company = () => {
       <article className={styles.aboutCompany}>
         <h2>La compagnie</h2>
         <p>
-          La Compagnie Shafak, a été fondée en octobre 2017 à Lyon, de la
+          La Compagnie Shafak a été fondée en octobre 2017 à Lyon, de la
           rencontre d'artistes partageant un même désir créatif. La compagnie se
-          délocalise et s’installe en Bretagne, à Binic-Etables-sur-Mer, début
+          délocalise et s’installe en Bretagne, à Binic-Étables-sur-Mer, début
           2022.
         </p>
         <p>
@@ -40,7 +41,11 @@ const Company = () => {
         <h2>Les directeurs artistiques</h2>
         <div className={styles.sectionsContainer}>
           <section className={styles.larbiSection}>
-            <h3>Larbi Lamouchi</h3>
+            <h3>Larbi Namouchi</h3>
+            <div className={styles.picture}>
+              <img src={PhotoLarbi} alt="Larbi Namouchi chorégraphe" />
+              <p>Crédits : Isabelle Chapuis</p>
+            </div>
             <p>
               Né en 1984 à Tunis, fasciné très tôt par le Cirque et les arts
               martiaux, Larbi Namouchi, enfant, débute par les danses de la
@@ -65,6 +70,10 @@ const Company = () => {
           </section>
           <section className={styles.margotSection}>
             <h3>Margot Libanga</h3>
+            <div className={styles.picture}>
+              <img src={PhotoLarbi} alt="Larbi Namouchi chorégraphe" />
+              <p>Crédits : Isabelle Chapuis</p>
+            </div>
             <p>
               Versatile, elle s’intéresse très tôt à diverses formes d’arts
               vivants, comme le théâtre contemporain et classique, le chant
