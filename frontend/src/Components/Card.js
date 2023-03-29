@@ -9,23 +9,22 @@ const Card = () => {
           <div className={styles.details}>
             <img src={creation.img.file} alt={`creation ${creation.title}`} />
             <div className={styles.detailsText}>
-              <h2>
-                {creation.title} – <span>{creation.date}</span>
-              </h2>
+              <h2>{creation.title}</h2>
+              <p>{creation.date}</p>
               <p>{creation.summary}</p>
-              {creation.teaser !== "" ? (
-                <a
-                  href={creation.teaser}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Teaser
-                </a>
-              ) : null}
             </div>
           </div>
           <div className={styles.infos}>
             <p>{creation.infos}</p>
+            {creation.teaser !== "" ? (
+              <a
+                href={creation.teaser}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Teaser
+              </a>
+            ) : null}
           </div>
         </article>
       ))}
