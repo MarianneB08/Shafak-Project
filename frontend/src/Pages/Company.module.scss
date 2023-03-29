@@ -9,10 +9,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: yellow;
   .aboutCompany {
     position: relative;
-    background-color: aqua;
     padding: 0 10rem;
     h2 {
       text-align: center;
@@ -32,7 +30,6 @@
         float: right;
         text-transform: uppercase;
         font-family: serif;
-        background-color: violet;
       }
       span {
         font-style: italic;
@@ -51,13 +48,11 @@
       margin-bottom: 5rem;
     }
     .sectionsContainer {
-      background-color: aquamarine;
       display: flex;
       justify-content: space-around;
       margin: 0 auto;
       .larbiSection,
       .margotSection {
-        background-color: orange;
         width: 30%;
         position: relative;
         h3 {
@@ -170,7 +165,7 @@
 
 // INTERMEDIATE QUERIES //
 
-@media screen and (min-width: 300px) and (max-width: 650px) {
+@media screen and (min-width: 450px) and (max-width: 650px) {
   .container {
     .aboutDancers {
       .sectionsContainer {
@@ -178,19 +173,44 @@
         margin-top: 15rem;
         .larbiSection {
           width: 100%;
-          .picture {
+          .pictureContainer {
             position: absolute;
-            top: -10rem;
+            top: -9.5rem;
             left: 16rem;
           }
         }
         .margotSection {
           margin-top: 10rem;
           width: 100%;
-          .picture {
+          .pictureContainer {
             position: absolute;
-            top: -10rem;
+            top: -9.5rem;
             left: 16rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 290px) and (max-width: 449px) {
+  .container {
+    .aboutDancers {
+      .sectionsContainer {
+        margin-top: 17rem;
+        .larbiSection {
+          .pictureContainer {
+            position: absolute;
+            top: -12.5rem;
+            left: 0;
+          }
+        }
+        .margotSection {
+          margin-top: 14rem;
+          .pictureContainer {
+            position: absolute;
+            top: -12.5rem;
+            left: 0;
           }
         }
       }
@@ -238,14 +258,14 @@
 
 // MOBILE DEVICES //
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 290px) and (max-width: 480px) {
   .container {
     padding: 3rem 3rem;
     .aboutCompany {
       padding: 0 3rem;
       h2 {
-        font-size: 1.5rem;
-        letter-spacing: 1.5rem;
+        font-size: 1.3rem;
+        letter-spacing: 1.3rem;
         margin-bottom: 3rem;
       }
       p {
@@ -253,10 +273,10 @@
       }
     }
     .aboutDancers {
-      margin-top: 12rem;
+      margin-top: 8rem;
       h2 {
-        font-size: 1.8rem;
-        letter-spacing: 1.8rem;
+        font-size: 1.3rem;
+        letter-spacing: 1.3rem;
       }
       .sectionsContainer {
         display: flex;
@@ -264,8 +284,11 @@
         align-items: center;
         .larbiSection,
         .margotSection {
-          width: 50%;
+          width: 100%;
           margin-bottom: 2rem;
+          h3{
+            font-size: 1.4rem;
+          }
           p {
             font-size: 1.2rem;
           }
