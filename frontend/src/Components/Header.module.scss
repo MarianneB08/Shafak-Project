@@ -1,3 +1,5 @@
+@use "../globals.module.scss" as globals;
+
 // DESKTOP //
 
 .container {
@@ -18,6 +20,35 @@
       font-size: 1.8rem;
       display: flex;
       justify-content: space-between;
+      div {
+        position: relative;
+        li:after {
+          background: none repeat scroll 0 0 transparent;
+          content: "";
+          width: 0;
+          height: 1px;
+          background-color: globals.$color-1;
+          display: block;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          li:hover:after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+      // li::after {
+      //   content: "";
+      //   width: 4rem;
+      //   height: 1px;
+      //   background-color: globals.$color-1;
+      //   display: inline-block;
+      //   position: absolute;
+      //   left: 0;
+      //   top: 2rem;
+      // }
     }
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Company.module.scss";
 import PhotoLarbi from "../assets/portrait_Larbi.jpg";
+import PhotoMargot from '../assets/portrait_Margot.jpg';
 
 const Company = () => {
   return (
@@ -76,10 +77,10 @@ const Company = () => {
             <h3>Margot Libanga</h3>
             <div className={styles.pictureContainer}>
               <div className={styles.img}>
-                <img src={PhotoLarbi} alt="Larbi Namouchi chorégraphe" />
+                <img src={PhotoMargot} alt="Margot Libanga chorégraphe" />
               </div>
               <div className={styles.legals}>
-                <p>Crédits : Isabelle Chapuis</p>
+                <p>Crédits : fabviews</p>
               </div>
             </div>
             <p>
