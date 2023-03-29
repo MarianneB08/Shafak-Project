@@ -1,0 +1,55 @@
+@use "../globals.module.scss" as globals;
+
+// DESKTOP //
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  height: fit-content;
+  margin-bottom: 5rem;
+  .card {
+    margin-bottom: 2rem;
+    width: 400px;
+    height: 250px;
+    border: 1px solid black;
+    padding: 1rem;
+    position: relative;
+    .details {
+        display: flex;
+      img {
+        width: 15rem;
+        height: 230px;
+        border: 1px solid black;
+        z-index: 0;
+      }
+      .detailsText {
+        margin-left: 1rem;
+      }
+    }
+    .infos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0 1rem;
+      p {
+        text-align: justify;
+        font-size: 1.3rem;
+      }
+      &:hover {
+        opacity: 0.8;
+        background-color: black;
+        color: globals.$color-2;
+        transition: 0.5s;
+      }
+    }
+  }
+}
