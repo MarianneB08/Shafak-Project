@@ -13,35 +13,33 @@
     font-weight: 200;
     margin: 5rem 0;
   }
-  .nav {
-    width: 90%;
-    margin-bottom: 5rem;
-    .navItems {
-      font-size: 1.8rem;
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    min-height: 75px;
+    padding: 1rem;
+    color: globals.$color-2;
+    .navbarLinks {
       display: flex;
-      justify-content: space-between;
-      li {
-        position: relative;
+      .navbarItem {
+        padding: 0 0.3rem;
+        font-size: 1.8rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
       }
-      a {
-        padding: 5px 0px;
-        position: relative;
-        &:after {
-          content: "";
-          background: black;
-          display: block;
-          position: absolute;
-          bottom: 0rem;
-          left: 50%;
-          height: 1px;
-          width: 0;
-          transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        }
-        &:hover:after {
-          width: 100%;
-          left: 0;
-        }
-      }
+    }
+    .navBurger {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: none;
+      color: inherit;
+      display: none;
     }
   }
 }
@@ -54,9 +52,14 @@
       letter-spacing: 2rem;
       font-size: 3rem;
     }
-    .nav {
-      .navItems {
-        font-size: 1.5rem;
+    .navbar {
+      .navbarLinks {
+        .navbarItem {
+          padding: 0 0.3rem;
+          font-size: 1.6rem;
+          margin-right: 1rem;
+          margin-left: 1rem;
+        }
       }
     }
   }
@@ -70,9 +73,14 @@
       letter-spacing: 1.5rem;
       font-size: 2rem;
     }
-    .nav {
-      .navItems {
-        font-size: 1.2rem;
+    .navbar {
+      .navbarLinks {
+        .navbarItem {
+          padding: 0 0.3rem;
+          font-size: 1.3rem;
+          margin-right: 0.5rem;
+          margin-left: 0.5rem;
+        }
       }
     }
   }
@@ -83,18 +91,217 @@
 @media screen and (max-width: 480px) {
   .container {
     h1 {
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+    }
+    .navbar {
+      position: relative;
+      padding: 0;
+      .navbarLinks {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: -100vw;
+        bottom: 0;
+        height: 100vh;
+        padding: 2rem;
+        background-color: white;
+        z-index: 2;
+        visibility: hidden;
+        .navbarItem {
+          display: block;
+          padding: 1.5rem;
+          font-size: 5vw;
+          a {
+            color: black;
+          }
+        }
+      }
+      .navBurger {
+        display: block;
+        z-index: 2;
+        // position: fixed;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        .burgerLine,
+        .burgerLine::before,
+        .burgerLine::after {
+          display: block;
+          width: 40px;
+          height: 3px;
+          position: relative;
+          border-radius: 3px;
+          background: black;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+          }
+          &::before {
+            transform: translateY(-12px);
+          }
+          &::after {
+            transform: translateY(12px);
+          }
+        }
+        .burgerLine::before,
+        .burgerLine::after {
+          content: "";
+          position: absolute;
+          left: 0;
+        }
+        .burgerLine::before {
+          transform: translateY(-12px);
+        }
+        .burgerLine::after {
+          transform: translateY(12px);
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .showNavbar {
+      position: relative;
+      .navbarLinks {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        width: 100vw;
+        bottom: 0;
+        height: 100vh;
+        padding: 2rem;
+        background-color: white;
+        z-index: 2;
+        visibility: visible;
+        .navbarItem {
+          display: block;
+          padding: 1.5rem;
+          font-size: 5vw;
+          a {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 480px) {
+  .container {
+    h1 {
       display: inline;
       letter-spacing: 1.5rem;
       font-size: 2rem;
       text-align: center;
     }
-    .nav {
-      width: 90%;
-      .navItems {
-        font-size: 1rem;
-        text-align: center;
-        white-space: wrap;
-      }
-    }
   }
 }
+
+// // DESKTOP //
+
+// .container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   h1 {
+//     text-transform: uppercase;
+//     letter-spacing: 3rem;
+//     font-size: 4rem;
+//     font-weight: 200;
+//     margin: 5rem 0;
+//   }
+//   .nav {
+//     width: 90%;
+//     margin-bottom: 5rem;
+//     .navItems {
+//       font-size: 1.8rem;
+//       display: flex;
+//       justify-content: space-between;
+//       li {
+//         position: relative;
+//       }
+//       a {
+//         padding: 5px 0px;
+//         position: relative;
+//         &:after {
+//           content: "";
+//           background: black;
+//           display: block;
+//           position: absolute;
+//           bottom: 0rem;
+//           left: 50%;
+//           height: 1px;
+//           width: 0;
+//           transition: width 0.3s ease 0s, left 0.3s ease 0s;
+//         }
+//         &:hover:after {
+//           width: 100%;
+//           left: 0;
+//         }
+//       }
+//     }
+//     .navBurger {
+//       visibility: hidden;
+//     }
+//   }
+// }
+
+// // SMALL SCREENS, LAPTOPS //
+
+// @media screen and (min-width: 769px) and (max-width: 1024px) {
+//   .container {
+//     h1 {
+//       letter-spacing: 2rem;
+//       font-size: 3rem;
+//     }
+//     .nav {
+//       .navItems {
+//         font-size: 1.5rem;
+//       }
+//     }
+//   }
+// }
+
+// // IPADS, TABLETS //
+
+// @media screen and (min-width: 481px) and (max-width: 768px) {
+//   .container {
+//     h1 {
+//       letter-spacing: 1.5rem;
+//       font-size: 2rem;
+//     }
+//     .nav {
+//       .navItems {
+//         font-size: 1.2rem;
+//       }
+//     }
+//   }
+// }
+
+// // MOBILE DEVICES //
+
+// @media screen and (min-width: 430px) and (max-width: 480px) {
+//   .container {
+//     h1 {
+//       display: inline;
+//       letter-spacing: 1.5rem;
+//       font-size: 2rem;
+//       text-align: center;
+//     }
+//     .nav {
+//       .navItems {
+//         font-size: 1rem;
+//         text-align: center;
+//         white-space: wrap;
+//         flex-wrap: wrap;
+//       }
+//     }
+//   }
+// }
