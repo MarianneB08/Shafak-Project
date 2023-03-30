@@ -11,44 +11,37 @@
     letter-spacing: 3rem;
     font-size: 4rem;
     font-weight: 200;
-    margin: 3rem 0;
+    margin: 5rem 0;
   }
   .nav {
     width: 90%;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     .navItems {
       font-size: 1.8rem;
       display: flex;
       justify-content: space-between;
-      div {
+      li {
         position: relative;
-        li:after {
-          background: none repeat scroll 0 0 transparent;
+      }
+      a {
+        padding: 15px 20px;
+        position: relative;
+        &:after {
           content: "";
-          width: 0;
-          height: 1px;
-          background-color: globals.$color-1;
+          background: black;
           display: block;
           position: absolute;
+          bottom: 1rem;
           left: 50%;
-          bottom: 0;
+          height: 1px;
+          width: 0;
           transition: width 0.3s ease 0s, left 0.3s ease 0s;
-          li:hover:after {
-            width: 100%;
-            left: 0;
-          }
+        }
+        &:hover:after {
+          width: 100%;
+          left: 0;
         }
       }
-      // li::after {
-      //   content: "";
-      //   width: 4rem;
-      //   height: 1px;
-      //   background-color: globals.$color-1;
-      //   display: inline-block;
-      //   position: absolute;
-      //   left: 0;
-      //   top: 2rem;
-      // }
     }
   }
 }
