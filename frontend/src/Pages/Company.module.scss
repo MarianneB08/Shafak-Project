@@ -86,8 +86,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 11.5rem;
-            height: 11.5rem;
+            width: 15rem;
+            height: 15rem;
             background-color: rgba(0, 0, 0, 0.6);
             display: flex;
             justify-content: center;
@@ -95,7 +95,7 @@
             visibility: hidden;
             cursor: pointer;
             p {
-              font-size: 0.9rem;
+              font-size: 1.2rem;
               color: globals.$color-2;
             }
           }
@@ -123,8 +123,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 11.5rem;
-            height: 11.5rem;
+            width: 15rem;
+            height: 15rem;
             background-color: rgba(0, 0, 0, 0.6);
             display: flex;
             justify-content: center;
@@ -132,7 +132,7 @@
             visibility: hidden;
             cursor: pointer;
             p {
-              font-size: 0.9rem;
+              font-size: 1.2rem;
               color: globals.$color-2;
             }
           }
