@@ -24,14 +24,14 @@
         position: relative;
       }
       a {
-        padding: 15px 20px;
+        padding: 5px 0px;
         position: relative;
         &:after {
           content: "";
           background: black;
           display: block;
           position: absolute;
-          bottom: 1rem;
+          bottom: 0rem;
           left: 50%;
           height: 1px;
           width: 0;

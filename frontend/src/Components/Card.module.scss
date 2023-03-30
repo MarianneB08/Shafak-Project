@@ -82,3 +82,77 @@
     }
   }
 }
+
+// SMALL SCREENS, LAPTOPS //
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    .card {
+      .details {
+        .detailsText {
+          h2 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// IPADS, TABLETS //
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    .card {
+      .details {
+        .detailsText {
+          h2 {
+            font-size: 1.8rem;
+          }
+          p {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// MOBILE DEVICES //
+
+@media screen and (max-width: 480px) {
+  .container {
+    .card {
+      .details {
+        img {
+          width: 13rem;
+          height: 200px;
+          border: 1px solid black;
+          z-index: 0;
+        }
+        .detailsText {
+          h2 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .infos {
+        .oldCreation {
+          font-size: 1.1rem;
+        }
+        .newCreation {
+          font-size: 1.1rem;
+        }
+        a {
+          font-size: 1.1rem;
+          padding: 0.75rem 1.5rem;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+}
