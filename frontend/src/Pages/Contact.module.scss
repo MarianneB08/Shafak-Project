@@ -1,0 +1,95 @@
+@use "../globals.module.scss" as globals;
+
+// DESKTOP //
+
+.container {
+  text-align: center;
+  padding: 7rem 6rem 10rem 6rem;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2rem;
+    margin-bottom: 8rem;
+  }
+  .details {
+    margin: 0 auto;
+    h2 {
+      font-family: serif;
+      text-transform: none;
+      letter-spacing: normal;
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 5rem;
+    }
+    .directors {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+    .directorsEmail {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+    .administration {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .administrationEmail {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+    .administrationPhone {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+    .adress {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+    .society {
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+  }
+}
+
+// SMALL SCREENS, LAPTOPS //
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+// IPADS, TABLETS //
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    h2 {
+      font-size: 1.8rem;
+      letter-spacing: 1.8rem;
+    }
+  }
+}
+
+// MOBILE DEVICES //
+
+@media screen and (min-width: 290px) and (max-width: 480px) {
+  .container {
+    h2 {
+      font-size: 1.3rem;
+      letter-spacing: 1.3rem;
+      margin-bottom: 3rem;
+    }
+  }
+}

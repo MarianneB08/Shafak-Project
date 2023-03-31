@@ -3,9 +3,9 @@
 // DESKTOP //
 
 .container {
-  //background-color: aquamarine;
   text-align: center;
-  padding: 6rem 6rem;
+  padding: 7rem 6rem;
+  height: fit-content;
   h1 {
     text-align: center;
     text-transform: uppercase;
@@ -26,9 +26,13 @@
         object-fit: cover;
         margin: 2rem 2rem;
     }
-    .pimoff {
+    .logo7 {
         width: 7rem;
         object-fit: contain;
+    }
+    .logo8 {
+        width: 7rem;
+        height: auto;
     }
   }
 }

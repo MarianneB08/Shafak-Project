@@ -25,8 +25,8 @@ const Partners = () => {
         <img src={logo4} alt="" />
         <img src={logo5} alt="" />
         <img src={logo6} alt="" />
-        <img src={logo7} alt="" className={styles.pimoff}/>
-        <img src={logo8} alt="" />
+        <img src={logo7} alt="" className={styles.logo7}/>
+        <img src={logo8} alt="" className={styles.logo8}/>
         <img src={logo9} alt="" />
         <img src={logo10} alt="" />
         <img src={logo11} alt="" />
