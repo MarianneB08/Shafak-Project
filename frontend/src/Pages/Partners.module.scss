@@ -1,0 +1,67 @@
+@use "../globals.module.scss" as globals;
+
+// DESKTOP //
+
+.container {
+  //background-color: aquamarine;
+  text-align: center;
+  padding: 6rem 6rem;
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2rem;
+    margin-bottom: 8rem;
+  }
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    img {
+        width: auto;
+        height: 5rem;
+        object-fit: cover;
+        margin: 2rem 2rem;
+    }
+    .pimoff {
+        width: 7rem;
+        object-fit: contain;
+    }
+  }
+}
+
+// SMALL SCREENS, LAPTOPS //
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+// IPADS, TABLETS //
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1.8rem;
+    }
+  }
+}
+
+// MOBILE DEVICES //
+
+@media screen and (min-width: 290px) and (max-width: 480px) {
+  .container {
+    h1 {
+      font-size: 1.3rem;
+      letter-spacing: 1.3rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
