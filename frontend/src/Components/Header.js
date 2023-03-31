@@ -16,27 +16,27 @@ const Header = () => {
       <h1>Compagnie Shafak</h1>
       <nav className={`${styles.navbar} ${showLinks ? styles.showNavbar : ""}` }>
         <ul className={styles.navbarLinks}>
-          <li className={styles.navbarItem}>
+          <li className={styles.navbarItem} onClick={handleShowLinks}>
             <NavLink to="/">Accueil</NavLink>
           </li>
 
-          <li className={styles.navbarItem}>
+          <li className={styles.navbarItem} onClick={handleShowLinks}>
             <NavLink to="/company">La compagnie</NavLink>
           </li>
 
-          <li className={styles.navbarItem}>
+          <li className={styles.navbarItem} onClick={handleShowLinks}>
             <NavLink to="/creations">Créations</NavLink>
           </li>
 
-          <li className={styles.navbarItem}>
+          <li className={styles.navbarItem} onClick={handleShowLinks}>
             <NavLink to="/agenda">Agenda</NavLink>
           </li>
 
-          <li className={styles.navbarItem}>
+          <li className={styles.navbarItem} onClick={handleShowLinks}>
             <NavLink to="/partners">Partenaires</NavLink>
           </li>
 
-          <li className={styles.navbarItem}>
+          <li className={styles.navbarItem} onClick={handleShowLinks}>
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
