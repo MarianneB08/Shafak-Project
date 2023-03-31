@@ -31,19 +31,25 @@
       font-size: 2rem;
       font-weight: 300;
     }
-    .directorsEmail {
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
-      font-weight: 300;
+    .directorsEmailContainer {
+        margin-bottom: 2rem;
+      .directorsEmail {
+        font-size: 1.8rem;
+        font-weight: 300;
+        cursor: pointer;
+      }
     }
     .administration {
       font-size: 2rem;
       font-weight: bold;
     }
-    .administrationEmail {
-      font-size: 1.8rem;
-      font-weight: 300;
-    }
+    
+      .administrationEmail {
+        font-size: 1.8rem;
+        font-weight: 300;
+        cursor: pointer;
+      }
+    
     .administrationPhone {
       font-size: 1.8rem;
       margin-bottom: 2rem;
