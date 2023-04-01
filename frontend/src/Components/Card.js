@@ -15,7 +15,18 @@ const Card = () => {
             </div>
           </div>
           <div className={styles.infos}>
-            <p className={creation.statut === "Passée" ? styles.oldCreation : styles.newCreation}>{creation.infos}</p>
+            <p
+              className={
+                creation.statut === "Passée"
+                  ? styles.oldCreation
+                  : styles.newCreation
+              }
+            >
+              {creation.infos}
+            </p>
+            {creation.img.legals !== "" ? (
+              <p className={styles.legals}>Crédits : {creation.img.legals}</p>
+            ) : null}
             {creation.teaser !== "" ? (
               <a
                 href={creation.teaser}

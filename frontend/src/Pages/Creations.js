@@ -5,7 +5,7 @@ import Card from "../components/Card";
 const Creations = () => {
   return (
     <main className={styles.container}>
-      <h1>Les créations</h1>
+      <h1>Créations</h1>
       <Card/>
     </main>
   );
