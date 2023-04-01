@@ -1,0 +1,61 @@
+@use "../globals.module.scss" as globals;
+
+// DESKTOP //
+
+.popupContainer {
+  text-align: justify;
+  word-break: break-word;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 280px;
+  padding: 25px;
+  color: globals.$color-2;
+  background-color: globals.$color-1;
+  opacity: 0.9;
+  overflow-y: scroll;
+  .popupTitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+  }
+  .popupText {
+    position: relative;
+    width: 100%;
+    margin-bottom: 80px;
+    font-size: 1.2rem;
+  }
+  .closeButton {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100px;
+    padding: 10px 20px;
+    // font-family: globals.$font-family-1;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: globals.$color-2;
+    color: globals.$color-1;
+    border: 2px solid globals.$color-1;
+    cursor: pointer;
+  }
+}
+
+// Mobiles
+
+@media screen and (max-width: 480px) {
+  .popupContainer {
+    .popupTitle {
+      font-size: 1.4rem;
+    }
+    .popupText {
+      margin-bottom: 60px;
+      font-size: 1.2rem;
+    }
+    .closeButton {
+      font-size: 1.2rem;
+    }
+  }
+}
