@@ -69,18 +69,14 @@ const Popup = ({ trigger, setTrigger }) => {
         </div>
         <div className={styles.popupTextLinks}>
           <h4>Liens</h4>
-          <p>
-            <em>Liens sortants</em>
-          </p>
+          <p className={styles.outLinks}>Liens sortants</p>
           <p>
             Le propriétaire du site décline toute responsabilité et n’est pas
             engagé par le référencement via des liens hypertextes, de ressources
             tierces présentes sur le réseau Internet, tant en ce qui concerne
             leur contenu que leur pertinence.
           </p>
-          <p>
-            <em>Liens entrants</em>
-          </p>
+          <p className={styles.inLinks}>Liens entrants</p>
           <p>
             Le propriétaire du site autorise les liens hypertextes vers l’une
             des pages de ce site, à condition que ceux-ci ouvrent une nouvelle
