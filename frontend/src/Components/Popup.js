@@ -103,6 +103,8 @@ const Popup = ({ trigger, setTrigger }) => {
           <p>
             Les auteurs des photographies utilisées pour illustrer ce site web
             sont mentionnés au survol de chaque photographie.
+            <br/>
+            Crédits vidéo page d'accueil : Compagnie Shafak
           </p>
           <p>
             Les icônes utilisées sur ce site sont chargées depuis le site

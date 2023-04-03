@@ -14,11 +14,12 @@
   .muteIcon {
     width: 2rem;
     height: 2rem;
-    color: globals.$color-2;
+    color: globals.$color-3;
     z-index: 4;
     position: absolute;
     top: 1rem;
     right: 1rem;
+    cursor: pointer;
   }
   .text {
     position: absolute;
