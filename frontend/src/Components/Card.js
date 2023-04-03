@@ -25,7 +25,7 @@ const Card = () => {
               {creation.infos}
             </p>
             {creation.img.legals !== "" ? (
-              <p className={styles.legals}>Crédits : {creation.img.legals}</p>
+              <p className={styles.legals}>Crédits photo : {creation.img.legals}</p>
             ) : null}
             {creation.teaser !== "" ? (
               <a

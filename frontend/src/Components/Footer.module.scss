@@ -15,8 +15,11 @@
     .legalsDetails {
       p {
         color: globals.$color-2;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 0.5rem;
+        &:nth-child(2) {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -49,8 +52,10 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     .legals {
-      p {
-        font-size: 1rem;
+      .legalsDetails {
+        p {
+          font-size: 1rem;
+        }
       }
     }
     .social {
@@ -66,8 +71,10 @@
 @media screen and (max-width: 480px) {
   .container {
     .legals {
-      p {
-        font-size: 1.2rem;
+      .legalsDetails {
+        p {
+          font-size: 1rem;
+        }
       }
     }
     .social {
