@@ -12,10 +12,12 @@
   align-items: center;
   .legals {
     text-align: center;
-    p {
-      color: globals.$color-2;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
+    .legalsDetails {
+      p {
+        color: globals.$color-2;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
     }
   }
   .social {
@@ -70,10 +72,13 @@
     }
     .social {
       right: 1rem;
-      font-size: 2rem;
+      font-size: 1.3rem;
       width: 4%;
       flex-direction: column;
       justify-content: space-around;
+      a {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }

@@ -12,7 +12,6 @@
 
 // DESKTOP //
 
-
 .container {
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@
     text-transform: uppercase;
     letter-spacing: 3rem;
     font-size: 4rem;
-    font-weight: 200;
+    font-weight: 300;
     margin: 5rem 0;
   }
   .navbar {
@@ -40,6 +39,7 @@
       .navbarItem {
         padding: 0 0.3rem;
         font-size: 1.8rem;
+        font-weight: 300;
         margin-right: 4rem;
         margin-left: 4rem;
         position: relative;
@@ -47,6 +47,7 @@
           color: black;
           padding: 5px 0px;
           position: relative;
+
           &:after {
             content: "";
             background: black;
@@ -269,7 +270,6 @@
           }
           &::after {
             transform: translateY(12px);
-            
           }
         }
         .burgerLine {

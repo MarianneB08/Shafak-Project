@@ -9,15 +9,16 @@ import {
 import Popup from "./Popup";
 
 const Footer = () => {
-
   const [buttonPopup, setButtonPopup] = useState(false);
 
   return (
     <footer className={styles.container}>
       <section className={styles.legals}>
-        <p>© 2023 Compagnie Shafak. Tous droits réservés.</p>
-        <p onClick={() => setButtonPopup(true)}>Mentions légales</p>
-        <Popup trigger={buttonPopup} setTrigger={setButtonPopup}/>
+        <div className={styles.legalsDetails}>
+          <p>© 2023 Compagnie Shafak. Tous droits réservés.</p>
+          <p onClick={() => setButtonPopup(true)}>Mentions légales</p>
+        </div>
+        <Popup trigger={buttonPopup} setTrigger={setButtonPopup} />
       </section>
       <section className={styles.social}>
         <a
