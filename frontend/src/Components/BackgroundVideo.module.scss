@@ -61,6 +61,11 @@
 
 @media screen and (max-width: 480px) {
   .container {
+    .muteIcon {
+      width: 1.5rem;
+      height: 1.5rem;
+      z-index: 1;
+    }
     .text {
       width: 90%;
       font-size: 1.2rem;

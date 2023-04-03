@@ -5,7 +5,7 @@ const Card = () => {
   return (
     <section className={styles.container}>
       {dataFile.map((creation) => (
-        <article className={styles.card}>
+        <article className={styles.card} key={creation.id}>
           <div className={styles.details}>
             <img src={creation.img.file} alt={`creation ${creation.title}`} />
             <div className={styles.detailsText}>
