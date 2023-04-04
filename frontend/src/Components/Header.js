@@ -1,13 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import styles from "./Header.module.scss";
+import rtlStyles from "./Header_rtl.module.scss";
+import ltrStyles from "./Header_ltr.module.scss";
 import { useState, useContext } from "react";
 import LanguageSelector from "./LanguageSelector";
 import { LanguageContext } from "../store/languageContext.js";
 
 const Header = () => {
-  const { dictionary } = useContext(LanguageContext);
+  const { dictionary, userLanguage } = useContext(LanguageContext);
   const [showLinks, setShowLinks] = useState(false);
+
+  // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
+  let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
   const handleShowLinks = () => {
     setShowLinks(!showLinks);

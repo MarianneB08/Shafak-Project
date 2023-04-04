@@ -1,10 +1,17 @@
 import React, { useState } from "react";
+import { useContext } from "react";
+import { LanguageContext } from "../store/languageContext.js";
 import video from "../assets/background_video.mp4";
-import styles from "./BackgroundVideo.module.scss";
+import ltrStyles from "./BackgroundVideo_ltr.module.scss";
+import rtlStyles from "./BackgroundVideo_rtl.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeXmark, faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
 
 const BackgroundVideo = () => {
+  // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
+  const { userLanguage } = useContext(LanguageContext);
+  let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
+
   const [isMute, setIsMute] = useState(false);
 
   const muteHandle = () => {

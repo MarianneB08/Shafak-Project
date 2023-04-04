@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import styles from "./Footer.module.scss";
+import ltrStyles from "./Footer_ltr.module.scss";
+import rtlStyles from "./Footer_rtl.module.scss";
+import { useContext } from "react";
+import { LanguageContext } from "../store/languageContext.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
@@ -9,14 +12,18 @@ import {
 import Popup from "./Popup";
 
 const Footer = () => {
+  const { dictionary, userLanguage } = useContext(LanguageContext);
   const [buttonPopup, setButtonPopup] = useState(false);
+
+  // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
+  let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
   return (
     <footer className={styles.container}>
       <section className={styles.legals}>
         <div className={styles.legalsDetails}>
-          <p>© 2023 Compagnie Shafak. Tous droits réservés.</p>
-          <p onClick={() => setButtonPopup(true)}>Mentions légales</p>
+          <p>{dictionary.footer.copyright}</p>
+          <p onClick={() => setButtonPopup(true)}>{dictionary.footer.legals}</p>
         </div>
         <Popup trigger={buttonPopup} setTrigger={setButtonPopup} />
       </section>

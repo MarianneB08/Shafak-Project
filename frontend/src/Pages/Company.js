@@ -1,9 +1,16 @@
 import React from "react";
-import styles from "./Company.module.scss";
+import { useContext } from "react";
+import { LanguageContext } from "../store/languageContext.js";
+import ltrStyles from "./Company_ltr.module.scss";
+import rtlStyles from "./Company_rtl.module.scss";
 import PhotoLarbi from "../assets/portrait_Larbi.jpg";
-import PhotoMargot from '../assets/portrait_Margot.jpg';
+import PhotoMargot from "../assets/portrait_Margot.jpg";
 
 const Company = () => {
+  // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
+  const { userLanguage } = useContext(LanguageContext);
+  let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
+
   return (
     <main className={styles.container}>
       <article className={styles.aboutCompany}>

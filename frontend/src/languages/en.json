@@ -6,5 +6,13 @@
     "agenda": "Agenda",
     "partners": "Partners",
     "contact": "Contact"
+  },
+  "contact": {
+    "artisticDirectors": "Artistic Directors",
+    "administration": "Administration"
+  }, 
+  "footer": {
+    "copyright": "© 2023 Compagnie Shafak. All rights reserved.",
+    "legals": "Legal notice"
   }
 }

@@ -4,9 +4,16 @@
 // En bas de cette modale, un bouton "Fermer" gère la dissimulation de la fenêtre en utilisant le setTrigger passé en props.
 
 import React from "react";
-import styles from "./Popup.module.scss";
+import { useContext } from "react";
+import { LanguageContext } from "../store/languageContext.js";
+import ltrStyles from "./Popup_ltr.module.scss";
+import rtlStyles from "./Popup_rtl.module.scss";
 
 const Popup = ({ trigger, setTrigger }) => {
+  // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
+  const { userLanguage } = useContext(LanguageContext);
+  let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
+
   return trigger ? (
     <div className={styles.popupContainer}>
       <h3 className={styles.popupTitle}>Mentions légales</h3>
@@ -103,7 +110,7 @@ const Popup = ({ trigger, setTrigger }) => {
           <p>
             Les auteurs des photographies utilisées pour illustrer ce site web
             sont mentionnés au survol de chaque photographie.
-            <br/>
+            <br />
             Crédits vidéo page d'accueil : Compagnie Shafak
           </p>
           <p>

@@ -1,13 +1,20 @@
 import React from "react";
-import styles from "./Contact.module.scss";
+import ltrStyles from "./Contact_ltr.module.scss";
+import rtlStyles from "./Contact_rtl.module.scss";
+import { useContext } from "react";
+import { LanguageContext } from "../store/languageContext.js";
 
 const Contact = () => {
+  const { dictionary, userLanguage } = useContext(LanguageContext);
+  // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
+  let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
+
   return (
     <main className={styles.container}>
       <h2>Contact</h2>
       <section className={styles.details}>
         <h2>Compagnie Shafak</h2>
-        <p className={styles.directors}>Directeurs artistiques</p>
+        <p className={styles.directors}>{dictionary.contact.artisticDirectors}</p>
         <h3>Larbi Namouchi & Margot Libanga</h3>
         <div className={styles.directorsEmailContainer}>
           <a
@@ -17,7 +24,7 @@ const Contact = () => {
             cieshafak@gmail.com
           </a>
         </div>
-        <p className={styles.administration}>Administration</p>
+        <p className={styles.administration}>{dictionary.contact.administration}</p>
         <a
           className={styles.administrationEmail}
           href="mailto:admi.shafak@gmail.com"
