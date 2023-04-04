@@ -1,8 +1,10 @@
 {
-  "Home": "Home",
-  "Company": "Company",
-  "Creations": "Creations",
-  "Agenda": "Agenda",
-  "Partners": "Partners",
-  "Contact": "Contact"
+  "navbarItems": {
+    "home": "Home",
+    "company": "Company",
+    "creations": "Creations",
+    "agenda": "Agenda",
+    "partners": "Partners",
+    "contact": "Contact"
+  }
 }

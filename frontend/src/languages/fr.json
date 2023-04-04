@@ -1,8 +1,10 @@
 {
-  "Home": "Accueil",
-  "Company": "La compagnie",
-  "Creations": "Créations",
-  "Agenda": "Agenda",
-  "Partners": "Partenaires",
-  "Contact": "Contact"
+  "navbarItems": {
+    "home": "Accueil",
+    "company": "La compagnie",
+    "creations": "Créations",
+    "agenda": "Agenda",
+    "partners": "Partenaires",
+    "contact": "Contact"
+  }
 }

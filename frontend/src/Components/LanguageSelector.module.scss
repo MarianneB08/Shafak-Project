@@ -1,0 +1,26 @@
+@use "../globals.module.scss" as globals;
+
+// DESKTOP //
+
+select {
+  border: 1px solid globals.$color-1;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+// SMALL SCREENS, LAPTOPS //
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  select {
+    font-size: 1.3rem;
+  }
+}
+
+// IPADS, TABLETS //
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  select {
+    font-size: 1.2rem;
+  }
+}

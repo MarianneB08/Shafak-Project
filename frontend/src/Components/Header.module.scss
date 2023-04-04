@@ -77,6 +77,21 @@
   }
 }
 
+// INTERMEDIATE QUERIES //
+
+@media screen and (min-width: 1025px) and (max-width: 1140px) {
+  .container {
+    .navbar {
+      .navbarLinks {
+        .navbarItem {
+          margin-right: 3rem;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+}
+
 // SMALL SCREENS, LAPTOPS //
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -90,8 +105,8 @@
         .navbarItem {
           padding: 0 0.3rem;
           font-size: 1.6rem;
-          margin-right: 2rem;
-          margin-left: 2rem;
+          margin-right: 1.5rem;
+          margin-left: 1.5rem;
         }
       }
     }
@@ -121,7 +136,7 @@
 
 // MOBILE DEVICES //
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 530px) {
   .container {
     h1 {
       margin-top: 5rem;
@@ -141,7 +156,7 @@
         height: 100vh;
         padding: 2rem;
         background-color: white;
-        z-index: 2;
+        z-index: 3;
         visibility: hidden;
         transition: all 0.8s ease-out;
         .navbarItem {
@@ -212,7 +227,7 @@
         height: 100vh;
         padding: 2rem;
         background-color: black;
-        z-index: 2;
+        z-index: 3;
         visibility: visible;
         .navbarItem {
           display: block;
@@ -245,7 +260,7 @@
       .navBurger {
         animation: disappearing 2s;
         display: block;
-        z-index: 2;
+        z-index: 3;
         position: absolute;
         top: -5rem;
         right: 4rem;
