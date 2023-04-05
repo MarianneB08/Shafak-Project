@@ -35,13 +35,15 @@
     padding: 1rem;
     color: globals.$color-2;
     .navbarLinks {
+      width: 100%;
       display: flex;
+      justify-content: space-around;
       .navbarItem {
         padding: 0 0.3rem;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         font-weight: 300;
-        margin-right: 4rem;
-        margin-left: 4rem;
+        // margin-right: 3rem;
+        // margin-left: 3rem;
         position: relative;
         a {
           color: black;
@@ -76,21 +78,6 @@
   }
 }
 
-// INTERMEDIATE QUERIES //
-
-@media screen and (min-width: 1025px) and (max-width: 1140px) {
-  .container {
-    .navbar {
-      .navbarLinks {
-        .navbarItem {
-          margin-right: 3rem;
-          margin-left: 3rem;
-        }
-      }
-    }
-  }
-}
-
 // SMALL SCREENS, LAPTOPS //
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -104,8 +91,8 @@
         .navbarItem {
           padding: 0 0.3rem;
           font-size: 1.6rem;
-          margin-right: 1.5rem;
-          margin-left: 1.5rem;
+          margin-right: 1rem;
+          margin-left: 1rem;
         }
       }
     }
@@ -125,8 +112,6 @@
         .navbarItem {
           padding: 0 0.3rem;
           font-size: 1.3rem;
-          margin-right: 0.5rem;
-          margin-left: 0.5rem;
         }
       }
     }
@@ -135,7 +120,7 @@
 
 // MOBILE DEVICES //
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 600px) {
   .container {
     h1 {
       margin-top: 5rem;
