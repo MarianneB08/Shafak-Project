@@ -8,13 +8,13 @@ import PhotoMargot from "../assets/portrait_Margot.jpg";
 
 const Company = () => {
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
-  const { userLanguage } = useContext(LanguageContext);
+  const { dictionary, userLanguage } = useContext(LanguageContext);
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
   return (
     <main className={styles.container}>
       <article className={styles.aboutCompany}>
-        <h2>La compagnie</h2>
+        <h2>{dictionary.companyPage.firstTitle}</h2>
         <p>
           La Compagnie Shafak a été fondée en octobre 2017 à Lyon, de la
           rencontre d'artistes partageant un même désir créatif. La compagnie se
@@ -46,7 +46,7 @@ const Company = () => {
         <p>Margot Libanga & Larbi Namouchi</p>
       </article>
       <article className={styles.aboutDancers}>
-        <h2>Les directeurs artistiques</h2>
+        <h2>{dictionary.companyPage.secondTitle}</h2>
         <div className={styles.sectionsContainer}>
           <section className={styles.larbiSection}>
             <h3>Larbi Namouchi</h3>

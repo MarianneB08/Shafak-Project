@@ -19,12 +19,12 @@ import logo13 from "../assets/13.png";
 
 const Partners = () => {
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
-  const { userLanguage } = useContext(LanguageContext);
+  const { dictionary, userLanguage } = useContext(LanguageContext);
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
   return (
     <main className={styles.container}>
-      <h1>Partenaires</h1>
+      <h1>{dictionary.partnersPage.firstTitle}</h1>
       <section className={styles.logos}>
         <img src={logo1} alt="" />
         <img src={logo2} alt="" />

@@ -7,7 +7,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   height: fit-content;
-  width: 80%;
   margin: 0 2rem 0 2rem;
   .card {
     margin-bottom: 7rem;
@@ -131,6 +130,7 @@
 
 @media screen and (max-width: 480px) {
   .container {
+    width: 80%;
     .card {
       .details {
         img {

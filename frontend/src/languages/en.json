@@ -8,6 +8,16 @@
     "partners": "Partners",
     "contact": "Contact"
   },
+  "companyPage" : {
+    "firstTitle":"The company",
+    "secondTitle": "The artistic directors"
+  },
+  "creationsPage" : {
+    "firstTitle": "Creations"
+  },
+  "partnersPage" : {
+    "firstTitle": "Partners"
+  },
   "contact": {
     "artisticDirectors": "Artistic Directors",
     "administration": "Administration"
