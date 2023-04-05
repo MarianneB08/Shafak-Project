@@ -10,7 +10,7 @@ const Card = ({ filteredCreation }) => {
 
   return (
     <section className={styles.container}>
-      <article className={styles.card} key={filteredCreation.id}>
+      <article className={styles.card}>
         <div className={styles.details}>
           <img
             src={filteredCreation.img.file}
