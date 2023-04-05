@@ -7,6 +7,7 @@ import Agenda from './pages/Agenda';
 import Partners from './pages/Partners';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
+import Archives from './pages/Archives';
 
 const Router = () => {
     return (
@@ -15,6 +16,7 @@ const Router = () => {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/company" element={<Company/>}/>
                 <Route path="/creations" element={<Creations/>}/>
+                <Route path="/archives" element={<Archives/>}/>
                 <Route path="/agenda" element={<Agenda/>}/>
                 <Route path="/partners" element={<Partners/>}/>
                 <Route path="/contact" element={<Contact/>}/>

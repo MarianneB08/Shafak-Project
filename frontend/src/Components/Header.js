@@ -37,6 +37,12 @@ const Header = () => {
           </li>
 
           <li className={styles.navbarItem} onClick={handleShowLinks}>
+            <NavLink to="/archives">
+              {dictionary.navbarItems.archives}
+            </NavLink>
+          </li>
+
+          <li className={styles.navbarItem} onClick={handleShowLinks}>
             <NavLink to="/agenda">{dictionary.navbarItems.agenda}</NavLink>
           </li>
 
