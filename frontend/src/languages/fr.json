@@ -15,5 +15,11 @@
   "footer": {
     "copyright": "© 2023 Compagnie Shafak. Tous droits réservés.",
     "legals": "Mentions légales"
+  },
+  "error": {
+    "errorType": "Erreur 404",
+    "errorDescription": "La page que vous demandez n'existe pas.",
+    "homeLink": "Retour à la page d'accueil"
   }
+
 }

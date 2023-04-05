@@ -7,15 +7,15 @@ import rtlStyles from "./Error_rtl.module.scss";
 
 const Error = () => {
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
-  const { userLanguage } = useContext(LanguageContext);
+  const { dictionary, userLanguage } = useContext(LanguageContext);
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
   return (
     <main className={styles.container}>
-      <p className={styles.errorType}>Erreur 404</p>
-      <p className={styles.errorDescription}>La page que vous demandez n'existe pas.</p>
+      <p className={styles.errorType}>{dictionary.error.errorType}</p>
+      <p className={styles.errorDescription}>{dictionary.error.errorDescription}</p>
       <Link to="/">
-        <p className={styles.backHome}>Retour à la page d'accueil</p>
+        <p className={styles.backHome}>{dictionary.error.homeLink}</p>
       </Link>
     </main>
   );
