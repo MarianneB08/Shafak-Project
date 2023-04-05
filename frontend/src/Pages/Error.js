@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { LanguageContext } from "../store/languageContext.js";
 import ltrStyles from "./Error_ltr.module.scss";
@@ -11,7 +12,11 @@ const Error = () => {
 
   return (
     <main className={styles.container}>
-      <p>Hello from Error !</p>
+      <p className={styles.errorType}>Erreur 404</p>
+      <p className={styles.errorDescription}>La page que vous demandez n'existe pas.</p>
+      <Link to="/">
+        <p className={styles.backHome}>Retour à la page d'accueil</p>
+      </Link>
     </main>
   );
 };

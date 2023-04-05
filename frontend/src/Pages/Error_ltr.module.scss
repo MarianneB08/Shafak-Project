@@ -1,7 +1,42 @@
 .container {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: flex-end;
-    background-color: greenyellow;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 5rem;
+  padding: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .errorType {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2rem;
+    margin-bottom: 8rem;
+  }
+  .errorDescription {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+  .backHome {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0.5rem 0;
+    position: relative;
+    &:after {
+      content: "";
+      background: black;
+      display: block;
+      position: absolute;
+      bottom: 0rem;
+      left: 50%;
+      height: 1px;
+      width: 0;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    }
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
 }
