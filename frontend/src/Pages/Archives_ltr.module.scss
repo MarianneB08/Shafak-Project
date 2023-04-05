@@ -1,19 +1,25 @@
 // DESKTOP //
 
 .container {
-  width: 100%;
-  margin-bottom: 5rem;
-  padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+  margin: 0 auto;
   h1 {
+    margin: 7rem 0 9rem 0;
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 300;
     letter-spacing: 2rem;
-    margin-bottom: 8rem;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5rem;
   }
 }
 

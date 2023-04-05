@@ -8,6 +8,85 @@
     "partners": "Partenaires",
     "contact": "Contact"
   },
+
+  "En/Jeux": {
+    "id": "1",
+    "title": "En/Jeux",
+    "date": "2024",
+    "summary": "Septète dansant autour du jeu",
+    "statut": "En cours",
+    "infos": "En/Jeux est une pièce qui s'inspire du réel, et donc de personnes et actions réelles. Le processus de recherche qui sera entamé avec les interprètes consistera tout d'abord en une phase d'observation et de rencontre. Nous nous mettrons en contact avec les « joueurs » de la ville où nous travaillerons. Il s'agit de s'inspirer par la rencontre avec l'autre. L'équipe s'intéressera aux jeux préférés des gens, mais jouera aussi avec eux, peut-être même dansera. Cette pièce de groupe interroge les dynamiques du jeu et ce qu'elles invoquent en chacun. En groupe ou seul, le jeu est l'outil ludique et animal de tout être qui souhaite apprendre et/ou prendre part. Comme pour tout bon joueur, c'est le corps qui est appelé à exprimer le déroulement de cette partie.",
+    "img": {
+      "file": "./img/enjeux.jpg",
+      "legals": "Kévin Lebrun"
+    },
+    "teaser": "https://vimeo.com/756059858/6ef4b39d06"
+  },
+  "Point de vue": {
+    "id": "2",
+    "title": "Point de vue",
+    "date": "2023",
+    "summary": "Création in-situ pour danseurs amateurs en Bretagne",
+    "statut": "En cours",
+    "infos": "Il s'agit de l'émergence d'un métissage entre le paysage breton, la sensibilité des danseurs et la rencontre de la musique traditionnelle Stambali (gnawa) avec la musique électronique. En ajoutant à des lieux déjà chargés d'un passé et d'un patrimoine, la trace d'une création éphémère et contemporaine, on invite une histoire dans l'Histoire. L'idée est de créer une pièce auprès de publics amateurs, qui auront également la chance de jouer cette pièce à plusieurs reprises. À la suite de sa tournée estivale, ce projet pourra être transmis des amateurs vers des professionnels. Contrairement à un projet conventionnel avec des danseurs professionnels, ici, c'est le chorégraphe qui s'engage auprès d'un groupe de danseurs amateurs.",
+    "img": {
+      "file": "./img/point_de_vue.jpg",
+      "legals": "Compagnie Shafak"
+    },
+    "teaser": "https://vimeo.com/789250799/cc60f6d095"
+  },
+  "Le Loup": {
+    "id": "3",
+    "title": "Le Loup",
+    "date": "2023",
+    "summary": "Solo chorégraphique",
+    "statut": "En cours",
+    "infos": "À travers un espace obscur, on assiste au voyage d'un individu dans la découverte de soi. Plusieurs facteurs tels que l'espace, le son, la voix et le texte, armeront ce solo tel un trajet ludique retraçant la révélation d'un individu. Dans une ambiance hypnotique, ce solo questionne nos choix et comment ils façonnent nos vies. Sur scène : un espace finement délimité par des lumières et un corps en quête de sagesse dans cette forêt abyssale que représente le son. Le jeu sonore est un apport sensoriel déroutant et crée ce labyrinthe mystique dans lequel l'âme se perd. En animation, le loup apparaît, comme pour nous rappeler à l'essentiel : « Oùùùùù est l'ââââââââme ? ».",
+    "img": {
+      "file": "./img/le_loup.jpg",
+      "legals": "Luca Del Pia"
+    },
+    "teaser": "https://vimeo.com/802407809"
+  },
+  "Terms & Conditions": {
+    "id": "4",
+    "title": "Terms & Conditions",
+    "date": "2021-2025 (création gelée)",
+    "summary": "Duo bilingue féminin insolite",
+    "statut": "En cours",
+    "infos": "En lien avec l'ouvrage de Sylvia Federici, Par-delà les frontières du corps, on se réapproprie son corps par la physicalité et les sensations de la danse. En duo, les femmes, ici, convoquent le vivant, questionnent le mouvement et demandent quelle.s danse.s leur permet.tent de se réapproprier leur corps.",
+    "img": {
+      "file": "./img/terms_and_conditions.jpg",
+      "legals": "Claire Dufféal"
+    },
+    "teaser": ""
+  },
+  "Adamah": {
+    "id": "5",
+    "title": "Adamah",
+    "date": "2018",
+    "summary": "Solo chorégraphique – Création à transmettre",
+    "statut": "Passée",
+    "infos": "Cette création est passée et n'est plus donnée en représentation.",
+    "img": {
+      "file": "./img/adamah.jpg",
+      "legals": "Garance Li"
+    },
+    "teaser": ""
+  },
+  "Kuhlankulanah": {
+    "id": "6",
+    "title": "Kuhlankulanah",
+    "date": "2017",
+    "statut": "Passée",
+    "summary": "Duo voyageur",
+    "infos": "Cette création est passée et n'est plus donnée en représentation.",
+    "img": {
+      "file": "./img/kuhlankulanah.jpg",
+      "legals": "Compagnie Shafak"
+    },
+    "teaser": ""
+  },
   "contact": {
     "artisticDirectors": "Directeurs artistiques",
     "administration": "Administration"
