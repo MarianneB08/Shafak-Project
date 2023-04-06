@@ -1,42 +1,65 @@
+@use "../globals.module.scss" as globals;
+
+// DESKTOP //
+
 .container {
   width: 100%;
-  height: 400px;
-  margin-bottom: 5rem;
-  padding: 5rem 10rem;
+  height: 100%;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  .errorType {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 2rem;
-    margin-bottom: 8rem;
+  position: relative;
+  img {
+    object-fit: cover;
+    width: 100%;
   }
-  .errorDescription {
-    font-size: 2rem;
-    font-weight: 300;
-    margin-bottom: 3rem;
-  }
-  .backHome {
-    font-size: 1.5rem;
-    font-weight: 300;
-    padding: 0.5rem 0;
-    position: relative;
-    &:after {
-      content: "";
-      background: black;
-      display: block;
-      position: absolute;
-      bottom: 0rem;
-      left: 50%;
-      height: 1px;
-      width: 0;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  .text {
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    .errorType {
+      color: globals.$color-2;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2rem;
+      margin-bottom: 8rem;
     }
-    &:hover:after {
-      width: 100%;
-      left: 0;
+    .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .errorDescription {
+        color: globals.$color-2;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 3rem;
+      }
+      .backHome {
+        color: globals.$color-2;
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding: 0.5rem 0;
+        position: relative;
+        &:after {
+          content: "";
+          background: globals.$color-2;
+          display: block;
+          position: absolute;
+          bottom: 0rem;
+          left: 50%;
+          height: 1px;
+          width: 0;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+        &:hover:after {
+          width: 100%;
+          left: 0;
+        }
+      }
     }
   }
 }
