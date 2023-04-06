@@ -70,6 +70,51 @@
     "copyright": "© 2023 Compagnie Shafak. Tous droits réservés.",
     "legals": "Mentions légales"
   },
+  "legalNotice": {
+    "popupTitle": "Mentions légales",
+    "popupIdentity": {
+      "identityTitle": "Identités",
+      "siteName": "Nom du site web : Compagnie Shafak",
+      "siteUrl": "Adresse : shafak.fr",
+      "siteOwner": "Propriétaire : Compagnie Shafak",
+      "siteEditor": "Responsable de publication : Compagnie Shafak",
+      "siteDesigner": "Conception et réalisation : Marianne Boyer",
+      "siteHosting": "Hébergement : Netlify"
+    },
+    "popupConditions": {
+      "conditionsTitle": "Conditions d'utilisation",
+      "conditionsText": "L’utilisation du présent site implique l’acceptation pleine et entière des conditions générales d’utilisation décrites ci-après. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment."
+    },
+    "popupInformations": {
+      "informationsTitle": "Informations",
+      "informationsText": "Les informations et documents du site sont présentés à titre indicatif, sans de caractère exhaustif, et ne peuvent engager la responsabilité du propriétaire du site. Le propriétaire du site ne peut être tenu responsable des dommages directs et indirects consécutifs à l’accès au site."
+    },
+    "popupProperty": {
+      "propertyTitle": "Propriété intellectuelle",
+      "propertyParagraph": "Sauf mention contraire, tous les éléments accessibles sur le site (textes, images, graphismes, logo, icônes, sons, logiciels, etc.) restent la propriété exclusive de leurs auteurs, en ce qui concerne les droits de propriété intellectuelle ou les droits d’usage.",
+      "propertyFirstListItem": "Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de l’auteur.",
+      "propertySecondListItem": "Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient est considérée comme constitutive d’une contrefaçon et passible de poursuites.",
+      "propertyThirdListItem": "Les marques et logos reproduits sur le site sont déposés par les sociétés qui en sont propriétaires."
+    },
+    "popupLinks": {
+      "linksTitle": "Liens",
+      "outLinksTitle": "Liens sortants",
+      "outLinksText": "Le propriétaire du site décline toute responsabilité et n’est pas engagé par le référencement via des liens hypertextes, de ressources tierces présentes sur le réseau Internet, tant en ce qui concerne leur contenu que leur pertinence.",
+      "inLinksTitle": "Liens entrants",
+      "inLinksText": "Le propriétaire du site autorise les liens hypertextes vers l’une des pages de ce site, à condition que ceux-ci ouvrent une nouvelle fenêtre et soient présentés de manière non équivoque afin d’éviter : tout risque de confusion entre le site citant et le propriétaire du site ainsi que toute présentation tendancieuse, ou contraire aux lois en vigueur. Le propriétaire du site se réserve le droit de demander la suppression d’un lien s’il estime que le site source ne respecte pas les règles ainsi définies."
+    }, 
+    "popupPrivacy":{
+      "privacyTitle":"Confidentialité",
+      "privacyText":"Tout utilisateur dispose d’un droit d’accès, de rectification et d’opposition aux données personnelles le concernant, en effectuant sa demande écrite et signée, accompagnée d’une preuve d’identité. Le site ne recueille pas d’informations personnelles, et n’est pas assujetti à déclaration à la CNIL."
+    },
+    "popupCredits": {
+      "creditsTitle":"Crédits",
+      "creditsText":"Les auteurs des photographies utilisées pour illustrer ce site web sont mentionnés au survol de chaque photographie.",
+      "creditsComplement": "Crédits vidéo page d'accueil : Compagnie Shafak",
+      "creditsIcons":"Les icônes utilisées sur ce site sont chargées depuis le site https://fontawesome.com."
+    },
+    "closeButton":"Fermer"
+  },
   "error": {
     "errorType": "Erreur 404",
     "errorDescription": "La page que vous demandez n'existe pas.",
