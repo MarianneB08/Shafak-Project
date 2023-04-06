@@ -22,6 +22,8 @@
     transform: translateX(-50%);
     .errorType {
       color: globals.$color-2;
+      background-color: rgba(0,0,0, .8);
+      padding: 1.5rem 0;
       text-transform: uppercase;
       font-size: 2.5rem;
       font-weight: 300;
@@ -36,6 +38,8 @@
       align-items: center;
       .errorDescription {
         color: globals.$color-2;
+        background-color: rgba(0,0,0, .8);
+        padding: 1.5rem 0;
         font-size: 2rem;
         font-weight: 300;
         margin-bottom: 3rem;
@@ -43,6 +47,8 @@
       }
       .backHome {
         color: globals.$color-2;
+        background-color: rgba(0,0,0, .8);
+        padding: 1.5rem 0;
         font-size: 1.5rem;
         font-weight: 300;
         padding: 0.5rem 0;
