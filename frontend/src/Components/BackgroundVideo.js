@@ -9,7 +9,7 @@ import { faVolumeXmark, faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
 
 const BackgroundVideo = () => {
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
-  const { userLanguage } = useContext(LanguageContext);
+  const { dictionary, userLanguage } = useContext(LanguageContext);
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
   const [isMute, setIsMute] = useState(false);
@@ -41,9 +41,7 @@ const BackgroundVideo = () => {
       )}
 
       <p className={styles.text}>
-        Compagnie de danse contemporaine et arts performatifs ayant pour but la
-        production, l’exploration, la promotion et la diffusion des créations
-        des chorégraphes Larbi Namouchi & Margot Libanga.
+        {dictionary.homePage.textVideo}
       </p>
     </section>
   );

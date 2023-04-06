@@ -1,0 +1,104 @@
+[
+  {
+    "id": "1",
+    "title": "Play/in",
+    "date": "2024",
+    "summary": "7 dancers exploring games",
+    "statut": "En cours",
+    "infos": {
+      "infosFirstRomanFragment": "Play/in is a piece inspired by reality, and therefore by real people and actions. The research process that will be initiated with the performers will first of all consist in a phase of observation and dialogue. We will get in touch with the “players“ of the city where we will work. It is a question of being inspired by the encounter with the other. The team will be interested in people's favorite games, but also play with them, maybe even dance. This group piece questions the dynamics of the game and what they invoke in everyone. In a group or alone, the game is the playful and animal tool of any being who wishes to learn and/or take part. As for any good player, it is the body which is called upon to express the progress of this game.",
+      "infosFirstItalicFragment": "",
+      "infosSecondRomanFragment": ""
+    },
+    "img": {
+      "file": "./img/enjeux.jpg",
+      "legals": "© Kévin Lebrun"
+    },
+    "teaser": "https://vimeo.com/756059858/6ef4b39d06"
+  },
+  {
+    "id": "2",
+    "title": "Point of view",
+    "date": "2023",
+    "summary": "In-situ dance project for amateur dancers in Brittany",
+    "statut": "En cours",
+    "infos": {
+      "infosFirstRomanFragment": "It's about the emergence of a mix between the Brittain landscape, the sensitivity of the dancers and the meeting of traditional Stambali music (gnawa) with electronic music. By adding to places already charged with a past and a heritage, the trace of an ephemeral and contemporary creation, we invite a story into History. The idea is to create a piece for amateur audiences, who will also have the chance to perform this piece several times. Following its summer tour, this project can be transmitted from amateurs to professionals. Unlike a conventional project with professional dancers, here it is the choreographer who works with a group of amateur dancers.",
+      "infosFirstItalicFragment": "",
+      "infosSecondRomanFragment": ""
+    },
+    "img": {
+      "file": "./img/point_de_vue.jpg",
+      "legals": "© Compagnie Shafak"
+    },
+    "teaser": "https://vimeo.com/789250799/cc60f6d095"
+  },
+  {
+    "id": "3",
+    "title": "The Wolf",
+    "date": "2023",
+    "summary": "choreographical solo",
+    "statut": "En cours",
+    "infos": {
+      "infosFirstRomanFragment": "Through an obscure space, we witness an individual's journey of self-discovery. Several factors such as space, sound, voice and text, will arm this solo like a playful journey tracing the revelation of an individual. In a hypnotic atmosphere, this solo questions our choices and how they shape our lives. On stage: a space finely delimited by lights and a body in search of wisdom in this abyssal forest represented by sound. The sound game is a confusing sensory input and creates this mystical labyrinth in which the soul gets lost. In animated images, the wolf appears, as if to remind us of the essential: “Where is the soooooooooul?“",
+      "infosFirstItalicFragment": "",
+      "infosSecondRomanFragment": ""
+    },
+    "img": {
+      "file": "./img/le_loup.jpg",
+      "legals": "© Luca Del Pia"
+    },
+    "teaser": "https://vimeo.com/802407809"
+  },
+  {
+    "id": "4",
+    "title": "Terms & Conditions",
+    "date": "2021-2025 (frozen production)",
+    "summary": "Unusual female bilingual duo",
+    "statut": "En cours",
+    "infos": {
+      "infosFirstRomanFragment": "In connection with Sylvia Federici’s book, ",
+      "infosFirstItalicFragment": "Beyond the Periphery of the Skin: Rethinking, Remaking, and Reclaiming the Body in Contemporary Capitalism",
+      "infosSecondRomanFragment": ", we reclaim our body through the physicality and sensations of dance. In duo, the women here summon the living, question movement and ask what dances allow them to reclaim their bodies."
+    },
+    "img": {
+      "file": "./img/terms_and_conditions.jpg",
+      "legals": "© Claire Dufféal"
+    },
+    "teaser": ""
+  },
+  {
+    "id": "5",
+    "title": "Adamah",
+    "date": "2018",
+    "summary": "Choreographical solo – piece to be transmitted",
+    "statut": "Passée",
+    "infos": {
+      "infosFirstRomanFragment": "This creation is passed and no longer on tour.",
+      "infosFirstItalicFragment": "",
+      "infosSecondRomanFragment": ""
+    },
+    "img": {
+      "file": "./img/adamah.jpg",
+      "legals": "© Garance Li"
+    },
+    "teaser": ""
+  },
+  {
+    "id": "6",
+    "title": "Kuhlankulanah",
+    "date": "2017",
+    "statut": "Passée",
+    "summary": "Travelling duo",
+    "infos": {
+      "infosFirstRomanFragment": "This creation is passed and no longer on tour.",
+      "infosFirstItalicFragment": "",
+      "infosSecondRomanFragment": ""
+    },
+    "img": {
+      "file": "./img/kuhlankulanah.jpg",
+      "legals": "© Compagnie Shafak"
+    },
+    "teaser": ""
+  }
+]

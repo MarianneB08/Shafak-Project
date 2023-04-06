@@ -8,24 +8,68 @@
     "partners": "Partners",
     "contact": "Contact"
   },
-  "companyPage" : {
-    "firstTitle":"The company",
-    "secondTitle": "The artistic directors"
+  "homePage": {
+    "textVideo": "Contemporary dance and performative arts company aiming to produce, promote and distribute the creations of the choreographers Larbi Namouchi & Margot Libanga."
   },
-  "creationsPage" : {
+  "companyPage": {
+    "firstTitle": "The company",
+    "aboutCompanyFirstParagraph": "Shafak Company was founded in October 2017 in Lyon, from the meeting of artists sharing the same creative desire. The company is relocating and settling in Brittany, in Binic-Étables-sur-Mer, at the beginning of 2022.",
+    "aboutCompanySecondParagraph": {
+      "firstItalicSegment": "Shafak",
+      "firstRomancSegment": ", or",
+      "secondItalicSegment": " twilight",
+      "secondRomanSegment": ", is the ambition to belong neither to day nor to night, a mixture of ideas and creativity. Shafak Company  seeks to make sense in its authenticity, in an honest approach with the public and its collaborators."
+    },
+    "aboutCompanyThirdParagraph": "For the company, the body is a twilight zone, a vehicle of emotions, sensations, scars and poetry. The body is not a neutral zone, it is itself a sensitive landscape capable of saying a lot. More than a carcass, it is a common and unique creation at the same time, therefore a fantastic way to exchange, meet, understand and explore. It is through this fantastic tool that the artists of the company deploy their creativity.",
+    "aboutCompanyFourthParagraph": "Larbi Namouchi and Margot Libanga, both co-artistic directors of the company, met as performers with the Compagnie La Baraka in 2019. Since their encounter, the projects follow one another and affirm a little more, each time , their artistic relentlessness.",
+    "secondTitle": "The artistic directors",
+    "larbiArticleTitle": "Larbi Namouchi",
+    "larbiPhotoLegals": "© Hassen Bachraoui",
+    "larbiPhotoAlt": "Larbi Namouchi by Hassen Bachraoui",
+    "larbiArticleFirstParagraph": "Born in 1984 in Tunis, fascinated very early on by the circus and martial arts, Larbi Namouchi, as a child, began with the dances of hip-hop culture and traditional Sufi dances. Between 1998 and 2005, he joined companies like Syhem Belkhodja’s and  Imed Jemaa’s. In 2005, he obtained a scholarship and studied at the International Dance Academy in Paris, within a multidisciplinary training.",
+    "larbiArticleSecondParagraph": "Since then he has worked and multiplied meetings, exchanges and collaborations with many choreographers and artists from different disciplines such as Yann Lheureux, Fabienne Berger, Boris Charmatz, Benoît Lachambre, Tonia Shilling, Abou Lagraa, Sandra Martinez Dahou, Omar Ghayatt, Christophe Honoré, Ashley Wright, Hafiz Dhaou and Aïcha M'Barek. Larbi Namouchi participates in several festivals, video-dance projects, films and performances. In 2017, he founded the Compagnie Shafak in Lyon. He has since continued to work and explore through his works and those of others, while remaining free and mobile, in body and mind.",
+    "margotArticleTitle": "Margot Libanga",
+    "margotPhotoLegals": "© fabviews",
+    "margotPhotoAlt": "Margot Libanga by fabviews",
+    "margotArticleFirstParagraph": "Versatile, she was interested very early in various forms of performing arts, such as contemporary and classical theater, gospel singing, as well as hip-hop and jazz dances. Trained between France and Germany in contemporary dance and modern literature, she has since worked for various choreographers, all at the extremes of the genre: Abou Lagraa and Nawal Aït Benalla (Compagnie La Baraka), Abdou N'Gom, Anna Anderegg ( Asphalt Piloten), Franka Marlene Foth (FMKF) and Johana Malédon (Compagnie Mâle).",
+    "margotArticleSecondParagraph": "Her dance is hybrid, due to her multiple influences. Her universe is expressed in the contrast of rhythms, the plural qualities in strength and levels, the multidirectional address of the body and the use of the voice. It addresses the body as a common part of individuals, as a playground to express its singularity. Margot Libanga is a dancer, movement artist and, since 2020, choreographer, co-artistic director and production director for Compagnie Shafak, alongside Larbi Namouchi."
+  },
+  "creationsPage": {
     "firstTitle": "Creations"
   },
-  "partnersPage" : {
+  "agendaPage": {
+    "firstDate": {
+      "firstDateMonthAndYear": "April 2023",
+      "firstDateTitle": "The Wolf",
+      "firstDateLocation": "Festival Rabi-Al-Jasad, Tunis, Tunisia"
+    },
+    "secondDate": {
+      "secondDateMonthAndYear": "April 2023",
+      "secondDateTitle": "The Wolf",
+      "secondDateLocation": "24h-du-théâtre-non-stop, Kef, Tunisia"
+    },
+    "thirdDate": {
+      "thirdDateMonthAndYear": "June 2023",
+      "thirdDateTitle": "The Wolf",
+      "thirdDateLocation": "Carthage's dance festival, Tunis, Tunisia"
+    },
+    "fourthDate": {
+      "fourthDateMonthAndYear": "July 2023",
+      "fourthDateTitle": "Point of view",
+      "fourthDateLocation": "Coming soon"
+    }
+  },
+  "partnersPage": {
     "firstTitle": "Partners"
   },
   "contact": {
     "artisticDirectors": "Artistic Directors",
     "administration": "Administration"
-  }, 
+  },
   "footer": {
     "copyright": "© 2023 Compagnie Shafak. All rights reserved.",
     "legals": "Legal notice"
-  }, 
+  },
   "error": {
     "errorType": "404 Error",
     "errorDescription": "The page you requested does not exist.",

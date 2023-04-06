@@ -23,19 +23,25 @@ const Card = ({ filteredCreation }) => {
           </div>
         </div>
         <div className={styles.infos}>
-          <p
+          <div
             className={
               filteredCreation.statut === "Passée"
                 ? styles.oldCreation
                 : styles.newCreation
             }
           >
-            {filteredCreation.infos}
-          </p>
-          {filteredCreation.img.legals !== "" ? (
-            <p className={styles.legals}>
-              Crédits photo : {filteredCreation.img.legals}
+            <p>
+              {filteredCreation.infos.infosFirstRomanFragment}
+              {filteredCreation.infos.infosFirstItalicFragment ? (
+                <span>{filteredCreation.infos.infosFirstItalicFragment}</span>
+              ) : null}
+              {filteredCreation.infos.infosSecondRomanFragment
+                ? filteredCreation.infos.infosSecondRomanFragment
+                : null}
             </p>
+          </div>
+          {filteredCreation.img.legals !== "" ? (
+            <p className={styles.legals}>{filteredCreation.img.legals}</p>
           ) : null}
           {filteredCreation.teaser !== "" ? (
             <a
