@@ -17,6 +17,11 @@
   opacity: 0.9;
   overflow-y: scroll;
   z-index: 2;
+  .icon {
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+  }
   .popupTitle {
     text-align: center;
     margin-bottom: 30px;

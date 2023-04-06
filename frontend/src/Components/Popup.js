@@ -8,6 +8,9 @@ import { useContext } from "react";
 import { LanguageContext } from "../store/languageContext.js";
 import ltrStyles from "./Popup_ltr.module.scss";
 import rtlStyles from "./Popup_rtl.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faXmark} from "@fortawesome/free-solid-svg-icons";
+
 
 const Popup = ({ trigger, setTrigger }) => {
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
@@ -16,6 +19,7 @@ const Popup = ({ trigger, setTrigger }) => {
 
   return trigger ? (
     <div className={styles.popupContainer}>
+      <FontAwesomeIcon icon={faXmark} className={styles.icon} onClick={() => setTrigger(false)}/>
       <h3 className={styles.popupTitle}>{dictionary.legalNotice.popupTitle}</h3>
       <div className={styles.popupText}>
         <div className={styles.popupTextIdentity}>
