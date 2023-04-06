@@ -55,7 +55,7 @@ const Company = () => {
                 <img src={PhotoLarbi} alt="Larbi Namouchi chorégraphe" />
               </div>
               <div className={styles.legals}>
-                <p>Crédits : Isabelle Chapuis</p>
+                <p>Crédits : Hassen Bachraoui</p>
               </div>
             </div>
             <p>
@@ -91,7 +91,7 @@ const Company = () => {
               </div>
             </div>
             <p>
-              Versatile, elle s’intéresse très tôt à diverses formes d’arts
+              Polyvalente, elle s’intéresse très tôt à diverses formes d’arts
               vivants, comme le théâtre contemporain et classique, le chant
               gospel, ainsi que les danses hip-hop et jazz. Formée entre la
               France et l’Allemagne en danse contemporaine et en lettres
