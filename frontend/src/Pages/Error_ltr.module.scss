@@ -4,7 +4,7 @@
 
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -13,6 +13,7 @@
   img {
     object-fit: cover;
     width: 100%;
+    height: 100%;
   }
   .text {
     position: absolute;
@@ -25,7 +26,8 @@
       font-size: 2.5rem;
       font-weight: 300;
       letter-spacing: 2rem;
-      margin-bottom: 8rem;
+      margin-bottom: 5rem;
+      text-align: center;
     }
     .details {
       display: flex;
@@ -37,6 +39,7 @@
         font-size: 2rem;
         font-weight: 300;
         margin-bottom: 3rem;
+        text-align: center;
       }
       .backHome {
         color: globals.$color-2;
@@ -44,6 +47,7 @@
         font-weight: 300;
         padding: 0.5rem 0;
         position: relative;
+        text-align: center;
         &:after {
           content: "";
           background: globals.$color-2;
@@ -58,6 +62,79 @@
         &:hover:after {
           width: 100%;
           left: 0;
+        }
+      }
+    }
+  }
+}
+
+// SMALL SCREENS, LAPTOPS //
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    .text {
+      .errorType {
+        font-size: 2.2rem;
+        letter-spacing: 2rem;
+        margin-bottom: 5rem;
+      }
+      .details {
+        .errorDescription {
+          font-size: 1.8rem;
+          margin-bottom: 3rem;
+        }
+        .backHome {
+          color: globals.$color-2;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+// IPADS, TABLETS //
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    .text {
+      .errorType {
+        font-size: 1.8rem;
+        letter-spacing: 1.8rem;
+        margin-bottom: 4rem;
+      }
+      .details {
+        .errorDescription {
+          font-size: 1.6rem;
+          margin-bottom: 2rem;
+        }
+        .backHome {
+          color: globals.$color-2;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+// MOBILE DEVICES //
+
+@media screen and (max-width: 480px) {
+  .container {
+    .text {
+      .errorType {
+        font-size: 1.6rem;
+        letter-spacing: 1.6rem;
+        margin-bottom: 3rem;
+      }
+      .details {
+        .errorDescription {
+          font-size: 1.4rem;
+          margin-bottom: 0;
+        }
+        .backHome {
+          margin-top: 26rem;
+          color: globals.$color-2;
+          font-size: 1.3rem;
         }
       }
     }
