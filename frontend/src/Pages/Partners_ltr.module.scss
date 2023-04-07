@@ -14,26 +14,55 @@
     letter-spacing: 2rem;
     margin-bottom: 8rem;
   }
-  .logos {
+  .cardsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 80%;
     margin: 0 auto;
-    .logoContainer {
+    .card {
       width: 160px;
-      height: 160px;
-      border: 1px solid globals.$color-1;
+      height: 200px;
+      border-left: 1px solid globals.$color-1;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 2rem;
-      margin: 2rem 2rem;
+      padding-left: 2rem;
+      margin: 4rem 3rem;
+      position: relative;
       .logo {
         width: 14rem;
         height: 14rem;
         object-fit: contain;
-        margin: 2rem 2rem;
+        padding-left: 2rem;
+      }
+      .partnerName {
+        background-color: globals.$color-1;
+        opacity: 0;
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        p {
+          color: globals.$color-2;
+          font-family: globals.$font-family-1;
+          font-size: 1.4rem;
+          width: 100%;
+          padding: 1rem;
+          margin-bottom: 3rem;
+        }
+        &:hover {
+          opacity: 0.8;
+          color: globals.$color-2;
+        }
       }
     }
   }

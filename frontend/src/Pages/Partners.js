@@ -15,22 +15,27 @@ const Partners = () => {
   return (
     <main className={styles.container}>
       <h1>{dictionary.partnersPage.firstTitle}</h1>
-      <section className={styles.logos}>
+      <section className={styles.cardsContainer}>
         {dataPartners.map((logo) => {
           return (
-            <div className={styles.logoContainer} key={logo.id}>
-              <a
-                href={logo.partnerUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <article className={styles.card} key={logo.id}>
+              <div>
                 <img
                   src={logo.partnerLogo}
                   alt={`logo ${logo.partnerName}`}
                   className={styles.logo}
                 />
-              </a>
-            </div>
+              </div>
+              <div className={styles.partnerName}>
+                <a
+                  href={logo.partnerUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>{logo.partnerName}</p>
+                </a>
+              </div>
+            </article>
           );
         })}
       </section>
