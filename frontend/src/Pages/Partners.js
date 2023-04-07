@@ -51,7 +51,7 @@ const Partners = () => {
         {logosArray.map((logo) => {
           return (
             <div className={styles.logoContainer} key={logo}>
-              <img src={logo} alt="" className={styles.logo} />
+              <img src={logo} alt={logo.split("media/")[1].split(".")[0]} className={styles.logo} />
             </div>
           );
         })}
