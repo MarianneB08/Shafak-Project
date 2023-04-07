@@ -20,19 +20,21 @@
     justify-content: space-around;
     width: 80%;
     margin: 0 auto;
-    img {
-        width: auto;
-        height: 5rem;
-        object-fit: cover;
-        margin: 2rem 2rem;
-    }
-    .logo7 {
-        width: 7rem;
+    .logoContainer {
+      width: 160px;
+      height: 160px;
+      border: 1px solid globals.$color-1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      margin: 2rem 2rem;
+      .logo {
+        width: 14rem;
+        height: 14rem;
         object-fit: contain;
-    }
-    .logo8 {
-        width: 7rem;
-        height: auto;
+        margin: 2rem 2rem;
+      }
     }
   }
 }
