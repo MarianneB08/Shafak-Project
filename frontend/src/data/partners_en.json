@@ -1,13 +1,13 @@
 [
   {
     "id": "1",
-    "partnerName": "Région Bretagne",
+    "partnerName": "Britanny",
     "partnerUrl": "https://www.bretagne.bzh",
     "partnerLogo": "./img/logo_region_bretagne.png"
   },
   {
     "id": "2",
-    "partnerName": "Binic-Étables-sur-Mer",
+    "partnerName": "City of Binic-Étables-sur-Mer",
     "partnerUrl": "https://www.binic-etables-sur-mer.fr",
     "partnerLogo": "./img/logo_binic-etable-sur-mer.png"
   },
@@ -37,19 +37,19 @@
   },
   {
     "id": "7",
-    "partnerName": "Centre national de la danse",
+    "partnerName": "National dance center",
     "partnerUrl": "https://www.cnd.fr/fr/",
     "partnerLogo": "./img/logo_cnd.png"
   },
   {
     "id": "8",
-    "partnerName": "Institut français de Tanger",
+    "partnerName": "French Institute of Tanger",
     "partnerUrl": "https://if-maroc.org/tanger/",
     "partnerLogo": "./img/logo_institut_francais_tanger.png"
   },
   {
     "id": "9",
-    "partnerName": "Plérin-sur-Mer",
+    "partnerName": "City of Plérin-sur-Mer",
     "partnerUrl": "https://www.ville-plerin.fr/loisirs/culture/centre-culturel-le-cap/",
     "partnerLogo": "./img/logo_plerin-sur-mer.png"
   },
@@ -73,7 +73,7 @@
   },
   {
     "id": "13",
-    "partnerName": "Trégueux",
+    "partnerName": "City of Trégueux",
     "partnerUrl": "https://www.tregueux.org",
     "partnerLogo": "./img/logo_tregueux.png"
   },
@@ -85,13 +85,13 @@
   },
   {
     "id": "15",
-    "partnerName": "Cité de la culture de Tunis",
+    "partnerName": "City of culture in Tunis",
     "partnerUrl": "https://m.facebook.com/pg/Citedelaculturetunis/photos/?__nodl",
     "partnerLogo": "./img/logo_cite_culture_tunis.png"
   },
   {
     "id": "16",
-    "partnerName": "Centre des Arts dramatiques et scéniques du Kef",
+    "partnerName": "Center for Dramatic and Performing Arts of Kef",
     "partnerUrl": "https://www.facebook.com/cadkef/?locale=fr_FR",
     "partnerLogo": "./img/logo_centre_arts_dramatiques_sceniques_kef.png"
   }

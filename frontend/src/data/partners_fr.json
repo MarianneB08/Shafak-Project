@@ -7,7 +7,7 @@
   },
   {
     "id": "2",
-    "partnerName": "Binic-Étables-sur-Mer",
+    "partnerName": "Ville de Binic-Étables-sur-Mer",
     "partnerUrl": "https://www.binic-etables-sur-mer.fr",
     "partnerLogo": "./img/logo_binic-etable-sur-mer.png"
   },
@@ -49,7 +49,7 @@
   },
   {
     "id": "9",
-    "partnerName": "Plérin-sur-Mer",
+    "partnerName": "Ville de Plérin-sur-Mer",
     "partnerUrl": "https://www.ville-plerin.fr/loisirs/culture/centre-culturel-le-cap/",
     "partnerLogo": "./img/logo_plerin-sur-mer.png"
   },
@@ -73,7 +73,7 @@
   },
   {
     "id": "13",
-    "partnerName": "Trégueux",
+    "partnerName": "Ville de Trégueux",
     "partnerUrl": "https://www.tregueux.org",
     "partnerLogo": "./img/logo_tregueux.png"
   },
