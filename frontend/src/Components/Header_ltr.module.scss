@@ -10,6 +10,12 @@
   }
 }
 
+@mixin afterConfiguration {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
 // DESKTOP //
 
 .container {
@@ -17,61 +23,61 @@
   flex-direction: column;
   align-items: center;
   h1 {
-    text-transform: uppercase;
-    letter-spacing: 3rem;
-    font-size: 4rem;
-    font-weight: 300;
     margin: 5rem 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3rem;
   }
   .navbar {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
-    margin: 0 auto;
-    position: relative;
+    align-items: center;
     width: 100%;
     min-height: 75px;
+    margin: 0 auto;
     padding: 1rem;
     color: globals.$color-2;
     .navbarLinks {
-      width: 100%;
       display: flex;
       justify-content: space-around;
+      width: 100%;
       .navbarItem {
+        position: relative;
         padding: 0 0.3rem;
         font-size: 1.7rem;
         font-weight: 300;
-        position: relative;
         a {
-          color: black;
-          padding: 5px 0px;
           position: relative;
+          padding: 5px 0px;
+          color: globals.$color-1;
           &:after {
             content: "";
             background: globals.$color-1;
-            display: block;
             position: absolute;
             bottom: 0rem;
             left: 50%;
-            height: 1px;
+            display: block;
             width: 0;
+            height: 1px;
             transition: width 0.3s ease 0s, left 0.3s ease 0s;
           }
           &:hover:after {
-            width: 100%;
             left: 0;
+            width: 100%;
           }
         }
       }
     }
     .navBurger {
+      display: none;
       width: 30px;
       height: 30px;
       background-color: transparent;
-      border: none;
       color: inherit;
-      display: none;
+      border: none;
     }
   }
 }
@@ -81,16 +87,16 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     h1 {
-      letter-spacing: 2rem;
       font-size: 3rem;
+      letter-spacing: 2rem;
     }
     .navbar {
       .navbarLinks {
         .navbarItem {
-          padding: 0 0.3rem;
-          font-size: 1.6rem;
           margin-right: 1rem;
           margin-left: 1rem;
+          padding: 0 0.3rem;
+          font-size: 1.6rem;
         }
       }
     }
@@ -102,8 +108,8 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     h1 {
-      letter-spacing: 1.5rem;
       font-size: 2rem;
+      letter-spacing: 1.5rem;
     }
     .navbar {
       .navbarLinks {
@@ -128,49 +134,45 @@
       position: relative;
       padding: 0;
       .navbarLinks {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        z-index: 3;
+        visibility: hidden;
         position: fixed;
         right: -100vw;
         bottom: 0;
+        @include globals.flexColumnCenter;
+        padding: 2rem;
         width: 0;
         height: 100vh;
-        padding: 2rem;
-        background-color: white;
-        z-index: 3;
-        visibility: hidden;
+        background-color: globals.$color-2;
         transition: all 0.8s ease-out;
         .navbarItem {
           display: block;
           padding: 1.5rem;
           font-size: 5vw;
           a {
-            color: black;
+            color: globals.$color-1;
           }
         }
       }
       .navBurger {
-        display: block;
         z-index: 2;
         position: absolute;
         top: 50%;
         right: 50%;
         transform: translate(50%, -50%);
+        display: block;
         .burgerLine,
         .burgerLine::before,
         .burgerLine::after {
+          position: relative;
           display: block;
           width: 30px;
           height: 1.5px;
-          position: relative;
+          background: globals.$color-1;
           border-radius: 3px;
-          background: black;
           &::before,
           &::after {
-            content: "";
-            position: absolute;
-            left: 0;
+            @include afterConfiguration;
           }
           &::before {
             transform: translateY(-12px);
@@ -181,9 +183,7 @@
         }
         .burgerLine::before,
         .burgerLine::after {
-          content: "";
-          position: absolute;
-          left: 0;
+          @include afterConfiguration;
         }
         .burgerLine::before {
           transform: translateY(-12px);
@@ -199,37 +199,35 @@
     .showNavbar {
       position: relative;
       .navbarLinks {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        right: 0;
-        width: 100vw;
-        bottom: 0;
-        height: 100vh;
-        padding: 2rem;
-        background-color: black;
         z-index: 3;
         visibility: visible;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        @include globals.flexColumnCenter;
+        padding: 2rem;
+        width: 100vw;
+        height: 100vh;
+        background-color: globals.$color-1;
         .navbarItem {
+          position: relative;
           display: block;
           padding: 1.5rem;
           font-size: 5vw;
-          position: relative;
           a {
-            color: white;
-            font-size: 14px;
-            padding: 5px 0px;
             position: relative;
+            padding: 5px 0px;
+            font-size: 14px;
+            color: globals.$color-2;
             &:after {
               content: "";
-              background: white;
-              display: block;
               position: absolute;
               bottom: 0rem;
               left: 50%;
-              height: 1px;
+              display: block;
               width: 0;
+              height: 1px;
+              background: globals.$color-2;
               transition: width 0.3s ease 0s, left 0.3s ease 0s;
             }
             &:hover:after {
@@ -240,21 +238,21 @@
         }
       }
       .navBurger {
-        animation: disappearing 2s;
-        display: block;
         z-index: 3;
         position: absolute;
         top: -5rem;
         right: 4rem;
+        display: block;
+        animation: disappearing 2s;
         .burgerLine,
         .burgerLine::before,
         .burgerLine::after {
+          position: relative;
           display: block;
           width: 30px;
           height: 1.5px;
-          position: relative;
+          background: globals.$color-2;
           border-radius: 3px;
-          background: white;
           transition: all 0.5s ease-in-out;
           &::before,
           &::after {
@@ -270,14 +268,12 @@
           }
         }
         .burgerLine {
-          background: transparent;
           width: 0;
+          background: transparent;
         }
         .burgerLine::before,
         .burgerLine::after {
-          content: "";
-          position: absolute;
-          left: 0;
+          @include afterConfiguration;
         }
         .burgerLine::before {
           width: 30px;
@@ -301,8 +297,8 @@
   .container {
     h1 {
       display: inline;
-      letter-spacing: 1.5rem;
       font-size: 2rem;
+      letter-spacing: 1.5rem;
       text-align: center;
     }
   }

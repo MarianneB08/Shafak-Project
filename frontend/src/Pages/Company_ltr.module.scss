@@ -1,36 +1,40 @@
 @use "../globals.module.scss" as globals;
 
+// MIXINS //
+
+@mixin h2Config {
+  margin-bottom: 8rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2rem;
+  text-align: center;
+}
+
 // DESKTOP //
 
 .container {
+  @include globals.flexColumnCenter;
   width: 100%;
   margin-bottom: 5rem;
   padding: 5rem 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   .aboutCompany {
     position: relative;
     padding: 0 10rem;
     h2 {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 2.5rem;
-      font-weight: 300;
-      letter-spacing: 2rem;
-      margin-bottom: 8rem;
+      @include h2Config;
     }
     p {
-      font-size: 1.5rem;
-      text-align: justify;
       margin: 0 auto;
       margin-bottom: 1.5rem;
+      font-size: 1.5rem;
       font-weight: 300;
+      text-align: justify;
       &:last-child {
-        margin-top: 2rem;
         float: right;
-        text-transform: uppercase;
+        margin-top: 2rem;
         font-family: globals.$font-family-2;
+        text-transform: uppercase;
       }
       span {
         font-style: italic;
@@ -41,12 +45,7 @@
     width: 90%;
     margin-top: 15rem;
     h2 {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 2.5rem;
-      font-weight: 300;
-      letter-spacing: 2rem;
-      margin-bottom: 5rem;
+      @include h2Config;
     }
     .sectionsContainer {
       display: flex;
@@ -54,98 +53,63 @@
       margin: 0 auto;
       .larbiSection,
       .margotSection {
-        width: 30%;
         position: relative;
+        width: 30%;
         h3 {
-          font-weight: 300;
-          font-size: 2rem;
-          font-family: globals.$font-family-2;
           margin-bottom: 2rem;
+          font-family: globals.$font-family-2;
+          font-size: 2rem;
+          font-weight: 300;
         }
         p {
-          text-align: justify;
-          font-size: 1.5rem;
           margin-bottom: 1.5rem;
+          font-size: 1.5rem;
           font-weight: 300;
+          text-align: justify;
+        }
+        .pictureContainer .img img {
+          width: 15rem;
+          height: 15rem;
+          object-fit: cover;
+        }
+        .pictureContainer .legals {
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          width: 15rem;
+          height: 15rem;
+          background-color: rgba(0, 0, 0, 0.6);
+          p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: globals.$color-2;
+          }
+          &:hover .legals {
+            opacity: 1;
+            transition: all 0.4s ease;
+          }
         }
       }
       .larbiSection {
-        position: relative;
         .pictureContainer {
           position: absolute;
-          width: 15rem;
-          height: 15rem;
           top: 4.5rem;
           left: -17rem;
-          .img {
-            img {
-              width: 15rem;
-              height: 15rem;
-              object-fit: cover;
-            }
-          }
-          .legals {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 15rem;
-            height: 15rem;
-            background-color: rgba(0, 0, 0, 0.6);
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            opacity: 0;
-            cursor: pointer;
-            p {
-              font-size: 1.1rem;
-              font-weight: 300;
-              color: globals.$color-2;
-            }
-          }
-          &:hover .legals {
-            opacity: 1;
-            transition: all 0.4s ease;
-          }
+          width: 15rem;
+          height: 15rem;
         }
       }
       .margotSection {
-        position: relative;
         .pictureContainer {
           position: absolute;
-          width: 12rem;
-          height: 12rem;
           top: 4.5rem;
           right: -14rem;
-          .img {
-            img {
-              width: 15rem;
-              height: 15rem;
-              object-fit: cover;
-            }
-          }
-          .legals {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 15rem;
-            height: 15rem;
-            background-color: rgba(0, 0, 0, 0.6);
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            opacity: 0;
-            cursor: pointer;
-            transition: all 0.4s ease;
-            p {
-              font-size: 1.1rem;
-              font-weight: 300;
-              color: globals.$color-2;
-            }
-          }
-          &:hover .legals {
-            opacity: 1;
-            transition: all 0.5s ease;
-          }
+          width: 12rem;
+          height: 12rem;
         }
       }
     }
@@ -156,28 +120,25 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
+    .aboutCompany h2,
+    .aboutDancers h2 {
+      font-size: 2.2rem;
+    }
     .aboutCompany {
       padding: 0 5rem;
-      h2 {
-        font-size: 2.2rem;
-      }
-      p {
-        font-size: 1.4rem;
-      }
+    }
+    .aboutCompany p,
+    .aboutDancers .sectionsContainer .larbiSection p, 
+    .aboutDancers .sectionsContainer .margotSection p {
+      font-size: 1.4rem;
     }
     .aboutDancers {
       margin-top: 12rem;
-      h2 {
-        font-size: 2.2rem;
-      }
       .sectionsContainer {
         width: 90%;
         .larbiSection,
         .margotSection {
           width: 40%;
-          p {
-            font-size: 1.4rem;
-          }
         }
       }
     }
@@ -190,9 +151,10 @@
   .container {
     .aboutDancers {
       .sectionsContainer {
-        padding: 0;
         margin-top: 18rem;
-        .larbiSection {
+        padding: 0;
+        .larbiSection,
+        .margotSection {
           width: 100%;
           .pictureContainer {
             position: absolute;
@@ -202,12 +164,6 @@
         }
         .margotSection {
           margin-top: 16rem;
-          width: 100%;
-          .pictureContainer {
-            position: absolute;
-            top: -12rem;
-            left: 16rem;
-          }
         }
       }
     }
@@ -219,58 +175,46 @@
     .aboutDancers {
       .sectionsContainer {
         margin-top: 20rem;
-        .larbiSection {
-          .pictureContainer {
-            position: absolute;
-            top: -16rem;
-            left: 0;
-          }
+        .larbiSection .pictureContainer,
+        .margotSection .pictureContainer {
+          position: absolute;
+          top: -16rem;
+          left: 0;
         }
         .margotSection {
           margin-top: 16rem;
-          .pictureContainer {
-            position: absolute;
-            top: -16rem;
-            left: 0;
-          }
         }
       }
     }
   }
 }
 
-// IPADS, TABLETS 
+// IPADS, TABLETS
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     padding: 3rem 3rem;
+    .aboutCompany h2,
+    .aboutDancers h2 {
+      font-size: 1.8rem;
+      letter-spacing: 1.8rem;
+    }
+    .aboutCompany p,
+    .aboutDancers .sectionsContainer .larbiSection p, 
+    .aboutDancers .sectionsContainer .margotSection p {
+      font-size: 1.2rem;
+    }
     .aboutCompany {
       padding: 0 3rem;
-      h2 {
-        font-size: 1.8rem;
-        letter-spacing: 1.8rem;
-      }
-      p {
-        font-size: 1.2rem;
-      }
     }
     .aboutDancers {
       margin-top: 12rem;
-      h2 {
-        font-size: 1.8rem;
-        letter-spacing: 1.8rem;
-      }
       .sectionsContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include globals.flexColumnCenter;
         .larbiSection,
         .margotSection {
           width: 50%;
           margin-bottom: 2rem;
-          p {
-            font-size: 1.2rem;
-          }
         }
       }
     }
@@ -282,36 +226,32 @@
 @media screen and (min-width: 290px) and (max-width: 480px) {
   .container {
     padding: 3rem 3rem;
+    .aboutCompany h2,
+    .aboutDancers h2 {
+      font-size: 1.3rem;
+      letter-spacing: 1.3rem;
+    }
+    .aboutCompany p,
+    .aboutDancers .sectionsContainer .larbiSection p, 
+    .aboutDancers .sectionsContainer .margotSection p {
+      font-size: 1.2rem;
+    }
     .aboutCompany {
       padding: 0 3rem;
       h2 {
-        font-size: 1.3rem;
-        letter-spacing: 1.3rem;
         margin-bottom: 3rem;
-      }
-      p {
-        font-size: 1.2rem;
       }
     }
     .aboutDancers {
       margin-top: 8rem;
-      h2 {
-        font-size: 1.3rem;
-        letter-spacing: 1.3rem;
-      }
       .sectionsContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include globals.flexColumnCenter;
         .larbiSection,
         .margotSection {
           width: 100%;
           margin-bottom: 2rem;
           h3 {
             font-size: 1.4rem;
-          }
-          p {
-            font-size: 1.2rem;
           }
           .pictureContainer {
             img {
