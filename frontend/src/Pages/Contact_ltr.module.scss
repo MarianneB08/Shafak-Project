@@ -3,61 +3,54 @@
 // DESKTOP //
 
 .container {
-  text-align: center;
   padding: 7rem 6rem 10rem 6rem;
+  text-align: center;
   h2 {
-    text-align: center;
-    text-transform: uppercase;
+    margin-bottom: 8rem;
     font-size: 2.5rem;
+    text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2rem;
-    margin-bottom: 8rem;
+    text-align: center;
   }
   .details {
     margin: 0 auto;
     h2 {
-      font-family: serif;
-      text-transform: none;
-      letter-spacing: normal;
-      font-weight: bold;
-      font-size: 2.5rem;
       margin-bottom: 5rem;
+      font-family: serif;
+      font-size: 2.5rem;
+      text-transform: none;
+      font-weight: bold;
+      letter-spacing: normal;
+    }
+    .directors,
+    h3 {
+      font-size: 2rem;
     }
     .directors {
-      font-size: 2rem;
       font-weight: bold;
     }
     h3 {
-      font-size: 2rem;
       font-weight: 300;
     }
-    .directorsEmailContainer {
+    .directorsEmailContainer .directorsEmail,
+    .administrationEmail {
+      cursor: pointer;
+    }
+    .directorsEmailContainer,
+    .administrationPhone,
+    .adress {
       margin-bottom: 2rem;
-      .directorsEmail {
-        font-size: 1.8rem;
-        font-weight: 300;
-        cursor: pointer;
-      }
     }
     .administration {
       font-size: 2rem;
       font-weight: bold;
     }
-
-    .administrationEmail {
-      font-size: 1.8rem;
-      font-weight: 300;
-      cursor: pointer;
-    }
-
-    .administrationPhone {
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
-      font-weight: 300;
-    }
+    .directorsEmailContainer .directorsEmail,
+    .administrationEmail,
+    .administrationPhone,
     .adress {
       font-size: 1.8rem;
-      margin-bottom: 2rem;
       font-weight: 300;
     }
     .society {
@@ -71,35 +64,19 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
-    h2 {
+    h2,
+    .details h2 {
       font-size: 2.2rem;
     }
     .details {
-      h2 {
-        font-size: 2.2rem;
-      }
-      .directors {
-        font-size: 1.8rem;
-      }
-      h3 {
-        font-size: 1.8rem;
-      }
-      .directorsEmailContainer {
-        .directorsEmail {
-          font-size: 1.6rem;
-        }
-      }
+      .directors,
+      h3,
       .administration {
         font-size: 1.8rem;
       }
-
-      .administrationEmail {
-        font-size: 1.6rem;
-      }
-
-      .administrationPhone {
-        font-size: 1.6rem;
-      }
+      .directorsEmailContainer .directorsEmail,
+      .administrationEmail,
+      .administrationPhone,
       .adress {
         font-size: 1.6rem;
       }
@@ -114,36 +91,22 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .container {
-    h2 {
+    h2,
+    .details h2 {
       font-size: 1.8rem;
+    }
+    h2 {
       letter-spacing: 1.8rem;
     }
     .details {
-      h2 {
-        font-size: 1.8rem;
-      }
-      .directors {
-        font-size: 1.6rem;
-      }
-      h3 {
-        font-size: 1.6rem;
-      }
-      .directorsEmailContainer {
-        .directorsEmail {
-          font-size: 1.4rem;
-        }
-      }
+      .directors,
+      h3,
       .administration {
         font-size: 1.6rem;
       }
-
-      .administrationEmail {
-        font-size: 1.4rem;
-      }
-
-      .administrationPhone {
-        font-size: 1.4rem;
-      }
+      .directorsEmailContainer .directorsEmail,
+      .administrationEmail,
+      .administrationPhone,
       .adress {
         font-size: 1.4rem;
       }
@@ -158,41 +121,27 @@
 
 @media screen and (min-width: 280px) and (max-width: 480px) {
   .container {
+    h2,
+    .details h2 {
+      font-size: 1.6rem;
+    }
     h2 {
-      font-size: 1.8rem;
       letter-spacing: 1.5rem;
     }
     .details {
-      h2 {
-        font-size: 1.6rem;
-      }
-      .directors {
-        font-size: 1.4rem;
-      }
+      .directors,
       h3 {
         font-size: 1.4rem;
       }
-      .directorsEmailContainer {
-        .directorsEmail {
-          font-size: 1.2rem;
-        }
+      .directorsEmailContainer .directorsEmail,
+      .administrationEmail,
+      .administrationPhone,
+      .adress,
+      .society {
+        font-size: 1.2rem;
       }
       .administration {
         font-size: 1.4rem;
-      }
-
-      .administrationEmail {
-        font-size: 1.2rem;
-      }
-
-      .administrationPhone {
-        font-size: 1.2rem;
-      }
-      .adress {
-        font-size: 1.2rem;
-      }
-      .society {
-        font-size: 1.2rem;
       }
     }
   }
