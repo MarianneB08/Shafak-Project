@@ -9,6 +9,14 @@ $font-family-2: serif;
 
 // MIXINS
 
+@mixin configh1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2rem;
+  text-align: center;
+}
+
 @mixin positionAbsolute {
   position: absolute;
   top: 0;
@@ -32,6 +40,17 @@ $font-family-2: serif;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin afterUnderline {
+  content: "";
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 1px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
 // KEYFRAMES

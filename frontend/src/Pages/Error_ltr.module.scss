@@ -3,17 +3,13 @@
 // DESKTOP //
 
 .container {
+  position: relative;
+  @include globals.flexColumnCenter;
   width: 100%;
   height: 100vh;
   margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
   img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    @include globals.WH100_cover;
   }
   .text {
     position: absolute;
@@ -21,53 +17,42 @@
     left: 50%;
     transform: translateX(-50%);
     .errorType {
-      color: globals.$color-2;
-      background-color: rgba(0,0,0, .8);
+      margin-bottom: 5rem;
       padding: 1.5rem 0;
-      text-transform: uppercase;
+      color: globals.$color-2;
       font-size: 2.5rem;
+      text-transform: uppercase;
       font-weight: 300;
       letter-spacing: 2rem;
-      margin-bottom: 5rem;
       text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
     }
     .details {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include globals.flexColumnCenter;
       .errorDescription {
-        color: globals.$color-2;
-        background-color: rgba(0,0,0, .8);
+        margin-bottom: 3rem;
         padding: 1.5rem 0;
         font-size: 2rem;
         font-weight: 300;
-        margin-bottom: 3rem;
         text-align: center;
+        color: globals.$color-2;
+        background-color: rgba(0, 0, 0, 0.8);
       }
       .backHome {
-        color: globals.$color-2;
-        background-color: rgba(0,0,0, .8);
-        padding: 1.5rem 0;
+        position: relative;
+        padding: 0.5rem 0;
         font-size: 1.5rem;
         font-weight: 300;
-        padding: 0.5rem 0;
-        position: relative;
         text-align: center;
+        color: globals.$color-2;
+        background-color: rgba(0, 0, 0, 0.8);
         &:after {
-          content: "";
+          @include globals.afterUnderline;
           background: globals.$color-2;
-          display: block;
-          position: absolute;
-          bottom: 0rem;
-          left: 50%;
-          height: 1px;
-          width: 0;
-          transition: width 0.3s ease 0s, left 0.3s ease 0s;
         }
         &:hover:after {
-          width: 100%;
           left: 0;
+          width: 100%;
         }
       }
     }
@@ -80,18 +65,18 @@
   .container {
     .text {
       .errorType {
+        margin-bottom: 5rem;
         font-size: 2.2rem;
         letter-spacing: 2rem;
-        margin-bottom: 5rem;
       }
       .details {
         .errorDescription {
-          font-size: 1.8rem;
           margin-bottom: 3rem;
+          font-size: 1.8rem;
         }
         .backHome {
-          color: globals.$color-2;
           font-size: 1.5rem;
+          color: globals.$color-2;
         }
       }
     }
@@ -104,18 +89,18 @@
   .container {
     .text {
       .errorType {
+        margin-bottom: 4rem;
         font-size: 1.8rem;
         letter-spacing: 1.8rem;
-        margin-bottom: 4rem;
       }
       .details {
         .errorDescription {
-          font-size: 1.6rem;
           margin-bottom: 2rem;
+          font-size: 1.6rem;
         }
         .backHome {
-          color: globals.$color-2;
           font-size: 1.4rem;
+          color: globals.$color-2;
         }
       }
     }
@@ -128,19 +113,19 @@
   .container {
     .text {
       .errorType {
+        margin-bottom: 3rem;
         font-size: 1.6rem;
         letter-spacing: 1.6rem;
-        margin-bottom: 3rem;
       }
       .details {
         .errorDescription {
-          font-size: 1.4rem;
           margin-bottom: 0;
+          font-size: 1.4rem;
         }
         .backHome {
           margin-top: 26rem;
-          color: globals.$color-2;
           font-size: 1.3rem;
+          color: globals.$color-2;
         }
       }
     }

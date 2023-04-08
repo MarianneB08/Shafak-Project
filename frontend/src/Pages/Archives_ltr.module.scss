@@ -8,11 +8,7 @@
   margin: 0 auto;
   h1 {
     margin: 7rem 0 9rem 0;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 2rem;
-    text-align: center;
+    @include globals.configh1;
   }
   .cards {
     display: flex;
