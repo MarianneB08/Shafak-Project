@@ -1,3 +1,8 @@
+// Le composant BackgroundVideo.js permet l'affichage de la vidéo de la page d'accueil, du texte affiché par-dessus et 
+// de l'icône de gestion du son de la vidéo.
+// La structure permettant de switcher de feuille de style en fonction du langage, selon qu'il exige une lecture LTR ou RTL, a été 
+// mise en place mais n'est pas utilisée actuellement.
+
 import React, { useState } from "react";
 import { useContext } from "react";
 import { LanguageContext } from "../store/languageContext.js";
@@ -12,20 +17,22 @@ const BackgroundVideo = () => {
   const { dictionary, userLanguage } = useContext(LanguageContext);
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
+  // State pour la gestion du son de la vidéo
   const [isMute, setIsMute] = useState(false);
-
+  // Fonction pour faire varier le state de gestion du son de la vidéo
   const muteHandle = () => {
     setIsMute((isMute) => !isMute);
   };
-  console.log(isMute);
 
   return (
     <section className={styles.container}>
+      {/* Condition en fonction du state de gestion du son de la vidéo */}
       {isMute ? (
         <video src={video} autoPlay loop />
       ) : (
         <video src={video} autoPlay loop muted />
       )}
+      {/* Affichage conditionnel de l'icône muted/unmuted selon le state de gestion du son de la vidéo */}
       {isMute ? (
         <FontAwesomeIcon
           icon={faVolumeHigh}
@@ -39,7 +46,7 @@ const BackgroundVideo = () => {
           className={styles.muteIcon}
         />
       )}
-
+      {/* Texte de présentation de la Compagnie Shafak */}
       <p className={styles.text}>
         {dictionary.homePage.textVideo}
       </p>

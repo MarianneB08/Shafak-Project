@@ -1,3 +1,7 @@
+// La page Contact.js affiche les coordonnées de la Compagnie Shafak et certaines informations administratives.
+// La structure permettant de switcher de feuille de style en fonction du langage, selon qu'il exige une lecture LTR ou RTL, a été
+// mise en place mais n'est pas utilisée actuellement.
+
 import React from "react";
 import ltrStyles from "./Contact_ltr.module.scss";
 import rtlStyles from "./Contact_rtl.module.scss";
@@ -5,6 +9,8 @@ import { useContext } from "react";
 import { LanguageContext } from "../store/languageContext.js";
 
 const Contact = () => {
+  // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
+  // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
   const { dictionary, userLanguage } = useContext(LanguageContext);
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;

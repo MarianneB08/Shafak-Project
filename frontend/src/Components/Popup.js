@@ -1,7 +1,9 @@
-// Le composant "Popup" correspond à la modale qui s'ouvre au clic sur le lien "Mentions légales" qui se trouve dans le footer du site.
-// L'apparition de ce composant est géré depuis le composant "Footer" avec le hook useState dont les paramètres sont passés en props
-// au composant "Popup".
+// Le composant Popup.js correspond à la modale qui s'ouvre au clic sur le lien "Mentions légales" qui se trouve dans le footer du site.
+// L'apparition de ce composant est gérée depuis le composant Footer.js avec le hook useState dont les paramètres sont passés en props
+// au composant Popup.js.
 // En bas de cette modale, un bouton "Fermer" gère la dissimulation de la fenêtre en utilisant le setTrigger passé en props.
+// La structure permettant de switcher de feuille de style en fonction du langage, selon qu'il exige une lecture LTR ou RTL, a été 
+// mise en place mais n'est pas utilisée actuellement.
 
 import React from "react";
 import { useContext } from "react";
@@ -13,14 +15,21 @@ import {faXmark} from "@fortawesome/free-solid-svg-icons";
 
 
 const Popup = ({ trigger, setTrigger }) => {
-  // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
+  // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
+  // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
   const { dictionary, userLanguage } = useContext(LanguageContext);
+  // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
+  // Si le state trigger passé en props est à true, affichage de la modale
   return trigger ? (
     <div className={styles.popupContainer}>
+      {/* Icône croix pour gérer la fermeture de la modale, grâce au setter du hook useState passé en props au composant Popup.js
+        depuis le composant parent Footer.js. */}
       <FontAwesomeIcon icon={faXmark} className={styles.icon} onClick={() => setTrigger(false)}/>
+      {/* Titre de la modale */}
       <h3 className={styles.popupTitle}>{dictionary.legalNotice.popupTitle}</h3>
+      {/* Contenu de la modale */}
       <div className={styles.popupText}>
         <div className={styles.popupTextIdentity}>
           <h4>{dictionary.legalNotice.popupIdentity.identityTitle}</h4>
@@ -80,8 +89,8 @@ const Popup = ({ trigger, setTrigger }) => {
           </p>
           <p>{dictionary.legalNotice.popupCredits.creditsIcons}</p>
         </div>
-        {/* La fermeture de la modale au clic sur le bouton "Fermer" est gérée par le setter du hook useState passé en props au composant "Popup"
-        depuis le composant parent "Footer". */}
+        {/* La fermeture de la modale au clic sur le bouton "Fermer" est gérée par le setter du hook useState passé en props au composant Popup.js
+        depuis le composant parent Footer.js. */}
         <button
           className={styles.closeButton}
           onClick={() => setTrigger(false)}
