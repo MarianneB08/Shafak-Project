@@ -9,6 +9,7 @@ import Header from "./Header";
 const Layout = (props) => {
   let location = useLocation();
   return (
+    // Affichage conditionnel du composant Header.js : il s'affiche sur toutes les pages, à l'exception de la page Error.js
     <div>
       {location.pathname === "/" ||
       location.pathname === "/company" ||
@@ -19,8 +20,6 @@ const Layout = (props) => {
       location.pathname === "/contact" ? (
         <Header />
       ) : null}
-      {/* {location.pathname === "*" ? null : <Header />} */}
-      {/* <Header /> */}
       {props.children}
       <Footer />
     </div>

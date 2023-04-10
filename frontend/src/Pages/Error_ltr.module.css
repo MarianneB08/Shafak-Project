@@ -44,7 +44,6 @@ li {
   align-items: center;
   width: 100%;
   height: 100vh;
-  margin-top: 5rem;
 }
 .container img {
   width: 100%;
@@ -150,8 +149,9 @@ li {
     font-size: 1.4rem;
   }
   .container .text .details .backHome {
-    margin-top: 26rem;
+    margin-top: 34rem;
     font-size: 1.3rem;
+    padding: 0.5rem 1rem;
     color: white;
   }
 }/*# sourceMappingURL=Error_ltr.module.css.map */
