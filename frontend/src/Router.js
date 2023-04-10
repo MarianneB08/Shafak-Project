@@ -13,14 +13,14 @@ const Router = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/company" element={<Company />} />
-        <Route path="/creations" element={<Creations />} />
-        <Route path="/archives" element={<Archives />} />
-        <Route path="/agenda" element={<Agenda />} />
-        <Route path="/partners" element={<Partners />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Error />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/company" element={<Company />} />
+        <Route exact path="/creations" element={<Creations />} />
+        <Route exact path="/archives" element={<Archives />} />
+        <Route exact path="/agenda" element={<Agenda />} />
+        <Route exact path="/partners" element={<Partners />} />
+        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="*" element={<Error />} />
       </Routes>
     </div>
   );
