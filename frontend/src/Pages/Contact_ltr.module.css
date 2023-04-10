@@ -1,0 +1,162 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:visited {
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  padding: 7rem 6rem 10rem 6rem;
+  text-align: center;
+}
+.container h2 {
+  margin-bottom: 8rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2rem;
+  text-align: center;
+}
+.container .details {
+  margin: 0 auto;
+}
+.container .details h2 {
+  margin-bottom: 5rem;
+  font-family: serif;
+  font-size: 2.5rem;
+  text-transform: none;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+.container .details .directors,
+.container .details h3 {
+  font-size: 2rem;
+}
+.container .details .directors {
+  font-weight: bold;
+}
+.container .details h3 {
+  font-weight: 300;
+}
+.container .details .directorsEmailContainer .directorsEmail,
+.container .details .administrationEmail {
+  cursor: pointer;
+}
+.container .details .directorsEmailContainer,
+.container .details .administrationPhone,
+.container .details .adress {
+  margin-bottom: 2rem;
+}
+.container .details .administration {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container .details .directorsEmailContainer .directorsEmail,
+.container .details .administrationEmail,
+.container .details .administrationPhone,
+.container .details .adress {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.container .details .society {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container h2,
+  .container .details h2 {
+    font-size: 2.2rem;
+  }
+  .container .details .directors,
+  .container .details h3,
+  .container .details .administration {
+    font-size: 1.8rem;
+  }
+  .container .details .directorsEmailContainer .directorsEmail,
+  .container .details .administrationEmail,
+  .container .details .administrationPhone,
+  .container .details .adress {
+    font-size: 1.6rem;
+  }
+  .container .details .society {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container h2,
+  .container .details h2 {
+    font-size: 1.8rem;
+  }
+  .container h2 {
+    letter-spacing: 1.8rem;
+  }
+  .container .details .directors,
+  .container .details h3,
+  .container .details .administration {
+    font-size: 1.6rem;
+  }
+  .container .details .directorsEmailContainer .directorsEmail,
+  .container .details .administrationEmail,
+  .container .details .administrationPhone,
+  .container .details .adress {
+    font-size: 1.4rem;
+  }
+  .container .details .society {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 480px) {
+  .container h2,
+  .container .details h2 {
+    font-size: 1.6rem;
+  }
+  .container h2 {
+    letter-spacing: 1.5rem;
+  }
+  .container .details .directors,
+  .container .details h3 {
+    font-size: 1.4rem;
+  }
+  .container .details .directorsEmailContainer .directorsEmail,
+  .container .details .administrationEmail,
+  .container .details .administrationPhone,
+  .container .details .adress,
+  .container .details .society {
+    font-size: 1.2rem;
+  }
+  .container .details .administration {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=Contact_ltr.module.css.map */

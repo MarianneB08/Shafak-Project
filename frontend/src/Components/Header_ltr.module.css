@@ -1,0 +1,332 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:visited {
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+@keyframes disappearing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container h1 {
+  margin: 5rem 0;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 3rem;
+}
+.container .navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 75px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: white;
+}
+.container .navbar .navbarLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.container .navbar .navbarLinks .navbarItem {
+  position: relative;
+  padding: 0 0.3rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.container .navbar .navbarLinks .navbarItem a {
+  position: relative;
+  padding: 5px 0px;
+  color: black;
+}
+.container .navbar .navbarLinks .navbarItem a:after {
+  content: "";
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 1px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  background-color: black;
+}
+.container .navbar .navbarLinks .navbarItem a:hover:after {
+  left: 0;
+  width: 100%;
+}
+.container .navbar .navBurger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container h1 {
+    font-size: 3rem;
+    letter-spacing: 2rem;
+  }
+  .container .navbar .navbarLinks .navbarItem {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 0 0.3rem;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container h1 {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+  }
+  .container .navbar .navbarLinks .navbarItem {
+    padding: 0 0.3rem;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container h1 {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+  .container .navbar {
+    position: relative;
+    padding: 0;
+  }
+  .container .navbar .navbarLinks {
+    z-index: 3;
+    visibility: hidden;
+    position: fixed;
+    right: -100vw;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 0;
+    height: 100vh;
+    background-color: white;
+    transition: all 0.8s ease-out;
+  }
+  .container .navbar .navbarLinks .navbarItem {
+    display: block;
+    padding: 1.5rem;
+    font-size: 5vw;
+  }
+  .container .navbar .navbarLinks .navbarItem a {
+    color: black;
+  }
+  .container .navbar .navBurger {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: block;
+  }
+  .container .navbar .navBurger .burgerLine,
+  .container .navbar .navBurger .burgerLine::before,
+  .container .navbar .navBurger .burgerLine::after {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 1.5px;
+    background: black;
+    border-radius: 3px;
+  }
+  .container .navbar .navBurger .burgerLine::before, .container .navbar .navBurger .burgerLine::after,
+  .container .navbar .navBurger .burgerLine::before::before,
+  .container .navbar .navBurger .burgerLine::before::after,
+  .container .navbar .navBurger .burgerLine::after::before,
+  .container .navbar .navBurger .burgerLine::after::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .container .navbar .navBurger .burgerLine::before,
+  .container .navbar .navBurger .burgerLine::before::before,
+  .container .navbar .navBurger .burgerLine::after::before {
+    transform: translateY(-12px);
+  }
+  .container .navbar .navBurger .burgerLine::after,
+  .container .navbar .navBurger .burgerLine::before::after,
+  .container .navbar .navBurger .burgerLine::after::after {
+    transform: translateY(12px);
+  }
+  .container .navbar .navBurger .burgerLine::before,
+  .container .navbar .navBurger .burgerLine::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .container .navbar .navBurger .burgerLine::before {
+    transform: translateY(-12px);
+  }
+  .container .navbar .navBurger .burgerLine::after {
+    transform: translateY(12px);
+  }
+  .container .navbar:hover {
+    cursor: pointer;
+  }
+  .container .showNavbar {
+    position: relative;
+  }
+  .container .showNavbar .navbarLinks {
+    z-index: 3;
+    visibility: visible;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+  }
+  .container .showNavbar .navbarLinks .navbarItem {
+    position: relative;
+    display: block;
+    padding: 1.5rem;
+    font-size: 5vw;
+  }
+  .container .showNavbar .navbarLinks .navbarItem a {
+    position: relative;
+    padding: 5px 0px;
+    font-size: 14px;
+    color: white;
+  }
+  .container .showNavbar .navbarLinks .navbarItem a:after {
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    background-color: white;
+  }
+  .container .showNavbar .navbarLinks .navbarItem a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .container .showNavbar .navBurger {
+    z-index: 3;
+    position: absolute;
+    top: -5rem;
+    right: 4rem;
+    display: block;
+    animation: disappearing 2s;
+  }
+  .container .showNavbar .navBurger .burgerLine,
+  .container .showNavbar .navBurger .burgerLine::before,
+  .container .showNavbar .navBurger .burgerLine::after {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 1.5px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+  .container .showNavbar .navBurger .burgerLine::before, .container .showNavbar .navBurger .burgerLine::after,
+  .container .showNavbar .navBurger .burgerLine::before::before,
+  .container .showNavbar .navBurger .burgerLine::before::after,
+  .container .showNavbar .navBurger .burgerLine::after::before,
+  .container .showNavbar .navBurger .burgerLine::after::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .container .showNavbar .navBurger .burgerLine::before,
+  .container .showNavbar .navBurger .burgerLine::before::before,
+  .container .showNavbar .navBurger .burgerLine::after::before {
+    transform: translateY(-12px);
+  }
+  .container .showNavbar .navBurger .burgerLine::after,
+  .container .showNavbar .navBurger .burgerLine::before::after,
+  .container .showNavbar .navBurger .burgerLine::after::after {
+    transform: translateY(12px);
+  }
+  .container .showNavbar .navBurger .burgerLine {
+    width: 0;
+    background: transparent;
+  }
+  .container .showNavbar .navBurger .burgerLine::before,
+  .container .showNavbar .navBurger .burgerLine::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .container .showNavbar .navBurger .burgerLine::before {
+    width: 30px;
+    transform: translateY(-12px);
+    transform: rotate(45deg);
+  }
+  .container .showNavbar .navBurger .burgerLine::after {
+    width: 30px;
+    transform: translateY(12px);
+    transform: rotate(-45deg);
+  }
+  .container .showNavbar:hover {
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 480px) {
+  .container h1 {
+    display: inline;
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+    text-align: center;
+  }
+}/*# sourceMappingURL=Header_ltr.module.css.map */

@@ -6,7 +6,7 @@ import styles from "./LanguageSelector.module.scss";
 export default function LanguageSelector() {
   const { userLanguage, userLanguageChange } = useContext(LanguageContext);
 
-  // set selected language by calling context method
+  // Définition du langage sélectionné d'après le context
   const handleLanguageChange = (e) => userLanguageChange(e.target.value);
 
   return (

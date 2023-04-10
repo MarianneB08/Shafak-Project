@@ -70,7 +70,6 @@
     width: 4rem;
   }
   // Règles spécifiques pour styliser le sélecteur dans Safari
-
   @supports (background: -webkit-named-image(i)) {
     .select {
       appearance: none;
