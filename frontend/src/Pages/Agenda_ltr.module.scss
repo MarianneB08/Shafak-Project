@@ -5,9 +5,8 @@
 .container {
   width: 100%;
   height: fit-content;
-  margin-bottom: 10rem;
   h1 {
-    margin: 7rem 0;
+    margin: 7rem 0 0 0;
     @include globals.configh1;
   }
   .datesList {
@@ -15,11 +14,12 @@
     flex-direction: column;
     justify-content: space-around;
     width: fit-content;
-    height: 380px;
+    height: 345px;
     margin: 0 auto;
     .date {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 15rem;
       p {
         font-size: 1.8rem;
         font-weight: 300;
@@ -68,6 +68,7 @@
       font-size: 1.8rem;
     }
     .datesList {
+      margin-bottom: 15rem;
       .date {
         p {
           font-size: 1.4rem;

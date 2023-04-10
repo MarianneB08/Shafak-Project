@@ -19,7 +19,7 @@ const Agenda = () => {
     <main className={styles.container}>
       <h1>Agenda</h1>
       <div className={styles.datesList}>
-        <section className={styles.date}>
+        {/* <section className={styles.date}>
           <p>
             <span className={styles.monthAndYear}>
               {dictionary.agendaPage.firstDate.firstDateMonthAndYear}
@@ -30,8 +30,8 @@ const Agenda = () => {
             </span>{" "}
             – {dictionary.agendaPage.firstDate.firstDateLocation}
           </p>
-        </section>
-        <section className={styles.date}>
+        </section> */}
+        {/* <section className={styles.date}>
           <p>
             <span className={styles.monthAndYear}>
               {dictionary.agendaPage.secondDate.secondDateMonthAndYear}
@@ -42,8 +42,8 @@ const Agenda = () => {
             </span>{" "}
             – {dictionary.agendaPage.secondDate.secondDateLocation}
           </p>
-        </section>
-        <section className={styles.date}>
+        </section> */}
+        {/* <section className={styles.date}>
           <p>
             <span className={styles.monthAndYear}>
               {dictionary.agendaPage.thirdDate.thirdDateMonthAndYear}
@@ -54,7 +54,7 @@ const Agenda = () => {
             </span>{" "}
             – {dictionary.agendaPage.thirdDate.thirdDateLocation}
           </p>
-        </section>
+        </section> */}
         <section className={styles.date}>
           <p>
             <span className={styles.monthAndYear}>

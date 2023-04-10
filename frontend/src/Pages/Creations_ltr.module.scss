@@ -7,8 +7,14 @@
   width: 80%;
   margin: 0 auto;
   h1 {
-    margin: 7rem 0 9rem 0;
+    margin: 7rem 0 5rem 0;
     @include globals.configh1;
+  }
+  .docRequest {
+      font-family: globals.$font-family-2;
+      font-style: italic;
+      font-size: 1.5rem;
+      margin-bottom: 9rem;
   }
   .cards {
     display: flex;
