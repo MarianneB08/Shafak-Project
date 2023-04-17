@@ -6,7 +6,6 @@
 // La structure permettant de switcher de feuille de style en fonction du langage, selon qu'il exige une lecture LTR ou RTL, a été
 // mise en place mais n'est pas utilisée actuellement.
 
-import React from "react";
 import { useContext } from "react";
 import { LanguageContext } from "../store/languageContext.js";
 import ltrStyles from "./Popup_ltr.module.scss";
@@ -14,8 +13,9 @@ import rtlStyles from "./Popup_rtl.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import LegalPopupContent from "./LegalPopupContent.js";
+import KitPopupContent from "./KitPopupContent.js";
 
-const Popup = ({ trigger, setTrigger }) => {
+const Popup = ({ trigger, setTrigger, isClicked }) => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
   const { dictionary, userLanguage } = useContext(LanguageContext);
@@ -27,14 +27,18 @@ const Popup = ({ trigger, setTrigger }) => {
     <div className={styles.popupContainer}>
       {/* Icône croix pour gérer la fermeture de la modale, grâce au setter du hook useState passé en props au composant Popup.js
         depuis le composant parent Footer.js. */}
-      <FontAwesomeIcon
-        icon={faXmark}
-        className={styles.icon}
-        onClick={() => setTrigger(false)}
-      />
+      <div className={styles.iconContainer}>
+        <FontAwesomeIcon
+          icon={faXmark}
+          className={styles.icon}
+          onClick={() => setTrigger(false)}
+        />
+      </div>
       <div className={styles.contentAndCloseButton}>
-        {/* Contenu de la modale */}
-        <LegalPopupContent />
+        {/* Contenu de la modale : si le state isClicked passé en props est à true (donc si on a cliqué sur le 
+        bouton "Dossier" d'une archive), alors c'est la modale KitPopupContent qui s'ouvre.
+        Sinon, c'est la modale LegalPopupContent qui s'ouvre.*/}
+        {isClicked ? <KitPopupContent /> : <LegalPopupContent />}
         {/* La fermeture de la modale au clic sur le bouton "Fermer" est gérée par le setter du hook useState passé en props au composant Popup.js
         depuis le composant parent Footer.js. */}
         <button

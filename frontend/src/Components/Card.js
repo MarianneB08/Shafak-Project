@@ -6,16 +6,26 @@
 // La structure permettant de switcher de feuille de style en fonction du langage, selon qu'il exige une lecture LTR ou RTL, a été
 // mise en place mais n'est pas utilisée actuellement.
 
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import { LanguageContext } from "../store/languageContext.js";
 import ltrStyles from "./Card_ltr.module.scss";
 import rtlStyles from "./Card_rtl.module.scss";
+import Popup from "./Popup.js";
 
 const Card = ({ filteredCreation }) => {
   // Importation du context languageContext.js
   const { dictionary, userLanguage } = useContext(LanguageContext);
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
+  // State pour gérer l'affichage de la popup au clic sur le bouton "Dossier"/"Kit"
+  const [buttonPopup, setButtonPopup] = useState(false);
+  // State pour remonter l'information que le bouton "Dossier"/"Kit" a été cliqué
+  const [isClicked, setIsClicked] = useState(false);
+
+  // Fonction pour gérer le state isClicked
+  const clickHandler = () => {
+    setIsClicked(true);
+  };
 
   return (
     <section className={styles.container}>
@@ -69,9 +79,21 @@ const Card = ({ filteredCreation }) => {
           ) : null}
           {/* Affichage conditionnel du bouton "Dossier"/"Kit" dans le hover selon qu'un kit existe ou non */}
           {filteredCreation.kit !== "" ? (
-            <button>{dictionary.archivesPage.kitButton}</button>
+            <button
+              onClick={() => {
+                setButtonPopup(true);
+                clickHandler();
+              }}
+            >
+              {dictionary.archivesPage.kitButton}
+            </button>
           ) : null}
         </div>
+        <Popup
+          trigger={buttonPopup}
+          setTrigger={setButtonPopup}
+          isClicked={isClicked}
+        />
       </article>
     </section>
   );

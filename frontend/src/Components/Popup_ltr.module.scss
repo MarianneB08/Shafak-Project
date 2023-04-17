@@ -17,10 +17,14 @@
   color: globals.$color-2;
   background-color: globals.$color-1;
   overflow-y: scroll;
-  .icon {
+  .iconContainer {
+    position: relative;
     float: right;
-    font-size: 2rem;
-    cursor: pointer;
+    z-index: 3;
+    .icon {
+      font-size: 2rem;
+      cursor: pointer;
+    }
   }
   .contentAndCloseButton {
     position: relative;

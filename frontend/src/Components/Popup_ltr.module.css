@@ -52,8 +52,12 @@ li {
   background-color: black;
   overflow-y: scroll;
 }
-.popupContainer .icon {
+.popupContainer .iconContainer {
+  position: relative;
   float: right;
+  z-index: 3;
+}
+.popupContainer .iconContainer .icon {
   font-size: 2rem;
   cursor: pointer;
 }
