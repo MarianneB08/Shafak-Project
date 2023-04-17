@@ -3,7 +3,7 @@
 // Une partie des informations est directement accessible. L'autre partie des informations apparaît au survol de la souris.
 // Les informations affichées sont transmises par la props filteredCreation et sont stockées dans data/creations_fr.json (version
 // française) et dans data/creations_en.json (version anglaise).
-// La structure permettant de switcher de feuille de style en fonction du langage, selon qu'il exige une lecture LTR ou RTL, a été 
+// La structure permettant de switcher de feuille de style en fonction du langage, selon qu'il exige une lecture LTR ou RTL, a été
 // mise en place mais n'est pas utilisée actuellement.
 
 import { useContext } from "react";
@@ -13,7 +13,7 @@ import rtlStyles from "./Card_rtl.module.scss";
 
 const Card = ({ filteredCreation }) => {
   // Importation du context languageContext.js
-  const { userLanguage } = useContext(LanguageContext);
+  const { dictionary, userLanguage } = useContext(LanguageContext);
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
@@ -66,6 +66,10 @@ const Card = ({ filteredCreation }) => {
             >
               Teaser
             </a>
+          ) : null}
+          {/* Affichage conditionnel du bouton "Dossier"/"Kit" dans le hover selon qu'un kit existe ou non */}
+          {filteredCreation.kit !== "" ? (
+            <button>{dictionary.archivesPage.kitButton}</button>
           ) : null}
         </div>
       </article>

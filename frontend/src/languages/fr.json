@@ -38,6 +38,9 @@
     "firstTitle": "Créations",
     "documentationRequest": "Dossiers de création uniquement sur demande via la page Contact"
   },
+  "archivesPage": {
+    "kitButton": "Dossier"
+  },
   "agendaPage": {
     "firstDate": {
       "firstDateMonthAndYear": "avril 2023",

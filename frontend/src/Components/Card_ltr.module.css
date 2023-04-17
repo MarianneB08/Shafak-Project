@@ -120,8 +120,20 @@ li {
 .container .card .infos a:hover {
   transform: scale(1.1);
 }
+.container .card .infos button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  transition: transform 300ms;
+}
+.container .card .infos button:hover {
+  transform: scale(1.1);
+}
 .container .card .infos:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   color: white;
   background-color: black;
   cursor: pointer;
@@ -165,6 +177,11 @@ li {
     font-size: 1.1rem;
   }
   .container .card .infos a {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+  }
+  .container .card .infos button {
     margin-top: 1.5rem;
     padding: 0.75rem 1.5rem;
     font-size: 1.1rem;

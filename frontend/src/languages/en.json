@@ -38,6 +38,9 @@
     "firstTitle": "Creations",
     "documentationRequest": "Creations documentation only on request via the Contact page"
   },
+  "archivesPage": {
+    "kitButton": "Kit"
+  },
   "agendaPage": {
     "firstDate": {
       "firstDateMonthAndYear": "April 2023",
