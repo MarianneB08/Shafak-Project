@@ -57,36 +57,12 @@ li {
   font-size: 2rem;
   cursor: pointer;
 }
-.popupContainer .popupTitle {
-  margin-bottom: 30px;
-  font-size: 1.6rem;
-  text-align: center;
-}
-.popupContainer .popupText {
+.popupContainer .contentAndCloseButton {
   position: relative;
-  width: 100%;
-  margin-bottom: 80px;
-  font-size: 1.2rem;
 }
-.popupContainer .popupText .popupTextIdentity,
-.popupContainer .popupText .popupTextConditions,
-.popupContainer .popupText .popupTextInformations,
-.popupContainer .popupText .popupTextProperty,
-.popupContainer .popupText .popupTextLinks,
-.popupContainer .popupText .popupTextConfidentiality,
-.popupContainer .popupText .popupTextCredits {
-  margin-bottom: 2rem;
-}
-.popupContainer .popupText .popupTextLinks h4 {
-  margin-bottom: 1rem;
-}
-.popupContainer .popupText .popupTextLinks .outLinks,
-.popupContainer .popupText .popupTextLinks .inLinks {
-  margin-bottom: 0;
-  font-style: italic;
-}
-.popupContainer .closeButton {
+.popupContainer .contentAndCloseButton .closeButton {
   position: absolute;
+  bottom: -6rem;
   left: 50%;
   transform: translate(-50%, 50%);
   width: 100px;
@@ -100,14 +76,7 @@ li {
 }
 
 @media screen and (max-width: 480px) {
-  .popupContainer .popupTitle {
-    font-size: 1.4rem;
-  }
-  .popupContainer .popupText {
-    margin-bottom: 60px;
-    font-size: 1.2rem;
-  }
-  .popupContainer .closeButton {
+  .popupContainer .contentAndCloseButton .closeButton {
     bottom: -4.5rem;
     font-size: 1.2rem;
   }

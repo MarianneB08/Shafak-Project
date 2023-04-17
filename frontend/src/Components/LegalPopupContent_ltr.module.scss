@@ -1,0 +1,46 @@
+.legalPopupContentContainer {
+  .popupTitle {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .popupText {
+    position: relative;
+    width: 100%;
+    margin-bottom: 80px;
+    font-size: 1.2rem;
+    .popupTextIdentity,
+    .popupTextConditions,
+    .popupTextInformations,
+    .popupTextProperty,
+    .popupTextLinks,
+    .popupTextConfidentiality,
+    .popupTextCredits {
+      margin-bottom: 2rem;
+    }
+    .popupTextLinks {
+      h4 {
+        margin-bottom: 1rem;
+      }
+      .outLinks,
+      .inLinks {
+        margin-bottom: 0;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+// MOBILES DEVICES //
+
+@media screen and (max-width: 480px) {
+  .legalPopupContentContainer {
+    .popupTitle {
+      font-size: 1.4rem;
+    }
+    .popupText {
+      margin-bottom: 60px;
+      font-size: 1.2rem;
+    }
+  }
+}

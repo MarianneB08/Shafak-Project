@@ -22,48 +22,22 @@
     font-size: 2rem;
     cursor: pointer;
   }
-  .popupTitle {
-    margin-bottom: 30px;
-    font-size: 1.6rem;
-    text-align: center;
-  }
-  .popupText {
+  .contentAndCloseButton {
     position: relative;
-    width: 100%;
-    margin-bottom: 80px;
-    font-size: 1.2rem;
-    .popupTextIdentity,
-    .popupTextConditions,
-    .popupTextInformations,
-    .popupTextProperty,
-    .popupTextLinks,
-    .popupTextConfidentiality,
-    .popupTextCredits {
-      margin-bottom: 2rem;
+    .closeButton {
+      position: absolute;
+      bottom: -6rem;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      width: 100px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: globals.$color-1;
+      background-color: globals.$color-2;
+      border: 2px solid globals.$color-1;
+      cursor: pointer;
     }
-    .popupTextLinks {
-      h4 {
-        margin-bottom: 1rem;
-      }
-      .outLinks,
-      .inLinks {
-        margin-bottom: 0;
-        font-style: italic;
-      }
-    }
-  }
-  .closeButton {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    width: 100px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: globals.$color-1;
-    background-color: globals.$color-2;
-    border: 2px solid globals.$color-1;
-    cursor: pointer;
   }
 }
 
@@ -71,17 +45,11 @@
 
 @media screen and (max-width: 480px) {
   .popupContainer {
-    .popupTitle {
-      font-size: 1.4rem;
-    }
-    .popupText {
-      margin-bottom: 60px;
-      font-size: 1.2rem;
-      
-    }
-    .closeButton {
-      bottom: -4.5rem;
-      font-size: 1.2rem;
+    .contentAndCloseButton {
+      .closeButton {
+        bottom: -4.5rem;
+        font-size: 1.2rem;
+      }
     }
   }
 }

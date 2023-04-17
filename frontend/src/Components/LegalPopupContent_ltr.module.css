@@ -1,0 +1,38 @@
+.legalPopupContentContainer .popupTitle {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.legalPopupContentContainer .popupText {
+  position: relative;
+  width: 100%;
+  margin-bottom: 80px;
+  font-size: 1.2rem;
+}
+.legalPopupContentContainer .popupText .popupTextIdentity,
+.legalPopupContentContainer .popupText .popupTextConditions,
+.legalPopupContentContainer .popupText .popupTextInformations,
+.legalPopupContentContainer .popupText .popupTextProperty,
+.legalPopupContentContainer .popupText .popupTextLinks,
+.legalPopupContentContainer .popupText .popupTextConfidentiality,
+.legalPopupContentContainer .popupText .popupTextCredits {
+  margin-bottom: 2rem;
+}
+.legalPopupContentContainer .popupText .popupTextLinks h4 {
+  margin-bottom: 1rem;
+}
+.legalPopupContentContainer .popupText .popupTextLinks .outLinks,
+.legalPopupContentContainer .popupText .popupTextLinks .inLinks {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+@media screen and (max-width: 480px) {
+  .legalPopupContentContainer .popupTitle {
+    font-size: 1.4rem;
+  }
+  .legalPopupContentContainer .popupText {
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=LegalPopupContent_ltr.module.css.map */

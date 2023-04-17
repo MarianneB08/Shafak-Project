@@ -64,7 +64,7 @@ li {
   left: 50%;
   transform: translate(-50%, 0);
   width: 60%;
-  font-family: serif;
+  font-family: "Archivo", sans-serif;
   font-size: 1.8rem;
   text-transform: uppercase;
   text-align: center;
