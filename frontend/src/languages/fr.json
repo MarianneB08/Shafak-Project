@@ -39,7 +39,8 @@
     "documentationRequest": "Dossiers de création uniquement sur demande via la page Contact"
   },
   "archivesPage": {
-    "kitButton": "Dossier"
+    "kitButton": "Dossier",
+    "pastPerformances": "Représentations passées"
   },
   "agendaPage": {
     "firstDate": {

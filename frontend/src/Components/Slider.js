@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Slider = ({pictures}) => {
+const Slider = ({ title, pictures }) => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
   const { userLanguage } = useContext(LanguageContext);
@@ -35,6 +35,7 @@ const Slider = ({pictures}) => {
 
   return (
     <div className={styles.container}>
+      <p>{title}</p>
       <img
         className={styles.img}
         // L'index de l'array, matérialisé par 'currentIndex', est rendu dynamique grâce au hook useState
@@ -42,26 +43,28 @@ const Slider = ({pictures}) => {
         alt={pictures.title}
         key={currentIndex}
       />
-      {/* Affichage conditionnel de la flèche "précédent" en fonction du nombre d'images dans l'array pictures */}
-      <FontAwesomeIcon
-        icon={faChevronLeft}
-        className={
-          pictures.length === 1 ? styles.hiddenArrow : styles.leftArrow
-        }
-        // Appel de la fonction goToPrevious au clic sur la flèche
-        onClick={() => goToPrevious()}
-      />
-      <div className={styles.counter}>
-        {currentIndex + 1}/{pictures.length}
+      <div className={styles.arrowsAndCounter}>
+        {/* Affichage conditionnel de la flèche "précédent" en fonction du nombre d'images dans l'array pictures */}
+        <FontAwesomeIcon
+          icon={faChevronLeft}
+          className={
+            pictures.length === 1 ? styles.hiddenArrow : styles.leftArrow
+          }
+          // Appel de la fonction goToPrevious au clic sur la flèche
+          onClick={() => goToPrevious()}
+        />
+        <div className={styles.counter}>
+          {currentIndex + 1}/{pictures.length}
+        </div>
+        <FontAwesomeIcon
+          icon={faChevronRight}
+          className={
+            pictures.length === 1 ? styles.hiddenArrow : styles.rightArrow
+          }
+          // Appel de la fonction goToNext au clic sur la flèche
+          onClick={() => goToNext()}
+        />
       </div>
-      <FontAwesomeIcon
-        icon={faChevronRight}
-        className={
-          pictures.length === 1 ? styles.hiddenArrow : styles.rightArrow
-        }
-        // Appel de la fonction goToNext au clic sur la flèche
-        onClick={() => goToNext()}
-      />
     </div>
   );
 };

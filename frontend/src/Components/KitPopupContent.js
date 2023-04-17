@@ -10,7 +10,7 @@ import Slider from "./Slider.js";
 const KitPopupContent = () => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
-  const { userLanguage } = useContext(LanguageContext);
+  const { dictionary, userLanguage } = useContext(LanguageContext);
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
   // Utilisation du fichier creations_fr.json ou creations_en.json en fonction de la langue sélectionnée par l'utilisateur
@@ -18,16 +18,25 @@ const KitPopupContent = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Représentations passées</h1>
+      <h1>{dictionary.archivesPage.pastPerformances}</h1>
       {dataFile
         .filter(function (creation) {
           return creation.kit !== "";
         })
         .map((archive) => (
           <>
-            <Slider pictures={archive.kit.adamahDansometre} />
-            <Slider pictures={archive.kit.adamahLeCroiseur} />
-            <Slider pictures={archive.kit.adamahAkropoditi} />
+            <Slider
+              title={archive.kit.adamahDansometre.title}
+              pictures={archive.kit.adamahDansometre.pictures}
+            />
+            <Slider
+              title={archive.kit.adamahLeCroiseur.title}
+              pictures={archive.kit.adamahLeCroiseur.pictures}
+            />
+            <Slider
+              title={archive.kit.adamahAkropoditi.title}
+              pictures={archive.kit.adamahAkropoditi.pictures}
+            />
           </>
         ))}
     </div>

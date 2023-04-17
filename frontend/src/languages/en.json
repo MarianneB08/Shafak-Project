@@ -39,7 +39,8 @@
     "documentationRequest": "Creations documentation only on request via the Contact page"
   },
   "archivesPage": {
-    "kitButton": "Kit"
+    "kitButton": "Kit",
+    "pastPerformances": "Past performances"
   },
   "agendaPage": {
     "firstDate": {

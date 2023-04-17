@@ -1,0 +1,59 @@
+@use "../globals.module.scss" as globals;
+
+.container {
+  width: 70%;
+  height: 350px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin-bottom: 3rem;
+    font-family: globals.$font-family-2;
+    font-size: 1.8rem;
+    color: globals.$color-2;
+  }
+  .img {
+    height: 255px;
+    border: 1px solid globals.$color-2;
+    object-fit: contain;
+    transition: all 1s ease-in-out;
+  }
+  .arrowsAndCounter {
+    display: flex;
+    margin-top: 1.5rem;
+    .leftArrow {
+      margin-right: 2rem;
+      font-size: 1.8rem;
+      font-weight: 100;
+      color: globals.$color-2;
+      cursor: pointer;
+      transition:all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .counter {
+      font-family: globals.$font-family-2;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .rightArrow {
+      margin-left: 2rem;
+      font-size: 1.8rem;
+      font-weight: 100;
+      color: globals.$color-2;
+      cursor: pointer;
+      transition:all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .hiddenArrow {
+      display: none;
+    }
+  }
+}
