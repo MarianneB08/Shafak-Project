@@ -3,96 +3,96 @@
     "id": "1",
     "partnerName": "Britanny",
     "partnerUrl": "https://www.bretagne.bzh",
-    "partnerLogo": "./img/logo_region_bretagne.png"
+    "partnerLogo": "./img/partners/logo_region_bretagne.png"
   },
   {
     "id": "2",
     "partnerName": "City of Binic-Étables-sur-Mer",
     "partnerUrl": "https://www.binic-etables-sur-mer.fr",
-    "partnerLogo": "./img/logo_binic-etable-sur-mer.png"
+    "partnerLogo": "./img/partners/logo_binic-etable-sur-mer.png"
   },
   {
     "id": "3",
     "partnerName": "Pimoff",
     "partnerUrl": "https://www.pimoff.it",
-    "partnerLogo": "./img/logo_pimoff.png"
+    "partnerLogo": "./img/partners/logo_pimoff.png"
   },
   {
     "id": "4",
     "partnerName": "DRAC Auvergne Rhônes-Alpes",
     "partnerUrl": "https://www.culture.gouv.fr/Regions/Drac-Auvergne-Rhone-Alpes",
-    "partnerLogo": "./img/logo_DRAC_auvergne_rhone-alpes.png"
+    "partnerLogo": "./img/partners/logo_DRAC_auvergne_rhone-alpes.png"
   },
   {
     "id": "5",
     "partnerName": "Le Croiseur",
     "partnerUrl": "https://www.lecroiseur.fr",
-    "partnerLogo": "./img/logo_le_croiseur.png"
+    "partnerLogo": "./img/partners/logo_le_croiseur.png"
   },
   {
     "id": "6",
     "partnerName": "Dampfzentrale Bern",
     "partnerUrl": "https://www.dampfzentrale.ch",
-    "partnerLogo": "./img/logo_dampfzentrale_bern.png"
+    "partnerLogo": "./img/partners/logo_dampfzentrale_bern.png"
   },
   {
     "id": "7",
     "partnerName": "National dance center",
     "partnerUrl": "https://www.cnd.fr/fr/",
-    "partnerLogo": "./img/logo_cnd.png"
+    "partnerLogo": "./img/partners/logo_cnd.png"
   },
   {
     "id": "8",
     "partnerName": "French Institute of Tanger",
     "partnerUrl": "https://if-maroc.org/tanger/",
-    "partnerLogo": "./img/logo_institut_francais_tanger.png"
+    "partnerLogo": "./img/partners/logo_institut_francais_tanger.png"
   },
   {
     "id": "9",
     "partnerName": "City of Plérin-sur-Mer",
     "partnerUrl": "https://www.ville-plerin.fr/loisirs/culture/centre-culturel-le-cap/",
-    "partnerLogo": "./img/logo_plerin-sur-mer.png"
+    "partnerLogo": "./img/partners/logo_plerin-sur-mer.png"
   },
   {
     "id": "10",
     "partnerName": "Desoblique",
     "partnerUrl": "https://desoblique.com",
-    "partnerLogo": "./img/logo_desoblique.png"
+    "partnerLogo": "./img/partners/logo_desoblique.png"
   },
   {
     "id": "11",
     "partnerName": "La Machinerie - Vénissieux",
     "partnerUrl": "https://lamachinerie-venissieux.fr",
-    "partnerLogo": "./img/logo_la_machinerie_venissieux.png"
+    "partnerLogo": "./img/partners/logo_la_machinerie_venissieux.png"
   },
   {
     "id": "12",
     "partnerName": "Dansomètre",
     "partnerUrl": "https://www.dansometre.ch",
-    "partnerLogo": "./img/logo_dansometre.png"
+    "partnerLogo": "./img/partners/logo_dansometre.png"
   },
   {
     "id": "13",
     "partnerName": "City of Trégueux",
     "partnerUrl": "https://www.tregueux.org",
-    "partnerLogo": "./img/logo_tregueux.png"
+    "partnerLogo": "./img/partners/logo_tregueux.png"
   },
   {
     "id": "14",
     "partnerName": "Lo Studio",
     "partnerUrl": "https://www.lostudio.guru",
-    "partnerLogo": "./img/logo_lo_studio.png"
+    "partnerLogo": "./img/partners/logo_lo_studio.png"
   },
   {
     "id": "15",
     "partnerName": "City of culture in Tunis",
     "partnerUrl": "https://m.facebook.com/pg/Citedelaculturetunis/photos/?__nodl",
-    "partnerLogo": "./img/logo_cite_culture_tunis.png"
+    "partnerLogo": "./img/partners/logo_cite_culture_tunis.png"
   },
   {
     "id": "16",
     "partnerName": "Center for Dramatic and Performing Arts of Kef",
     "partnerUrl": "https://www.facebook.com/cadkef/?locale=fr_FR",
-    "partnerLogo": "./img/logo_centre_arts_dramatiques_sceniques_kef.png"
+    "partnerLogo": "./img/partners/logo_centre_arts_dramatiques_sceniques_kef.png"
   }
 ]

@@ -11,10 +11,11 @@
       "infosSecondRomanFragment": ""
     },
     "img": {
-      "file": "./img/enjeux.jpg",
+      "file": "./img/creations/enjeux.jpg",
       "legals": "© Kévin Lebrun"
     },
-    "teaser": "https://vimeo.com/756059858/6ef4b39d06"
+    "teaser": "https://vimeo.com/756059858/6ef4b39d06", 
+    "kit": ""
   },
   {
     "id": "2",
@@ -28,10 +29,11 @@
       "infosSecondRomanFragment": ""
     },
     "img": {
-      "file": "./img/point_de_vue.jpg",
+      "file": "./img/creations/point_de_vue.jpg",
       "legals": "© Compagnie Shafak"
     },
-    "teaser": "https://vimeo.com/789250799/cc60f6d095"
+    "teaser": "https://vimeo.com/789250799/cc60f6d095",
+    "kit": ""
   },
   {
     "id": "3",
@@ -45,10 +47,11 @@
       "infosSecondRomanFragment": ""
     },
     "img": {
-      "file": "./img/le_loup.jpg",
+      "file": "./img/creations/le_loup.jpg",
       "legals": "© Luca Del Pia"
     },
-    "teaser": "https://vimeo.com/802407809"
+    "teaser": "https://vimeo.com/802407809",
+    "kit": ""
   },
   {
     "id": "4",
@@ -62,10 +65,11 @@
       "infosSecondRomanFragment": ", we reclaim our body through the physicality and sensations of dance. In duo, the women here summon the living, question movement and ask what dances allow them to reclaim their bodies."
     },
     "img": {
-      "file": "./img/terms_and_conditions.jpg",
+      "file": "./img/creations/terms_and_conditions.jpg",
       "legals": "© Claire Dufféal"
     },
-    "teaser": ""
+    "teaser": "",
+    "kit": ""
   },
   {
     "id": "5",
@@ -79,10 +83,67 @@
       "infosSecondRomanFragment": ""
     },
     "img": {
-      "file": "./img/adamah.jpg",
+      "file": "./img/creations/adamah.jpg",
       "legals": "© Garance Li"
     },
-    "teaser": ""
+    "teaser": "",
+    "kit": "",
+    "kit": {
+      "adamahAkropoditi": [
+        "./img/kits/adamah_akropoditi/IMG_8696.JPG",
+        "./img/kits/adamah_akropoditi/IMG_8697.JPG",
+        "./img/kits/adamah_akropoditi/IMG_8698.JPG",
+        "./img/kits/adamah_akropoditi/IMG_8699.JPG",
+        "./img/kits/adamah_akropoditi/IMG_8700.JPG",
+        "./img/kits/adamah_akropoditi/IMG_8701.JPG"
+      ], 
+      "adamahDansometre": [
+        "./img/kits/adamah_dansometre/DSC03207.JPG",
+        "./img/kits/adamah_dansometre/DSC03208.JPG",
+        "./img/kits/adamah_dansometre/DSC03209.JPG",
+        "./img/kits/adamah_dansometre/DSC03210.JPG",
+        "./img/kits/adamah_dansometre/DSC03211.JPG",
+        "./img/kits/adamah_dansometre/DSC03212.JPG",
+        "./img/kits/adamah_dansometre/DSC03213.JPG",
+        "./img/kits/adamah_dansometre/DSC03214.JPG",
+        "./img/kits/adamah_dansometre/DSC03215.JPG",
+        "./img/kits/adamah_dansometre/DSC03216.JPG",
+        "./img/kits/adamah_dansometre/DSC03217.JPG",
+        "./img/kits/adamah_dansometre/DSC03218.JPG",
+        "./img/kits/adamah_dansometre/DSC03219.JPG",
+        "./img/kits/adamah_dansometre/DSC03222.JPG",
+        "./img/kits/adamah_dansometre/DSC03223.JPG",
+        "./img/kits/adamah_dansometre/DSC03224.JPG",
+        "./img/kits/adamah_dansometre/DSC03225.JPG",
+        "./img/kits/adamah_dansometre/DSC03226.JPG",
+        "./img/kits/adamah_dansometre/DSC03227.JPG",
+        "./img/kits/adamah_dansometre/DSC03228.JPG"
+      ], 
+      "adamahLeCroiseur":[
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-007.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-008.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-009.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-010.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-011.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-012.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-013.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-014.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-015.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-016.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-017.jpg", 
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-018.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-019.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-020.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-021.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-022.jpg", 
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-023.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-024.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-025.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-026.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-027.jpg",
+        "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-028.jpg"
+      ]
+    }
   },
   {
     "id": "6",
@@ -96,9 +157,10 @@
       "infosSecondRomanFragment": ""
     },
     "img": {
-      "file": "./img/kuhlankulanah.jpg",
+      "file": "./img/creations/kuhlankulanah.jpg",
       "legals": "© Compagnie Shafak"
     },
-    "teaser": ""
+    "teaser": "",
+    "kit": ""
   }
 ]
