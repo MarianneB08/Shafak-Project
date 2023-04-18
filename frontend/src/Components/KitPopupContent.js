@@ -30,7 +30,7 @@ const KitPopupContent = () => {
         >
           {dictionary.archivesPage.adamahAkropoditi.title}
         </p>
-        <span>|</span>
+        <span className={styles.span}>|</span>
         <p
           onClick={() => {
             setShownPerf("dansometre");
@@ -39,7 +39,7 @@ const KitPopupContent = () => {
         >
           {dictionary.archivesPage.adamahDansometre.title}
         </p>
-        <span>|</span>
+        <span className={styles.span}>|</span>
         <p
           onClick={() => {
             setShownPerf("lecroiseur");

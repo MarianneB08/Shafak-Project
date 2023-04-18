@@ -158,7 +158,7 @@
 @media screen and (min-width: 290px) and (max-width: 379px) {
   .container {
     margin-top: 2rem;
-    height: 230px;
+    max-height: 400px;
     .pictureContainer {
       height: fit-content;
       position: relative;

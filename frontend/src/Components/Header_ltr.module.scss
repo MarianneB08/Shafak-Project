@@ -157,6 +157,7 @@
         .burgerLine,
         .burgerLine::before,
         .burgerLine::after {
+          content:"";
           position: relative;
           display: block;
           width: 30px;
