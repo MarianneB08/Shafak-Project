@@ -51,8 +51,15 @@ li {
   height: 310px;
   position: relative;
 }
+.container .pictureContainer .imgLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 .container .pictureContainer .imgLink .img {
   height: 100%;
+  max-height: 310px;
   border: 0.5px solid white;
   -o-object-fit: contain;
      object-fit: contain;
@@ -122,33 +129,88 @@ li {
   .container {
     margin-top: 0;
   }
-  .container .img {
-    width: auto;
+  .container .pictureContainer {
     height: 250px;
+    position: relative;
+  }
+  .container .pictureContainer .imgLink .img {
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .container .pictureContainer .legals {
+    height: 100%;
+  }
+  .container .pictureContainer .legals p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: white;
+  }
+  .container .pictureContainer .legals:hover {
+    border: 0.5px solid white;
+    opacity: 1;
+    transition: all 0.4s ease;
+  }
+  .container .arrowsAndCounter {
+    display: flex;
+    margin-top: 2rem;
   }
 }
 @media screen and (min-width: 380px) and (max-width: 480px) {
   .container {
     margin-top: 0;
   }
-  .container .img {
-    width: auto;
-    height: 250px;
+  .container .pictureContainer {
+    height: 210px;
+    position: relative;
+  }
+  .container .pictureContainer .imgLink {
+    height: 210px;
+  }
+  .container .pictureContainer .imgLink .img {
+    max-width: 350px;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .container .pictureContainer .legals {
+    height: 210px;
+  }
+  .container .pictureContainer .legals:hover {
+    border: 0.5px solid white;
+    opacity: 1;
+    transition: all 0.4s ease;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 379px) {
   .container {
-    margin-top: 0;
+    margin-top: 2rem;
+    height: 230px;
   }
-  .container .img {
+  .container .pictureContainer {
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .container .pictureContainer .imgLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .container .pictureContainer .imgLink .img {
     max-width: 290px;
-    height: 250px;
-    -o-object-fit: contain;
-       object-fit: contain;
+    height: auto;
+  }
+  .container .pictureContainer .legals {
+    height: 100%;
+  }
+  .container .pictureContainer .legals p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+  .container .pictureContainer .legals:hover {
     border: none;
   }
 }/*# sourceMappingURL=Slider_ltr.module.css.map */

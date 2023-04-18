@@ -14,8 +14,14 @@
     height: 310px;
     position: relative;
     .imgLink {
+      // TEST
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
       .img {
         height: 100%;
+        max-height: 310px;
         border: 0.5px solid globals.$color-2;
         object-fit: contain;
         cursor: pointer;
@@ -90,10 +96,33 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     margin-top: 0;
-    .img {
-      width: auto;
+    .pictureContainer {
       height: 250px;
-      object-fit: cover;
+      position: relative;
+      .imgLink {
+        .img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .legals {
+        height: 100%;
+        p {
+          margin-bottom: 2rem;
+          font-size: 1.1rem;
+          font-weight: 300;
+          color: globals.$color-2;
+        }
+        &:hover {
+          border: 0.5px solid globals.$color-2;
+          opacity: 1;
+          transition: all 0.4s ease;
+        }
+      }
+    }
+    .arrowsAndCounter {
+      display: flex;
+      margin-top: 2rem;
     }
   }
 }
@@ -103,24 +132,56 @@
 @media screen and (min-width: 380px) and (max-width: 480px) {
   .container {
     margin-top: 0;
-    .img {
-      width: auto;
-      height: 250px;
-      object-fit: cover;
+    .pictureContainer {
+      height: 210px;
+      position: relative;
+      .imgLink {
+        height: 210px;
+        .img {
+          max-width: 350px;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .legals {
+        height: 210px;
+        &:hover {
+          border: 0.5px solid globals.$color-2;
+          opacity: 1;
+          transition: all 0.4s ease;
+        }
+      }
     }
   }
 }
 
 @media screen and (min-width: 290px) and (max-width: 379px) {
   .container {
-    margin-top: 0;
-    .img {
-      // width: 290px;
-      // height: auto;
-      max-width: 290px;
-      height: 250px;
-      object-fit: contain;
-      border: none;
+    margin-top: 2rem;
+    height: 230px;
+    .pictureContainer {
+      height: fit-content;
+      position: relative;
+      .imgLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        .img {
+          max-width: 290px;
+          height: auto;
+        }
+      }
+      .legals {
+        height: 100%;
+        p {
+          margin-bottom: 2rem;
+          font-size: 1.1rem;
+        }
+        &:hover {
+          border: none;
+        }
+      }
     }
   }
 }
