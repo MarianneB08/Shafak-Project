@@ -39,11 +39,17 @@
     "documentationRequest": "Dossiers de création uniquement sur demande via la page Contact"
   },
   "archivesPage": {
-    "kitButton": "Dossier",
+    "kitButton": "Kit",
     "pastPerformances": "Représentations passées",
-    "adamahAkropoditi": "À l'Akropoditi Dance and Performing Arts Centre (Hermoupolis, Syros, Grèce)",
-    "adamahLeCroiseur": "Au festival Impulsion, théâtre Le Croiseur à Lyon",
-    "adamahDansometre": "Au Dansomètre (Vevey, Suisse)"
+    "adamahAkropoditi": {
+      "title": "À l'Akropoditi Dance and Performing Arts Centre (Hermoupolis, Syros, Grèce)"
+    },
+    "adamahLeCroiseur": {
+      "title": "Au festival Impulsion, théâtre Le Croiseur à Lyon"
+    },
+    "adamahDansometre": {
+      "title": "Au Dansomètre (Vevey, Suisse)"
+    }
   },
   "agendaPage": {
     "firstDate": {
@@ -110,18 +116,18 @@
       "outLinksText": "Le propriétaire du site décline toute responsabilité et n’est pas engagé par le référencement via des liens hypertextes, de ressources tierces présentes sur le réseau Internet, tant en ce qui concerne leur contenu que leur pertinence.",
       "inLinksTitle": "Liens entrants",
       "inLinksText": "Le propriétaire du site autorise les liens hypertextes vers l’une des pages de ce site, à condition que ceux-ci ouvrent une nouvelle fenêtre et soient présentés de manière non équivoque afin d’éviter : tout risque de confusion entre le site citant et le propriétaire du site ainsi que toute présentation tendancieuse, ou contraire aux lois en vigueur. Le propriétaire du site se réserve le droit de demander la suppression d’un lien s’il estime que le site source ne respecte pas les règles ainsi définies."
-    }, 
-    "popupPrivacy":{
-      "privacyTitle":"Confidentialité",
-      "privacyText":"Tout utilisateur dispose d’un droit d’accès, de rectification et d’opposition aux données personnelles le concernant, en effectuant sa demande écrite et signée, accompagnée d’une preuve d’identité. Le site ne recueille pas d’informations personnelles, et n’est pas assujetti à déclaration à la CNIL."
+    },
+    "popupPrivacy": {
+      "privacyTitle": "Confidentialité",
+      "privacyText": "Tout utilisateur dispose d’un droit d’accès, de rectification et d’opposition aux données personnelles le concernant, en effectuant sa demande écrite et signée, accompagnée d’une preuve d’identité. Le site ne recueille pas d’informations personnelles, et n’est pas assujetti à déclaration à la CNIL."
     },
     "popupCredits": {
-      "creditsTitle":"Crédits",
-      "creditsText":"Les auteurs des photographies utilisées pour illustrer ce site web sont mentionnés au survol de chaque photographie.",
+      "creditsTitle": "Crédits",
+      "creditsText": "Les auteurs des photographies utilisées pour illustrer ce site web sont mentionnés au survol de chaque photographie.",
       "creditsComplement": "Crédits vidéo page d'accueil : Compagnie Shafak",
-      "creditsIcons":"Les icônes utilisées sur ce site sont chargées depuis le site https://fontawesome.com."
+      "creditsIcons": "Les icônes utilisées sur ce site sont chargées depuis le site https://fontawesome.com."
     },
-    "closeButton":"Fermer"
+    "closeButton": "Fermer"
   },
   "error": {
     "errorType": "Erreur 404",

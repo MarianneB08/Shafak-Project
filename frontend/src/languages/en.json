@@ -41,9 +41,15 @@
   "archivesPage": {
     "kitButton": "Kit",
     "pastPerformances": "Past performances",
-    "adamahAkropoditi": "At Akropoditi Dance and Performing Arts Centre (Hermoupolis, Syros, Greece)",
-    "adamahLeCroiseur": "At Impulsion festival, Le Croiseur theater in Lyon (France)",
-    "adamahDansometre": "At Dansomètre (Vevey, Suisse)"
+    "adamahAkropoditi" : {
+      "title" : "At Akropoditi Dance and Performing Arts Centre (Hermoupolis, Syros, Greece)"
+    },
+    "adamahLeCroiseur": {
+      "title" : "At Impulsion festival, Le Croiseur theater in Lyon (France)"
+    },
+    "adamahDansometre": {
+      "title": "At Dansomètre (Vevey, Suisse)"
+    }
   },
   "agendaPage": {
     "firstDate": {

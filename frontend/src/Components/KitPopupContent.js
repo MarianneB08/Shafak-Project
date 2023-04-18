@@ -28,7 +28,7 @@ const KitPopupContent = () => {
           }}
           className={shownPerf === "akropoditi" ? styles.shownPerf : styles.notShownPerf}
         >
-          {dictionary.archivesPage.adamahAkropoditi}
+          {dictionary.archivesPage.adamahAkropoditi.title}
         </p>
         <span>|</span>
         <p
@@ -37,7 +37,7 @@ const KitPopupContent = () => {
           }}
           className={shownPerf === "dansometre" ? styles.shownPerf : styles.notShownPerf}
         >
-          {dictionary.archivesPage.adamahDansometre}
+          {dictionary.archivesPage.adamahDansometre.title}
         </p>
         <span>|</span>
         <p
@@ -46,7 +46,7 @@ const KitPopupContent = () => {
           }}
           className={shownPerf === "lecroiseur" ? styles.shownPerf : styles.notShownPerf}
         >
-          {dictionary.archivesPage.adamahLeCroiseur}
+          {dictionary.archivesPage.adamahLeCroiseur.title}
         </p>
       </div>
       {dataFile
@@ -60,6 +60,7 @@ const KitPopupContent = () => {
               <Slider
                 title={archive.kit.adamahDansometre.title}
                 pictures={archive.kit.adamahDansometre.pictures}
+                legals={archive.kit.adamahDansometre.legals}
                 index={index}
               />
             ) : null}
@@ -67,6 +68,7 @@ const KitPopupContent = () => {
               <Slider
                 title={archive.kit.adamahLeCroiseur.title}
                 pictures={archive.kit.adamahLeCroiseur.pictures}
+                legals={archive.kit.adamahLeCroiseur.legals}
                 index={index}
               />
             ) : null}
@@ -74,6 +76,7 @@ const KitPopupContent = () => {
               <Slider
                 title={archive.kit.adamahAkropoditi.title}
                 pictures={archive.kit.adamahAkropoditi.pictures}
+                legals={archive.kit.adamahAkropoditi.legals}
                 index={index}
               />
             ) : null}

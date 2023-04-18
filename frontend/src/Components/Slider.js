@@ -9,10 +9,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Slider = ({ index, pictures }) => {
+const Slider = ({ pictures, legals }) => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
-  const { userLanguage } = useContext(LanguageContext);
+  const { dictionary, userLanguage } = useContext(LanguageContext);
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
@@ -33,14 +33,14 @@ const Slider = ({ index, pictures }) => {
     setCurrentIndex(newIndex);
   };
 
-
   return (
     <div className={styles.container}>
-      {/* <div className={currentIndex === index + 1 ? styles.activeAnim : styles.slide}> */}
+      <div className={styles.pictureContainer}>
         <a
           href={pictures[currentIndex]}
           target="_blank"
           rel="noopener noreferrer"
+          className={styles.imgLink}
         >
           <img
             className={styles.img}
@@ -49,8 +49,11 @@ const Slider = ({ index, pictures }) => {
             alt={pictures.title}
             key={currentIndex}
           />
+        <div className={styles.legals}>
+          <p>{legals}</p>
+        </div>
         </a>
-      {/* </div> */}
+      </div>
       <div className={styles.arrowsAndCounter}>
         {/* Affichage conditionnel de la flèche "précédent" en fonction du nombre d'images dans l'array pictures */}
         <FontAwesomeIcon

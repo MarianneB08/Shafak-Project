@@ -89,9 +89,8 @@
     "teaser": "",
     "kit": {
       "adamahAkropoditi": {
+        "legals": "© Vivi Sklia",
         "pictures": [
-          "./img/kits/adamah_akropoditi/IMG_8696.JPG",
-          "./img/kits/adamah_akropoditi/IMG_8697.JPG",
           "./img/kits/adamah_akropoditi/IMG_8698.JPG",
           "./img/kits/adamah_akropoditi/IMG_8699.JPG",
           "./img/kits/adamah_akropoditi/IMG_8700.JPG",
@@ -99,6 +98,7 @@
         ]
       },
       "adamahDansometre": {
+        "legals": "© Hassen Bachraoui",
         "pictures": [
           "./img/kits/adamah_dansometre/DSC03207.JPG",
           "./img/kits/adamah_dansometre/DSC03208.JPG",
@@ -107,44 +107,27 @@
           "./img/kits/adamah_dansometre/DSC03211.JPG",
           "./img/kits/adamah_dansometre/DSC03212.JPG",
           "./img/kits/adamah_dansometre/DSC03213.JPG",
-          "./img/kits/adamah_dansometre/DSC03214.JPG",
-          "./img/kits/adamah_dansometre/DSC03215.JPG",
-          "./img/kits/adamah_dansometre/DSC03216.JPG",
-          "./img/kits/adamah_dansometre/DSC03217.JPG",
           "./img/kits/adamah_dansometre/DSC03218.JPG",
-          "./img/kits/adamah_dansometre/DSC03219.JPG",
           "./img/kits/adamah_dansometre/DSC03222.JPG",
           "./img/kits/adamah_dansometre/DSC03223.JPG",
-          "./img/kits/adamah_dansometre/DSC03224.JPG",
-          "./img/kits/adamah_dansometre/DSC03225.JPG",
-          "./img/kits/adamah_dansometre/DSC03226.JPG",
-          "./img/kits/adamah_dansometre/DSC03227.JPG",
-          "./img/kits/adamah_dansometre/DSC03228.JPG"
+          "./img/kits/adamah_dansometre/DSC03226.JPG"
         ]
       },
       "adamahLeCroiseur": {
+        "legals": "© Garance Li",
         "pictures": [
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-007.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-008.jpg",
-          "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-009.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-010.jpg",
-          "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-011.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-012.jpg",
-          "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-013.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-014.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-015.jpg",
-          "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-016.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-017.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-018.jpg",
-          "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-019.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-020.jpg",
-          "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-021.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-022.jpg",
-          "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-023.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-024.jpg",
-          "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-025.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-026.jpg",
-          "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-027.jpg",
           "./img/kits/adamah_le_croiseur/garanceli-impulsion4-2211-028.jpg"
         ]
       }
