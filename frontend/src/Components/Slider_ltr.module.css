@@ -39,24 +39,20 @@ li {
 .container {
   width: 70%;
   height: 350px;
-  margin: 3rem auto;
+  margin: 0 auto;
+  margin-top: 5rem;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container p {
-  margin-bottom: 3rem;
-  font-family: "Archivo", sans-serif;
-  font-size: 1.8rem;
-  color: white;
-}
 .container .img {
   height: 310px;
-  border: 1px solid white;
+  border: 0.5px solid white;
   -o-object-fit: contain;
      object-fit: contain;
+  cursor: pointer;
 }
 .container .arrowsAndCounter {
   display: flex;
@@ -93,4 +89,39 @@ li {
 }
 .container .arrowsAndCounter .hiddenArrow {
   display: none;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin-top: 0;
+  }
+  .container .img {
+    width: auto;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (min-width: 380px) and (max-width: 480px) {
+  .container {
+    margin-top: 0;
+  }
+  .container .img {
+    width: auto;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 379px) {
+  .container {
+    margin-top: 0;
+  }
+  .container .img {
+    max-width: 290px;
+    height: 250px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border: none;
+  }
 }/*# sourceMappingURL=Slider_ltr.module.css.map */

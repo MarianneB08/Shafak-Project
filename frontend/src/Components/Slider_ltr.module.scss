@@ -3,23 +3,20 @@
 .container {
   width: 70%;
   height: 350px;
-  margin: 3rem auto;
+  margin: 0 auto;
+  margin-top: 5rem;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  p {
-    margin-bottom: 3rem;
-    font-family: globals.$font-family-2;
-    font-size: 1.8rem;
-    color: globals.$color-2;
-  }
   .img {
     height: 310px;
-    border: 1px solid globals.$color-2;
+    border: 0.5px solid globals.$color-2;
     object-fit: contain;
+    cursor: pointer;
   }
+
   .arrowsAndCounter {
     display: flex;
     margin-top: 2rem;
@@ -29,7 +26,7 @@
       font-weight: 100;
       color: globals.$color-2;
       cursor: pointer;
-      transition:all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       &:hover {
         color: grey;
         transform: scale(1.1);
@@ -46,7 +43,7 @@
       font-weight: 100;
       color: globals.$color-2;
       cursor: pointer;
-      transition:all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       &:hover {
         color: grey;
         transform: scale(1.1);
@@ -54,6 +51,48 @@
     }
     .hiddenArrow {
       display: none;
+    }
+  }
+}
+
+// SMALL SCREENS, LAPTOPS //
+
+// IPADS, TABLETS //
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin-top: 0;
+    .img {
+      width: auto;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+}
+
+// MOBILE DEVICES (CUSTOM) //
+
+@media screen and (min-width: 380px) and (max-width: 480px) {
+  .container {
+    margin-top: 0;
+    .img {
+      width: auto;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (min-width: 290px) and (max-width: 379px) {
+  .container {
+    margin-top: 0;
+    .img {
+      // width: 290px;
+      // height: auto;
+      max-width: 290px;
+      height: 250px;
+      object-fit: contain;
+      border: none;
     }
   }
 }

@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Slider = ({ pictures }) => {
+const Slider = ({ index, pictures }) => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
   const { userLanguage } = useContext(LanguageContext);
@@ -33,15 +33,24 @@ const Slider = ({ pictures }) => {
     setCurrentIndex(newIndex);
   };
 
+
   return (
     <div className={styles.container}>
-      <img
-        className={styles.img}
-        // L'index de l'array, matérialisé par 'currentIndex', est rendu dynamique grâce au hook useState
-        src={pictures[currentIndex]}
-        alt={pictures.title}
-        key={currentIndex}
-      />
+      {/* <div className={currentIndex === index + 1 ? styles.activeAnim : styles.slide}> */}
+        <a
+          href={pictures[currentIndex]}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className={styles.img}
+            // L'index de l'array, matérialisé par 'currentIndex', est rendu dynamique grâce au hook useState
+            src={pictures[currentIndex]}
+            alt={pictures.title}
+            key={currentIndex}
+          />
+        </a>
+      {/* </div> */}
       <div className={styles.arrowsAndCounter}>
         {/* Affichage conditionnel de la flèche "précédent" en fonction du nombre d'images dans l'array pictures */}
         <FontAwesomeIcon

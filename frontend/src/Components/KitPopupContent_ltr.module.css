@@ -36,11 +36,14 @@ li {
   list-style-type: none;
 }
 
+.container .popupTitle {
+  margin-bottom: 6rem;
+}
 .container .perfTitles {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 90%;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 .container .perfTitles span {
@@ -52,7 +55,7 @@ li {
   font-family: "Archivo", sans-serif;
   font-size: 1.5rem;
   cursor: pointer;
-  margin: 1rem 0;
+  margin: 0.5rem 2rem;
   padding: 0.5rem 0;
   position: relative;
 }
@@ -98,4 +101,48 @@ li {
   color: white;
   left: 0;
   width: 100%;
+}
+
+@media screen and (max-width: 1239px) {
+  span {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container .perfTitles p {
+    font-size: 1.4rem;
+    word-break: break-word;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container .perfTitles {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .container .perfTitles p {
+    font-size: 1.2rem;
+    word-break: break-word;
+    text-align: center;
+    margin: 0 0;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 480px) {
+  .container .perfTitles {
+    flex-direction: column;
+    height: 150px;
+    flex-wrap: nowrap;
+  }
+  .container .perfTitles p {
+    font-size: 1.2rem;
+    word-break: break-word;
+    text-align: center;
+    margin: 0 0;
+  }
+  .container .perfTitles .shownPerf:after {
+    height: 0;
+  }
+  .container .perfTitles .notShownPerf:after {
+    height: 0;
+  }
 }/*# sourceMappingURL=KitPopupContent_ltr.module.css.map */

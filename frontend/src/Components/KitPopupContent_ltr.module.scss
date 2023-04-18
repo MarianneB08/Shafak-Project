@@ -3,11 +3,14 @@
 // DESKTOP //
 
 .container {
+  .popupTitle {
+    margin-bottom: 6rem;
+  }
   .perfTitles {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 90%;
+    flex-wrap: wrap;
     margin: 0 auto;
     span {
       font-family: globals.$font-family-2;
@@ -18,7 +21,7 @@
       font-family: globals.$font-family-2;
       font-size: 1.5rem;
       cursor: pointer;
-      margin: 1rem 0;
+      margin: 0.5rem 2rem;
       padding: 0.5rem 0;
       position: relative;
     }
@@ -49,6 +52,77 @@
         color: globals.$color-2;
         left: 0;
         width: 100%;
+      }
+    }
+  }
+}
+
+// CUSTOM QUERIES //
+
+@media screen and (max-width: 1239px) {
+  span {
+    opacity: 0;
+  }
+}
+
+// SMALL SCREENS, LAPTOPS //
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    .perfTitles {
+      // flex-direction: column;
+      // flex-wrap: nowrap;
+      p {
+        font-size: 1.4rem;
+        word-break: break-word;
+        text-align: center;
+        // margin: 0 0;
+      }
+    }
+  }
+}
+
+// IPADS, TABLETS //
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    .perfTitles {
+      flex-direction: column;
+      // height: 150px;
+      flex-wrap: nowrap;
+      p {
+        font-size: 1.2rem;
+        word-break: break-word;
+        text-align: center;
+        margin: 0 0;
+      }
+    }
+  }
+}
+
+// MOBILE DEVICES //
+
+@media screen and (min-width: 290px) and (max-width: 480px) {
+  .container {
+    .perfTitles {
+      flex-direction: column;
+      height: 150px;
+      flex-wrap: nowrap;
+      p {
+        font-size: 1.2rem;
+        word-break: break-word;
+        text-align: center;
+        margin: 0 0;
+      }
+      .shownPerf {
+        &:after {
+          height: 0;
+        }
+      }
+      .notShownPerf {
+        &:after {
+          height: 0;
+        }
       }
     }
   }

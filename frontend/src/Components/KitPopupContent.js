@@ -20,7 +20,7 @@ const KitPopupContent = () => {
 
   return (
     <div className={styles.container}>
-      <h1>{dictionary.archivesPage.pastPerformances}</h1>
+      <h1 className={styles.popupTitle}>{dictionary.archivesPage.pastPerformances}</h1>
       <div className={styles.perfTitles}>
         <p
           onClick={() => {
@@ -53,25 +53,28 @@ const KitPopupContent = () => {
         .filter(function (creation) {
           return creation.kit !== "";
         })
-        .map((archive) => (
+        .map((archive, index) => (
           <>
           {/* Affichage conditionnel de chaque slider en fonction du contenu du state shownPerf */}
             {shownPerf === "dansometre" ? (
               <Slider
                 title={archive.kit.adamahDansometre.title}
                 pictures={archive.kit.adamahDansometre.pictures}
+                index={index}
               />
             ) : null}
             {shownPerf === "lecroiseur" ? (
               <Slider
                 title={archive.kit.adamahLeCroiseur.title}
                 pictures={archive.kit.adamahLeCroiseur.pictures}
+                index={index}
               />
             ) : null}
             {shownPerf === "akropoditi" ? (
               <Slider
                 title={archive.kit.adamahAkropoditi.title}
                 pictures={archive.kit.adamahAkropoditi.pictures}
+                index={index}
               />
             ) : null}
           </>

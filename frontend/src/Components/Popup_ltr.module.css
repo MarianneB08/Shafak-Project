@@ -84,7 +84,7 @@ li {
 
 @media screen and (max-width: 480px) {
   .popupContainer .contentAndCloseButton .closeButton {
-    bottom: -4.5rem;
+    bottom: -3rem;
     font-size: 1.2rem;
   }
 }/*# sourceMappingURL=Popup_ltr.module.css.map */
