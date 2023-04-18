@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Slider = ({ title, pictures }) => {
+const Slider = ({ pictures }) => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
   const { userLanguage } = useContext(LanguageContext);
@@ -35,7 +35,6 @@ const Slider = ({ title, pictures }) => {
 
   return (
     <div className={styles.container}>
-      <p>{title}</p>
       <img
         className={styles.img}
         // L'index de l'array, matérialisé par 'currentIndex', est rendu dynamique grâce au hook useState

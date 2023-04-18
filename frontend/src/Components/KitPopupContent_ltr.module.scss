@@ -1,5 +1,55 @@
-// .container {
-//     background-color: aqua;
-//     // width: 100%;
+@use "../globals.module.scss" as globals;
 
-// }
+// DESKTOP //
+
+.container {
+  .perfTitles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    span {
+      font-family: globals.$font-family-2;
+      font-size: 3rem;
+      font-weight: 100;
+    }
+    p {
+      font-family: globals.$font-family-2;
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin: 1rem 0;
+      padding: 0.5rem 0;
+      position: relative;
+    }
+    .shownPerf {
+      color: globals.$color-2;
+      &:after {
+        @include globals.afterUnderline;
+        height: 0.5px;
+        background-color: globals.$color-2;
+      }
+      &:hover:after {
+        left: 0;
+        width: 100%;
+      }
+    }
+    .notShownPerf {
+      color: grey;
+      transition: all 0.3s;
+      &:hover {
+        color: globals.$color-2;
+      }
+      &:after {
+        @include globals.afterUnderline;
+        height: 0.5px;
+        background-color: globals.$color-2;
+      }
+      &:hover:after {
+        color: globals.$color-2;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}

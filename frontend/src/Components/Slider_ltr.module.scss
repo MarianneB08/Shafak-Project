@@ -20,7 +20,7 @@
     height: 255px;
     border: 1px solid globals.$color-2;
     object-fit: contain;
-    transition: all 1s ease-in-out;
+    // transition: transform 0.3s;
   }
   .arrowsAndCounter {
     display: flex;
