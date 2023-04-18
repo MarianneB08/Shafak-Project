@@ -7,23 +7,20 @@
     margin-bottom: 6rem;
   }
   .perfTitles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include globals.flexRowCenter;
     flex-wrap: wrap;
     margin: 0 auto;
     span {
       font-family: globals.$font-family-2;
       font-size: 3rem;
-      font-weight: 100;
     }
     p {
+      position: relative;
+      margin: 0.5rem 2rem;
+      padding: 0.5rem 0;
       font-family: globals.$font-family-2;
       font-size: 1.5rem;
       cursor: pointer;
-      margin: 0.5rem 2rem;
-      padding: 0.5rem 0;
-      position: relative;
     }
     .shownPerf {
       color: globals.$color-2;
@@ -38,7 +35,7 @@
       }
     }
     .notShownPerf {
-      color: grey;
+      color: globals.$color-3;
       transition: all 0.3s;
       &:hover {
         color: globals.$color-2;
@@ -49,9 +46,9 @@
         background-color: globals.$color-2;
       }
       &:hover:after {
-        color: globals.$color-2;
         left: 0;
         width: 100%;
+        color: globals.$color-2;
       }
     }
   }
@@ -61,7 +58,7 @@
 
 @media screen and (max-width: 1239px) {
   .span {
-    opacity: 0;
+    display: none;
   }
 }
 
@@ -70,13 +67,11 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     .perfTitles {
-      // flex-direction: column;
-      // flex-wrap: nowrap;
       p {
+        margin: 0 2rem;
         font-size: 1.4rem;
-        word-break: break-word;
         text-align: center;
-        // margin: 0 0;
+        word-break: break-word;
       }
     }
   }
@@ -88,13 +83,12 @@
   .container {
     .perfTitles {
       flex-direction: column;
-      // height: 150px;
       flex-wrap: nowrap;
       p {
-        font-size: 1.2rem;
-        word-break: break-word;
+        margin: 0.5rem 0;
+        font-size: 1.3rem;
         text-align: center;
-        margin: 0 0;
+        word-break: break-word;
       }
     }
   }
@@ -106,23 +100,17 @@
   .container {
     .perfTitles {
       flex-direction: column;
-      height: 150px;
       flex-wrap: nowrap;
+      height: 150px;
       p {
+        margin: 0.5rem 0;
         font-size: 1.2rem;
-        word-break: break-word;
         text-align: center;
-        margin: 0 0;
+        word-break: break-word;
       }
-      .shownPerf {
-        &:after {
-          height: 0;
-        }
-      }
-      .notShownPerf {
-        &:after {
-          height: 0;
-        }
+      .shownPerf::after,
+      .notShownPerf::after {
+        height: 0;
       }
     }
   }

@@ -49,15 +49,14 @@ li {
 .container .perfTitles span {
   font-family: "Archivo", sans-serif;
   font-size: 3rem;
-  font-weight: 100;
 }
 .container .perfTitles p {
+  position: relative;
+  margin: 0.5rem 2rem;
+  padding: 0.5rem 0;
   font-family: "Archivo", sans-serif;
   font-size: 1.5rem;
   cursor: pointer;
-  margin: 0.5rem 2rem;
-  padding: 0.5rem 0;
-  position: relative;
 }
 .container .perfTitles .shownPerf {
   color: white;
@@ -79,7 +78,7 @@ li {
   width: 100%;
 }
 .container .perfTitles .notShownPerf {
-  color: grey;
+  color: #666666;
   transition: all 0.3s;
 }
 .container .perfTitles .notShownPerf:hover {
@@ -98,21 +97,22 @@ li {
   background-color: white;
 }
 .container .perfTitles .notShownPerf:hover:after {
-  color: white;
   left: 0;
   width: 100%;
+  color: white;
 }
 
 @media screen and (max-width: 1239px) {
   .span {
-    opacity: 0;
+    display: none;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container .perfTitles p {
+    margin: 0 2rem;
     font-size: 1.4rem;
-    word-break: break-word;
     text-align: center;
+    word-break: break-word;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -121,28 +121,26 @@ li {
     flex-wrap: nowrap;
   }
   .container .perfTitles p {
-    font-size: 1.2rem;
-    word-break: break-word;
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
     text-align: center;
-    margin: 0 0;
+    word-break: break-word;
   }
 }
 @media screen and (min-width: 290px) and (max-width: 480px) {
   .container .perfTitles {
     flex-direction: column;
-    height: 150px;
     flex-wrap: nowrap;
+    height: 150px;
   }
   .container .perfTitles p {
+    margin: 0.5rem 0;
     font-size: 1.2rem;
-    word-break: break-word;
     text-align: center;
-    margin: 0 0;
+    word-break: break-word;
   }
-  .container .perfTitles .shownPerf:after {
-    height: 0;
-  }
-  .container .perfTitles .notShownPerf:after {
+  .container .perfTitles .shownPerf::after,
+  .container .perfTitles .notShownPerf::after {
     height: 0;
   }
 }/*# sourceMappingURL=KitPopupContent_ltr.module.css.map */

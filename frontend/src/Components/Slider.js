@@ -1,3 +1,11 @@
+// Le composant Slider.js est appelé dans le composant KitPopupContent.js. Il permet l'affichage sous forme de carousel de photographies
+// prises lors de différentes représentations de la création Adamah qui figure parmi les archives de la Compagnie Shafak.
+// Le défilement des images est infini : on revient à la première image après la dernière image.
+// Un compteur affiche l'index de la photo en cours de visionnage et s'actualise à chaque clic sur la flèche droite ou la flèche gauche.
+// Au survol sur chaque image, les crédits photos apparaissent.
+// La structure permettant de switcher de feuille de style en fonction du langage, selon qu'il exige une lecture LTR ou RTL, a été
+// mise en place mais n'est pas utilisée actuellement.
+
 import React from "react";
 import { useContext, useState } from "react";
 import { LanguageContext } from "../store/languageContext.js";
@@ -12,7 +20,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Slider = ({ pictures, legals }) => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
-  const { dictionary, userLanguage } = useContext(LanguageContext);
+  const { userLanguage } = useContext(LanguageContext);
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 

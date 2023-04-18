@@ -1,3 +1,10 @@
+// Le composant KitPopupContent.js correspond au contenu du composant Popup.js qui s'affiche lorsqu'on clique sur le bouton "Kit" 
+// accessible au survol de la card de la création Adamah sur la page Archives du site. Il regroupe trois sliders (composant Slider.js)
+// qui mettent en avant des photographies prises lors de différentes représentations de cette création. Chaque slider est accessible
+// au clic sur le nom de la représentation.
+// La structure permettant de switcher de feuille de style en fonction du langage, selon qu'il exige une lecture LTR ou RTL, a été
+// mise en place mais n'est pas utilisée actuellement.
+
 import React, { useState } from "react";
 import { useContext } from "react";
 import { LanguageContext } from "../store/languageContext.js";
@@ -22,6 +29,7 @@ const KitPopupContent = () => {
     <div className={styles.container}>
       <h1 className={styles.popupTitle}>{dictionary.archivesPage.pastPerformances}</h1>
       <div className={styles.perfTitles}>
+        {/* "Menu" des différentes représentations de la création Adamah et des différents sliders de photographies */}
         <p
           onClick={() => {
             setShownPerf("akropoditi");
