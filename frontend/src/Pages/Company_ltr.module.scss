@@ -79,7 +79,7 @@
             font-weight: 300;
             color: globals.$color-2;
           }
-          &:hover .legals {
+          &:hover {
             opacity: 1;
             transition: all 0.4s ease;
           }
@@ -119,7 +119,7 @@
       padding: 0 5rem;
     }
     .aboutCompany p,
-    .aboutDancers .sectionsContainer .larbiSection p, 
+    .aboutDancers .sectionsContainer .larbiSection p,
     .aboutDancers .sectionsContainer .margotSection p {
       font-size: 1.4rem;
     }
@@ -191,7 +191,7 @@
       letter-spacing: 1.8rem;
     }
     .aboutCompany p,
-    .aboutDancers .sectionsContainer .larbiSection p, 
+    .aboutDancers .sectionsContainer .larbiSection p,
     .aboutDancers .sectionsContainer .margotSection p {
       font-size: 1.2rem;
     }
@@ -223,7 +223,7 @@
       letter-spacing: 1.3rem;
     }
     .aboutCompany p,
-    .aboutDancers .sectionsContainer .larbiSection p, 
+    .aboutDancers .sectionsContainer .larbiSection p,
     .aboutDancers .sectionsContainer .margotSection p {
       font-size: 1.2rem;
     }

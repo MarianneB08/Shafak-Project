@@ -135,8 +135,8 @@ li {
   font-weight: 300;
   color: white;
 }
-.container .aboutDancers .sectionsContainer .larbiSection .pictureContainer .legals:hover .legals,
-.container .aboutDancers .sectionsContainer .margotSection .pictureContainer .legals:hover .legals {
+.container .aboutDancers .sectionsContainer .larbiSection .pictureContainer .legals:hover,
+.container .aboutDancers .sectionsContainer .margotSection .pictureContainer .legals:hover {
   opacity: 1;
   transition: all 0.4s ease;
 }

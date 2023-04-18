@@ -59,6 +59,10 @@ li {
 .popupContainer .iconContainer .icon {
   font-size: 2rem;
   cursor: pointer;
+  transition: transform 300ms;
+}
+.popupContainer .iconContainer .icon:hover {
+  transform: scale(1.1);
 }
 .popupContainer .contentAndCloseButton {
   position: relative;

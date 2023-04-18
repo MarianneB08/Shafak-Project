@@ -16,7 +16,7 @@ const KitPopupContent = () => {
   // Utilisation du fichier creations_fr.json ou creations_en.json en fonction de la langue sélectionnée par l'utilisateur
   const dataFile = userLanguage === "fr" ? dataFileFr : dataFileEn;
   // State pour gérer l'affichage conditionnel des différents sliders
-  const [shownPerf, setShownPerf] = useState(null);
+  const [shownPerf, setShownPerf] = useState("akropoditi");
 
   return (
     <div className={styles.container}>
