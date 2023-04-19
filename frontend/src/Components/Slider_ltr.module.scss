@@ -1,5 +1,14 @@
 @use "../globals.module.scss" as globals;
 
+@keyframes transition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .container {
   width: 70%;
   height: 350px;
@@ -10,11 +19,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: transition 2s;
   .pictureContainer {
     height: 310px;
     position: relative;
     .imgLink {
-      // TEST
       display: flex;
       justify-content: center;
       align-items: center;

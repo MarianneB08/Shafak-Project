@@ -25,41 +25,41 @@ const Slider = ({ pictures, legals }) => {
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
   // Le hook useState permet de faire varier l'index de l'array pictures
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentArrayIndex, setCurrentArrayIndex] = useState(0);
 
   // La fonction goToPrevious actualise l'index de l'array pictures au clic sur la flèche "précédente" du carousel
   const goToPrevious = () => {
-    const isFirstPicture = currentIndex === 0;
-    const newIndex = isFirstPicture ? pictures.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
+    const isFirstPicture = currentArrayIndex === 0;
+    const newIndex = isFirstPicture
+      ? pictures.length - 1
+      : currentArrayIndex - 1;
+    setCurrentArrayIndex(newIndex);
   };
 
   // La fonction goToNext actualise l'index de l'array pictures au clic sur la flèche "suivante" du carousel
   const goToNext = () => {
-    const isLastPicture = currentIndex === pictures.length - 1;
-    const newIndex = isLastPicture ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
+    const isLastPicture = currentArrayIndex === pictures.length - 1;
+    const newIndex = isLastPicture ? 0 : currentArrayIndex + 1;
+    setCurrentArrayIndex(newIndex);
   };
 
   return (
     <div className={styles.container}>
       <div className={styles.pictureContainer}>
         <a
-          href={pictures[currentIndex]}
+          href={pictures[currentArrayIndex]}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.imgLink}
         >
           <img
             className={styles.img}
-            // L'index de l'array, matérialisé par 'currentIndex', est rendu dynamique grâce au hook useState
-            src={pictures[currentIndex]}
+            src={pictures[currentArrayIndex]}
             alt={pictures.title}
-            key={currentIndex}
           />
-        <div className={styles.legals}>
-          <p>{legals}</p>
-        </div>
+          <div className={styles.legals}>
+            <p>{legals}</p>
+          </div>
         </a>
       </div>
       <div className={styles.arrowsAndCounter}>
@@ -70,10 +70,10 @@ const Slider = ({ pictures, legals }) => {
             pictures.length === 1 ? styles.hiddenArrow : styles.leftArrow
           }
           // Appel de la fonction goToPrevious au clic sur la flèche
-          onClick={() => goToPrevious()}
+          onClick={goToPrevious}
         />
         <div className={styles.counter}>
-          {currentIndex + 1}/{pictures.length}
+          {currentArrayIndex + 1}/{pictures.length}
         </div>
         <FontAwesomeIcon
           icon={faChevronRight}
@@ -81,7 +81,7 @@ const Slider = ({ pictures, legals }) => {
             pictures.length === 1 ? styles.hiddenArrow : styles.rightArrow
           }
           // Appel de la fonction goToNext au clic sur la flèche
-          onClick={() => goToNext()}
+          onClick={goToNext}
         />
       </div>
     </div>
