@@ -41,15 +41,16 @@
   "archivesPage": {
     "kitButton": "Kit",
     "pastPerformances": "Past performances",
-    "adamahAkropoditi" : {
-      "title" : "At Akropoditi Dance and Performing Arts Centre (Hermoupolis, Syros, Greece)"
+    "adamahAkropoditi": {
+      "title": "At Akropoditi Dance and Performing Arts Centre (Hermoupolis, Syros, Greece)"
     },
     "adamahLeCroiseur": {
-      "title" : "At Impulsion festival, Le Croiseur theater in Lyon (France)"
+      "title": "At Impulsion festival, Le Croiseur theater in Lyon (France)"
     },
     "adamahDansometre": {
       "title": "At Dansomètre (Vevey, Suisse)"
-    }
+    },
+    "alternativeText": "Company Shafak performance"
   },
   "agendaPage": {
     "firstDate": {
@@ -116,18 +117,18 @@
       "outLinksText": "The owner of the site declines all responsibility and is not engaged by the referencing via hypertext links, of third-party resources present on the Internet network, both with regard to their content and their relevance.",
       "inLinksTitle": "Incoming links",
       "inLinksText": "The owner of the site authorizes hypertext links to one of the pages of this site, provided that they open a new window and are presented in an unequivocal manner in order to avoid: any risk of confusion between the citing site and the owner of the site as well as any tendentious presentation, or contrary to the laws in force. The owner of the site reserves the right to request the deletion of a link if he considers that the source site does not respect the rules thus defined."
-    }, 
-    "popupPrivacy":{
-      "privacyTitle":"Privacy",
-      "privacyText":"Any user has a right of access, rectification and opposition to personal data concerning him, by making his written and signed request, accompanied by proof of identity. The site does not collect personal information, and is not subject to declaration to the CNIL."
+    },
+    "popupPrivacy": {
+      "privacyTitle": "Privacy",
+      "privacyText": "Any user has a right of access, rectification and opposition to personal data concerning him, by making his written and signed request, accompanied by proof of identity. The site does not collect personal information, and is not subject to declaration to the CNIL."
     },
     "popupCredits": {
-      "creditsTitle":"Credits",
-      "creditsText":"The authors of the photographs used to illustrate this website are mentioned over each photograph.",
+      "creditsTitle": "Credits",
+      "creditsText": "The authors of the photographs used to illustrate this website are mentioned over each photograph.",
       "creditsComplement": "Home page video credits: Compagnie Shafak",
-      "creditsIcons":"The icons used on this site are loaded from the site https://fontawesome.com."
+      "creditsIcons": "The icons used on this site are loaded from the site https://fontawesome.com."
     },
-    "closeButton":"Close"
+    "closeButton": "Close"
   },
   "error": {
     "errorType": "404 Error",

@@ -20,7 +20,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Slider = ({ pictures, legals }) => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
-  const { userLanguage } = useContext(LanguageContext);
+  const { dictionary, userLanguage } = useContext(LanguageContext);
   // Utilisation de la feuille de style RTL ou LTR en fonction de la langue sélectionnée par l'utilisateur
   let styles = userLanguage === "ar" ? rtlStyles : ltrStyles;
 
@@ -55,7 +55,7 @@ const Slider = ({ pictures, legals }) => {
           <img
             className={styles.img}
             src={pictures[currentArrayIndex]}
-            alt={pictures[currentArrayIndex]}
+            alt={dictionary.archivesPage.alternativeText}
           />
           <div className={styles.legals}>
             <p>{legals}</p>

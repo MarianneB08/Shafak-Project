@@ -94,5 +94,17 @@
     "partnerName": "Centre des Arts dramatiques et scéniques du Kef",
     "partnerUrl": "https://www.facebook.com/cadkef/?locale=fr_FR",
     "partnerLogo": "./img/partners/logo_centre_arts_dramatiques_sceniques_kef.png"
+  },
+  {
+    "id": "17",
+    "partnerName": "Agglomération de Saint-Brieuc",
+    "partnerUrl": "https://www.saintbrieuc-armor-agglo.bzh/",
+    "partnerLogo": "./img/partners/logo_agglo_saintbrieuc.png"
+  },
+  {
+    "id": "18",
+    "partnerName": "uFaFabrik - Berlin",
+    "partnerUrl": "https://www.ufafabrik.de/en",
+    "partnerLogo": "./img/partners/logo_ufafabrik.png"
   }
 ]
