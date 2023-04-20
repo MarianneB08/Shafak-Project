@@ -69,22 +69,22 @@ const KitPopupContent = () => {
         .filter(function (creation) {
           return creation.kit !== "";
         })
-        .map((archive) =>
+        .map((archive, index) =>
           (
-            <>
+            <div key={index}>
               {/* Affichage conditionnel de chaque slider en fonction du contenu du state shownPerf */}
               {shownPerf === "dansometre" ? (
                 <Slider
                   pictures={archive.kit.adamahDansometre.pictures}
                   legals={archive.kit.adamahDansometre.legals}
-                  key={archive.kit.adamahDansometre.legals}
+                  // key={archive.kit.adamahDansometre.legals}
                 />
               ) : null}
               {shownPerf === "lecroiseur" ? (
                 <Slider
                   pictures={archive.kit.adamahLeCroiseur.pictures}
                   legals={archive.kit.adamahLeCroiseur.legals}
-                  key={archive.kit.adamahLeCroiseur.legals}
+                  // key={archive.kit.adamahLeCroiseur.legals}
 
                 />
               ) : null}
@@ -92,10 +92,10 @@ const KitPopupContent = () => {
                 <Slider
                   pictures={archive.kit.adamahAkropoditi.pictures}
                   legals={archive.kit.adamahAkropoditi.legals}
-                  key={archive.kit.adamahAkropoditi.legals}
+                  // key={archive.kit.adamahAkropoditi.legals}
                 />
               ) : null}
-            </>
+            </ div>
           )
         )}
     </div>

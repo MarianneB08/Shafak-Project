@@ -43,6 +43,7 @@ li {
   align-items: center;
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 3rem;
 }
 .container h1 {
   margin: 7rem 0 5rem 0;

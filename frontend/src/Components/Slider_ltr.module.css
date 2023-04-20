@@ -36,16 +36,24 @@ li {
   list-style-type: none;
 }
 
+@keyframes transition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .container {
   width: 70%;
   height: 350px;
   margin: 0 auto;
   margin-top: 5rem;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: transition 2s;
 }
 .container .pictureContainer {
   height: 310px;
@@ -120,9 +128,6 @@ li {
 .container .arrowsAndCounter .rightArrow:hover {
   color: grey;
   transform: scale(1.1);
-}
-.container .arrowsAndCounter .hiddenArrow {
-  display: none;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {

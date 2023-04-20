@@ -55,7 +55,7 @@ const Slider = ({ pictures, legals }) => {
           <img
             className={styles.img}
             src={pictures[currentArrayIndex]}
-            alt={pictures.title}
+            alt={pictures[currentArrayIndex]}
           />
           <div className={styles.legals}>
             <p>{legals}</p>
@@ -66,9 +66,7 @@ const Slider = ({ pictures, legals }) => {
         {/* Affichage conditionnel de la flèche "précédent" en fonction du nombre d'images dans l'array pictures */}
         <FontAwesomeIcon
           icon={faChevronLeft}
-          className={
-            pictures.length === 1 ? styles.hiddenArrow : styles.leftArrow
-          }
+          className={styles.leftArrow}
           // Appel de la fonction goToPrevious au clic sur la flèche
           onClick={goToPrevious}
         />
@@ -77,9 +75,7 @@ const Slider = ({ pictures, legals }) => {
         </div>
         <FontAwesomeIcon
           icon={faChevronRight}
-          className={
-            pictures.length === 1 ? styles.hiddenArrow : styles.rightArrow
-          }
+          className={styles.rightArrow}
           // Appel de la fonction goToNext au clic sur la flèche
           onClick={goToNext}
         />
