@@ -75,6 +75,7 @@ li {
 }
 .container .aboutDancers {
   width: 90%;
+  padding: 0 5rem;
   margin-top: 15rem;
 }
 .container .aboutDancers h2 {
@@ -93,7 +94,7 @@ li {
 .container .aboutDancers .sectionsContainer .larbiSection,
 .container .aboutDancers .sectionsContainer .margotSection {
   position: relative;
-  width: 30%;
+  width: 40%;
 }
 .container .aboutDancers .sectionsContainer .larbiSection h3,
 .container .aboutDancers .sectionsContainer .margotSection h3 {
@@ -170,6 +171,7 @@ li {
   }
   .container .aboutDancers {
     margin-top: 12rem;
+    padding: 0 3rem;
   }
   .container .aboutDancers .sectionsContainer {
     width: 90%;
@@ -252,6 +254,9 @@ li {
   .container .aboutDancers h2 {
     font-size: 1.3rem;
     letter-spacing: 1.3rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
   }
   .container .aboutCompany p,
   .container .aboutDancers .sectionsContainer .larbiSection p,
