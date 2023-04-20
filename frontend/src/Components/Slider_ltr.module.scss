@@ -10,22 +10,17 @@
 }
 
 .container {
-  width: 70%;
-  height: 350px;
+  @include globals.flexColumnCenter;
+  animation: transition 2s;
   margin: 0 auto;
   margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: transition 2s;
+  width: 70%;
+  height: 350px;
   .pictureContainer {
-    height: 310px;
     position: relative;
+    height: 310px;
     .imgLink {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include globals.flexRowCenter;
       height: 100%;
       .img {
         height: 100%;
@@ -53,8 +48,8 @@
         color: globals.$color-2;
       }
       &:hover {
-        border: 0.5px solid globals.$color-2;
         opacity: 1;
+        border: 0.5px solid globals.$color-2;
         transition: all 0.4s ease;
       }
     }
@@ -63,16 +58,8 @@
     display: flex;
     margin-top: 2rem;
     .leftArrow {
+      @include globals.arrowConfig;
       margin-right: 2rem;
-      font-size: 1.4rem;
-      font-weight: 100;
-      color: globals.$color-2;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        color: grey;
-        transform: scale(1.1);
-      }
     }
     .counter {
       font-family: globals.$font-family-2;
@@ -80,16 +67,8 @@
       font-weight: bold;
     }
     .rightArrow {
+      @include globals.arrowConfig;
       margin-left: 2rem;
-      font-size: 1.4rem;
-      font-weight: 100;
-      color: globals.$color-2;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        color: grey;
-        transform: scale(1.1);
-      }
     }
   }
 }
@@ -102,8 +81,8 @@
   .container {
     margin-top: 0;
     .pictureContainer {
-      height: 250px;
       position: relative;
+      height: 250px;
       .imgLink {
         .img {
           height: 100%;
@@ -119,8 +98,8 @@
           color: globals.$color-2;
         }
         &:hover {
-          border: 0.5px solid globals.$color-2;
           opacity: 1;
+          border: 0.5px solid globals.$color-2;
           transition: all 0.4s ease;
         }
       }
@@ -138,8 +117,8 @@
   .container {
     margin-top: 0;
     .pictureContainer {
-      height: 210px;
       position: relative;
+      height: 210px;
       .imgLink {
         height: 210px;
         .img {
@@ -151,8 +130,8 @@
       .legals {
         height: 210px;
         &:hover {
-          border: 0.5px solid globals.$color-2;
           opacity: 1;
+          border: 0.5px solid globals.$color-2;
           transition: all 0.4s ease;
         }
       }
@@ -165,12 +144,10 @@
     margin-top: 2rem;
     max-height: 400px;
     .pictureContainer {
-      height: fit-content;
       position: relative;
+      height: fit-content;
       .imgLink {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include globals.flexRowCenter;
         height: auto;
         .img {
           max-width: 290px;

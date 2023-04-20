@@ -45,7 +45,9 @@ const Slider = ({ pictures, legals }) => {
 
   return (
     <div className={styles.container}>
+      {/* Affichage de l'image */}
       <div className={styles.pictureContainer}>
+        {/* Lien pour agrandir la photo dans un nouvel onglet au clic */}
         <a
           href={pictures[currentArrayIndex]}
           target="_blank"
@@ -57,6 +59,7 @@ const Slider = ({ pictures, legals }) => {
             src={pictures[currentArrayIndex]}
             alt={dictionary.archivesPage.alternativeText}
           />
+          {/* Crédits photo */}
           <div className={styles.legals}>
             <p>{legals}</p>
           </div>

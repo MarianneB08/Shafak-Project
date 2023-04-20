@@ -45,19 +45,19 @@ li {
   }
 }
 .container {
-  width: 70%;
-  height: 350px;
-  margin: 0 auto;
-  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   animation: transition 2s;
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 70%;
+  height: 350px;
 }
 .container .pictureContainer {
-  height: 310px;
   position: relative;
+  height: 310px;
 }
 .container .pictureContainer .imgLink {
   display: flex;
@@ -92,8 +92,8 @@ li {
   color: white;
 }
 .container .pictureContainer .legals:hover {
-  border: 0.5px solid white;
   opacity: 1;
+  border: 0.5px solid white;
   transition: all 0.4s ease;
 }
 .container .arrowsAndCounter {
@@ -101,16 +101,16 @@ li {
   margin-top: 2rem;
 }
 .container .arrowsAndCounter .leftArrow {
-  margin-right: 2rem;
   font-size: 1.4rem;
   font-weight: 100;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  margin-right: 2rem;
 }
 .container .arrowsAndCounter .leftArrow:hover {
-  color: grey;
-  transform: scale(1.1);
+  color: #666666;
+  transform: scale(1.3);
 }
 .container .arrowsAndCounter .counter {
   font-family: "Archivo", sans-serif;
@@ -118,16 +118,16 @@ li {
   font-weight: bold;
 }
 .container .arrowsAndCounter .rightArrow {
-  margin-left: 2rem;
   font-size: 1.4rem;
   font-weight: 100;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  margin-left: 2rem;
 }
 .container .arrowsAndCounter .rightArrow:hover {
-  color: grey;
-  transform: scale(1.1);
+  color: #666666;
+  transform: scale(1.3);
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -135,8 +135,8 @@ li {
     margin-top: 0;
   }
   .container .pictureContainer {
-    height: 250px;
     position: relative;
+    height: 250px;
   }
   .container .pictureContainer .imgLink .img {
     height: 100%;
@@ -153,8 +153,8 @@ li {
     color: white;
   }
   .container .pictureContainer .legals:hover {
-    border: 0.5px solid white;
     opacity: 1;
+    border: 0.5px solid white;
     transition: all 0.4s ease;
   }
   .container .arrowsAndCounter {
@@ -167,8 +167,8 @@ li {
     margin-top: 0;
   }
   .container .pictureContainer {
-    height: 210px;
     position: relative;
+    height: 210px;
   }
   .container .pictureContainer .imgLink {
     height: 210px;
@@ -183,8 +183,8 @@ li {
     height: 210px;
   }
   .container .pictureContainer .legals:hover {
-    border: 0.5px solid white;
     opacity: 1;
+    border: 0.5px solid white;
     transition: all 0.4s ease;
   }
 }
@@ -194,9 +194,9 @@ li {
     max-height: 400px;
   }
   .container .pictureContainer {
+    position: relative;
     height: -moz-fit-content;
     height: fit-content;
-    position: relative;
   }
   .container .pictureContainer .imgLink {
     display: flex;

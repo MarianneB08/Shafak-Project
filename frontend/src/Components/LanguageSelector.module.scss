@@ -3,13 +3,13 @@
 // DESKTOP //
 
 .select {
+  width: 4.5rem;
   font-family: sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   border: 1px solid globals.$color-1;
-  width: 4.5rem;
-  cursor: pointer;
   background-color: globals.$color-2;
+  cursor: pointer;
 }
 
 // Règles spécifiques pour styliser le sélecteur dans Mozilla Firefox
@@ -24,12 +24,12 @@
 @supports (background: -webkit-named-image(i)) {
   .select {
     appearance: none;
-    background-color: globals.$color-2;
-    border-radius: 0;
-    padding: 0.4rem;
-    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+)
-      no-repeat 95% 50%;
     width: 4.5rem;
+    padding: 0.4rem;
+    border-radius: 0;
+    background-color: globals.$color-2;
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+)
+      no-repeat 100% 50%;
   }
 }
 
@@ -42,7 +42,18 @@
   // Règles spécifiques pour styliser le sélecteur dans Mozilla Firefox
   @supports (-moz-appearance: none) {
     .select {
-      padding: 0.4rem 0 0.2rem 0.4rem;
+      padding: 0.4rem 0 0 0.4rem;
+    }
+  }
+  // Règles spécifiques pour styliser le sélecteur dans Safari
+  @supports (background: -webkit-named-image(i)) {
+    .select {
+      appearance: none;
+      border-radius: 0;
+      border: 1px solid globals.$color-1;
+      padding: 0.3rem 0.5rem;
+      width: 4.5rem;
+      color: globals.$color-1;
     }
   }
 }
@@ -57,7 +68,19 @@
   @supports (-moz-appearance: none) {
     .select {
       width: 4rem;
-      padding: 0.4rem 0 0.2rem 0.4rem;
+      padding: 0.4rem 0 0 0.4rem;
+    }
+  }
+  // Règles spécifiques pour styliser le sélecteur dans Safari
+  @supports (background: -webkit-named-image(i)) {
+    .select {
+      appearance: none;
+      width: 4rem;
+      padding: 0.3rem 0.5rem;
+      border: 1px solid globals.$color-1;
+      border-radius: 0;
+      color: globals.$color-1;
+      background-color: globals.$color-2;
     }
   }
 }
@@ -73,10 +96,10 @@
   @supports (background: -webkit-named-image(i)) {
     .select {
       appearance: none;
-      background-color: globals.$color-2;
-      border-radius: 0;
-      padding: 0.4rem;
       width: 4rem;
+      padding: 0.4rem;
+      border-radius: 0;
+      background-color: globals.$color-2;
     }
   }
 }
