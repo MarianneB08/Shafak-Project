@@ -43,7 +43,7 @@ const Agenda = () => {
             – {dictionary.agendaPage.secondDate.secondDateLocation}
           </p>
         </section>
-        {/* <section className={styles.date}>
+        <section className={styles.date}>
           <p>
             <span className={styles.monthAndYear}>
               {dictionary.agendaPage.thirdDate.thirdDateMonthAndYear}
@@ -54,7 +54,7 @@ const Agenda = () => {
             </span>{" "}
             – {dictionary.agendaPage.thirdDate.thirdDateLocation}
           </p>
-        </section>  */}
+        </section> 
         {/* <section className={styles.date}>
           <p>
             <span className={styles.monthAndYear}>

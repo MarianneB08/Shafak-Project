@@ -54,19 +54,19 @@
   },
   "agendaPage": {
     "firstDate": {
-      "firstDateMonthAndYear": "14 juillet 2023",
-      "firstDateTitle": "Point de vue",
-      "firstDateLocation": " Binic-Étables-sur-Mer, France"
+      "firstDateMonthAndYear": "29 avril 2023",
+      "firstDateTitle": "Le Loup",
+      "firstDateLocation": " Festival Rabî-Al-Jasad, Tunis, Tunisie"
     },
     "secondDate": {
-      "secondDateMonthAndYear": "15 juillet 2023",
+      "secondDateMonthAndYear": "14 juillet 2023",
       "secondDateTitle": "Point de vue",
-      "secondDateLocation": " À la Halle Belem (Légué), Saint-Brieuc, France"
+      "secondDateLocation": " Binic-Étables-sur-Mer, France"
     },
     "thirdDate": {
-      "thirdDateMonthAndYear": "juin 2023",
-      "thirdDateTitle": "Le Loup",
-      "thirdDateLocation": " Festival de danse de Carthage, Tunis, Tunisie"
+      "thirdDateMonthAndYear": "15 juillet 2023",
+      "thirdDateTitle": "Point de vue",
+      "thirdDateLocation": " À la Halle Belem, Carré Rosengart, Saint-Brieuc, France"
     },
     "fourthDate": {
       "fourthDateMonthAndYear": "juillet 2023",

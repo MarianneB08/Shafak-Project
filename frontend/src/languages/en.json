@@ -54,19 +54,19 @@
   },
   "agendaPage": {
     "firstDate": {
-      "firstDateMonthAndYear": "14th July 2023",
-      "firstDateTitle": "Point of view",
-      "firstDateLocation": " Binic-Étables-sur-Mer, France"
+      "firstDateMonthAndYear": "29th April 2023",
+      "firstDateTitle": "The Wolf",
+      "firstDateLocation": " Rabî-Al-Jasad Festival, Tunis, Tunisia"
     },
     "secondDate": {
-      "secondDateMonthAndYear": "15th July 2023",
+      "secondDateMonthAndYear": "14th July 2023",
       "secondDateTitle": "Point of view",
-      "secondDateLocation": " At Halle Belem (Légué), Saint-Brieuc, France"
+      "secondDateLocation": " Binic-Étables-sur-Mer, France"
     },
     "thirdDate": {
-      "thirdDateMonthAndYear": "June 2023",
-      "thirdDateTitle": "The Wolf",
-      "thirdDateLocation": "Carthage's dance festival, Tunis, Tunisia"
+      "thirdDateMonthAndYear": "15th July 2023",
+      "thirdDateTitle": "Point of view",
+      "thirdDateLocation": " At Halle Belem, Carré Rosenguart, Saint-Brieuc, France"
     },
     "fourthDate": {
       "fourthDateMonthAndYear": "July 2023",
