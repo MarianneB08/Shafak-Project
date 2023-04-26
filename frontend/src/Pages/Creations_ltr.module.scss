@@ -14,8 +14,9 @@
   .docRequest {
       font-family: globals.$font-family-2;
       font-style: italic;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-bottom: 9rem;
+      text-align: center;
   }
   .cards {
     display: flex;
@@ -54,7 +55,7 @@
   .container {
     h1 {
       margin: 5rem 0 8rem 0;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       letter-spacing: 1.3rem;
     }
   }
