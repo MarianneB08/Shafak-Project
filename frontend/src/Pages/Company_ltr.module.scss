@@ -255,8 +255,9 @@
               width: 10rem;
             }
             p {
-              display: block;
-              width: 8rem;
+              width: fit-content;
+              font-size: 1.1rem;
+              text-align: center;
             }
           }
         }
