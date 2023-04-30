@@ -6,7 +6,7 @@ import Creations from "./pages/Creations";
 import Agenda from "./pages/Agenda";
 import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
-import Error from "./pages/Error";
+import Error from "./pages/404";
 import Archives from "./pages/Archives";
 
 const Router = () => {

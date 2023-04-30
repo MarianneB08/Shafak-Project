@@ -6,8 +6,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { LanguageContext } from "../store/languageContext.js";
-import ltrStyles from "./Error_ltr.module.scss";
-import rtlStyles from "./Error_rtl.module.scss";
+import ltrStyles from "./404_ltr.module.scss";
+import rtlStyles from "./404_rtl.module.scss";
 import backgroundImg from "../assets/error_background.jpg";
 
 const Error = () => {
