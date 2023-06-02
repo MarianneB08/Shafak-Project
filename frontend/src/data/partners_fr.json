@@ -106,5 +106,29 @@
     "partnerName": "uFaFabrik - Berlin",
     "partnerUrl": "https://www.ufafabrik.de/en",
     "partnerLogo": "./img/partners/logo_ufafabrik.png"
+  }, 
+  {
+    "id": "19",
+    "partnerName": "Ville de Perros-Guirec",
+    "partnerUrl": "https://www.perros-guirec.com",
+    "partnerLogo": "./img/partners/logo_perros-guirec.png"
+  }, 
+  {
+    "id": "20",
+    "partnerName": "Ville de Lannion",
+    "partnerUrl": "https://www.lannion.bzh",
+    "partnerLogo": "./img/partners/logo_lannion.png"
+  },
+  {
+    "id": "21",
+    "partnerName": "La Barge de Morlaix",
+    "partnerUrl": "https://www.labargedemorlaix.fr",
+    "partnerLogo": "./img/partners/logo_la_barge_morlaix.png"
+  }, 
+  {
+    "id": "22",
+    "partnerName": "Akropoditi Dance Center, Syros, Grèce",
+    "partnerUrl": "https://akropoditi.com/dancecentre/en/",
+    "partnerLogo": "./img/partners/logo_akropoditi.png"
   }
 ]
