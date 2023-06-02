@@ -55,7 +55,7 @@ const Agenda = () => {
             – {dictionary.agendaPage.thirdDate.thirdDateLocation}
           </p>
         </section> 
-        {/* <section className={styles.date}>
+        <section className={styles.date}>
           <p>
             <span className={styles.monthAndYear}>
               {dictionary.agendaPage.fourthDate.fourthDateMonthAndYear}
@@ -66,7 +66,31 @@ const Agenda = () => {
             </span>{" "}
             – {dictionary.agendaPage.fourthDate.fourthDateLocation}
           </p> 
-        </section> */}
+        </section>
+        <section className={styles.date}>
+          <p>
+            <span className={styles.monthAndYear}>
+              {dictionary.agendaPage.fifthDate.fifthDateMonthAndYear}
+            </span>{" "}
+            –{" "}
+            <span className={styles.title}>
+              {dictionary.agendaPage.fifthDate.fifthDateTitle}
+            </span>{" "}
+            – {dictionary.agendaPage.fifthDate.fifthDateLocation}
+          </p> 
+        </section>
+        <section className={styles.date}>
+          <p>
+            <span className={styles.monthAndYear}>
+              {dictionary.agendaPage.sixthDate.sixthDateMonthAndYear}
+            </span>{" "}
+            –{" "}
+            <span className={styles.title}>
+              {dictionary.agendaPage.sixthDate.sixthDateTitle}
+            </span>{" "}
+            – {dictionary.agendaPage.sixthDate.sixthDateLocation}
+          </p> 
+        </section>
       </div>
     </main>
   );

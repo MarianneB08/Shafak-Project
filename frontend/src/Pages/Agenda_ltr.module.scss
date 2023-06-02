@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     width: fit-content;
-    height: 345px;
+    height: 600px;
     margin: 0 auto;
     .date {
       display: flex;
@@ -49,6 +49,7 @@
       font-size: 2.2rem;
     }
     .datesList {
+      height: 550px;
       margin-bottom: 0;
       .date {
         p {
@@ -71,6 +72,7 @@
       font-size: 1.8rem;
     }
     .datesList {
+      height: 500px;
       margin-bottom: 0;
       .date {
         p {
@@ -94,7 +96,7 @@
     }
     .datesList {
         width: 80%;
-        height: 250px;
+        height: 550px;
       .date {
         p {
           font-size: 1.2rem;
@@ -106,6 +108,14 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 270px) and (max-width: 350px){
+  .container {
+    .datesList {
+      height: 590px;
     }
   }
 }

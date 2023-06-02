@@ -54,24 +54,34 @@
   },
   "agendaPage": {
     "firstDate": {
-      "firstDateMonthAndYear": "6 mai 2023",
+      "firstDateMonthAndYear": "30 avril 2023",
       "firstDateTitle": "Le Loup",
-      "firstDateLocation": " Festival 4/4, Jendouba, Tunisie"
+      "firstDateLocation": " CADS du Kef, Tunisie"
     },
     "secondDate": {
-      "secondDateMonthAndYear": "14 juillet 2023",
-      "secondDateTitle": "Point de vue",
-      "secondDateLocation": " Binic-Étables-sur-Mer, France"
+      "secondDateMonthAndYear": "6 mai 2023",
+      "secondDateTitle": "Le Loup",
+      "secondDateLocation": " Festival 4/4, Jendouba, Tunisie"
     },
     "thirdDate": {
-      "thirdDateMonthAndYear": "15 juillet 2023",
-      "thirdDateTitle": "Point de vue",
-      "thirdDateLocation": " À la Halle Belem, Carré Rosengart, Saint-Brieuc, France"
+      "thirdDateMonthAndYear": "11 juin 2023, 17h00",
+      "thirdDateTitle": "Le Loup",
+      "thirdDateLocation": " Festival Carthage Dance, Théâtre El Hamra, Tunis, Tunisie"
     },
     "fourthDate": {
-      "fourthDateMonthAndYear": "juillet 2023",
+      "fourthDateMonthAndYear": "10 juillet 2023, 19h00",
       "fourthDateTitle": "Point de vue",
-      "fourthDateLocation": " Lieux dévoilés prochainement"
+      "fourthDateLocation": " Devant l'entrée du Palais des Congrès, Perros-Guirec, France"
+    },
+    "fifthDate": {
+      "fifthDateMonthAndYear": "14 juillet 2023, 19h00",
+      "fifthDateTitle": "Point de vue",
+      "fifthDateLocation": " Binic-Étables-sur-Mer, France"
+    },
+    "sixthDate": {
+      "sixthDateMonthAndYear": "15 juillet 2023, 19h00",
+      "sixthDateTitle": "Point de vue",
+      "sixthDateLocation": " À la Halle Belem, Carré Rosengart, Saint-Brieuc, France"
     }
   },
   "partnersPage": {

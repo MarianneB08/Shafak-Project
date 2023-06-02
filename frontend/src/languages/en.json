@@ -54,24 +54,34 @@
   },
   "agendaPage": {
     "firstDate": {
-      "firstDateMonthAndYear": "6th May 2023",
+      "firstDateMonthAndYear": "30th April 2023",
       "firstDateTitle": "The Wolf",
-      "firstDateLocation": " 4/4 Festival, Jendouba, Tunisia"
+      "firstDateLocation": " CADS, Kef, Tunisia"
     },
     "secondDate": {
-      "secondDateMonthAndYear": "14th July 2023",
-      "secondDateTitle": "Point of view",
-      "secondDateLocation": " Binic-Étables-sur-Mer, France"
+      "secondDateMonthAndYear": "6th May 2023",
+      "secondDateTitle": "The Wolf",
+      "secondDateLocation": " Festival 4/4, Jendouba, Tunisia"
     },
     "thirdDate": {
-      "thirdDateMonthAndYear": "15th July 2023",
-      "thirdDateTitle": "Point of view",
-      "thirdDateLocation": " At Halle Belem, Carré Rosenguart, Saint-Brieuc, France"
+      "thirdDateMonthAndYear": "11th June 2023, 5 p.m.",
+      "thirdDateTitle": "The Wolf",
+      "thirdDateLocation": " Carthage Dance Festival , El Hamra Theatre, Tunis, Tunisia"
     },
     "fourthDate": {
-      "fourthDateMonthAndYear": "July 2023",
-      "fourthDateTitle": "Point of view",
-      "fourthDateLocation": "Coming soon"
+      "fourthDateMonthAndYear": "10th July 2023, 7 p.m.",
+      "fourthDateTitle": "Point Of View",
+      "fourthDateLocation": " In front of the entrance of Congress Palace, Perros-Guirec, France"
+    },
+    "fifthDate": {
+      "fifthDateMonthAndYear": "14th July 2023, 7 p.m.",
+      "fifthDateTitle": "Point Of View",
+      "fifthDateLocation": " Binic-Étables-sur-Mer, France"
+    },
+    "sixthDate": {
+      "sixthDateMonthAndYear": "15th July 2023, 7 p.m.",
+      "sixthDateTitle": "Point Of View",
+      "sixthDateLocation": " At Halle Belem, Carré Rosenguart, Saint-Brieuc, France"
     }
   },
   "partnersPage": {
