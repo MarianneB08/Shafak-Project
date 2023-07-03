@@ -91,6 +91,30 @@ const Agenda = () => {
             – {dictionary.agendaPage.sixthDate.sixthDateLocation}
           </p> 
         </section>
+        <section className={styles.date}>
+          <p>
+            <span className={styles.monthAndYear}>
+              {dictionary.agendaPage.seventhDate.seventhDateMonthAndYear}
+            </span>{" "}
+            –{" "}
+            <span className={styles.title}>
+              {dictionary.agendaPage.seventhDate.seventhDateTitle}
+            </span>{" "}
+            – {dictionary.agendaPage.seventhDate.seventhDateLocation}
+          </p> 
+        </section>
+        <section className={styles.date}>
+          <p>
+            <span className={styles.monthAndYear}>
+              {dictionary.agendaPage.heighthDate.heighthDateMonthAndYear}
+            </span>{" "}
+            –{" "}
+            <span className={styles.title}>
+              {dictionary.agendaPage.heighthDate.heighthDateTitle}
+            </span>{" "}
+            – {dictionary.agendaPage.heighthDate.heighthDateLocation}
+          </p> 
+        </section>
       </div>
     </main>
   );
