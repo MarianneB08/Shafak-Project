@@ -15,7 +15,8 @@
       "legals": "© Kévin Lebrun"
     },
     "teaser": "https://vimeo.com/756059858/6ef4b39d06",
-    "kit": ""
+    "kit": "", 
+    "more": ""
   },
   {
     "id": "2",
@@ -30,10 +31,11 @@
     },
     "img": {
       "file": "./img/creations/point_de_vue.jpg",
-      "legals": "© Compagnie Shafak"
+      "legals": "© Bernadette Vallin"
     },
     "teaser": "https://vimeo.com/837849845",
-    "kit": ""
+    "kit": "", 
+    "more": "Read more"
   },
   {
     "id": "3",
@@ -51,7 +53,8 @@
       "legals": "© Luca Del Pia"
     },
     "teaser": "https://vimeo.com/802407809",
-    "kit": ""
+    "kit": "", 
+    "more": ""
   },
   {
     "id": "4",
@@ -69,7 +72,8 @@
       "legals": "© Claire Dufféal"
     },
     "teaser": "",
-    "kit": ""
+    "kit": "", 
+    "more": ""
   },
   {
     "id": "5",
@@ -130,7 +134,8 @@
           "./img/kits/adamah_le_croiseur/garance_li_compagnie_shafak_adamah_le_croiseur_13.jpg"
         ]
       }
-    }
+    }, 
+    "more": ""
   },
   {
     "id": "6",
@@ -148,6 +153,7 @@
       "legals": "© Compagnie Shafak"
     },
     "teaser": "",
-    "kit": ""
+    "kit": "", 
+    "more": ""
   }
 ]

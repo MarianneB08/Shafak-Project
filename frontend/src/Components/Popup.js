@@ -14,8 +14,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import LegalPopupContent from "./LegalPopupContent.js";
 import KitPopupContent from "./KitPopupContent.js";
+import ReadMorePopupContent from "./ReadMorePopupContent.js";
 
-const Popup = ({ trigger, setTrigger, isClicked }) => {
+const Popup = ({ trigger, setTrigger, isClicked, buttonMore }) => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
   const { dictionary, userLanguage } = useContext(LanguageContext);
@@ -36,9 +37,15 @@ const Popup = ({ trigger, setTrigger, isClicked }) => {
       </div>
       <div className={styles.contentAndCloseButton}>
         {/* Contenu de la modale : si le state isClicked passé en props est à true (donc si on a cliqué sur le 
-        bouton "Dossier" d'une archive), alors c'est la modale KitPopupContent qui s'ouvre.
+        bouton "Dossier" d'une archive), alors c'est la modale KitPopupContent qui s'ouvre. Si le state buttonMore passé en props est à true (donc si on a cliqué sur le bouton "En savoir plus" d'une création), alors c'est la modale ReadMorePopupContent qui s'ouvre.
         Sinon, c'est la modale LegalPopupContent qui s'ouvre.*/}
-        {isClicked ? <KitPopupContent /> : <LegalPopupContent />}
+        {!isClicked ? (
+          <LegalPopupContent />
+        ) : buttonMore ? (
+          <ReadMorePopupContent />
+        ) : (
+          <KitPopupContent />
+        )}
         {/* La fermeture de la modale au clic sur le bouton "Fermer" est gérée par le setter du hook useState passé en props au composant Popup.js
         depuis le composant parent Footer.js. */}
         <button

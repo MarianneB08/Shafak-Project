@@ -60,9 +60,13 @@ li {
 }
 .container .card .details img {
   z-index: 0;
-  width: 15rem;
-  height: 230px;
+  width: auto;
+  max-width: 23rem;
+  height: auto;
+  max-height: 230px;
   border: 1px solid black;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container .card .details .detailsText {
   margin-left: 1rem;
@@ -120,16 +124,24 @@ li {
 .container .card .infos a:hover {
   transform: scale(1.1);
 }
-.container .card .infos button {
+.container .card .infos .buttons {
   margin-top: 2rem;
+}
+.container .card .infos .buttons a {
+  border: none;
+  cursor: pointer;
+}
+.container .card .infos .buttons button {
+  margin: 2rem 2rem 0 2rem;
   padding: 1rem 2rem;
   font-size: 1.3rem;
   color: white;
   background-color: black;
   border: 1px solid white;
   transition: transform 300ms;
+  cursor: pointer;
 }
-.container .card .infos button:hover {
+.container .card .infos .buttons button:hover {
   transform: scale(1.1);
 }
 .container .card .infos:hover {
@@ -170,6 +182,9 @@ li {
   .container .card .details .detailsText p {
     font-size: 1.2rem;
   }
+  .container .card .infos {
+    padding: 1rem 1rem;
+  }
   .container .card .infos .oldCreation {
     font-size: 1.1rem;
   }
@@ -178,12 +193,12 @@ li {
   }
   .container .card .infos a {
     margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
     font-size: 1.1rem;
   }
   .container .card .infos button {
     margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
     font-size: 1.1rem;
   }
 }/*# sourceMappingURL=Card_ltr.module.css.map */

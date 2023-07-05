@@ -36,7 +36,8 @@
   },
   "creationsPage": {
     "firstTitle": "Créations",
-    "documentationRequest": "Dossiers de création uniquement sur demande via la page Contact"
+    "documentationRequest": "Dossiers de création uniquement sur demande via la page Contact",
+    "moreButton": "En savoir plus"
   },
   "archivesPage": {
     "kitButton": "Kit",

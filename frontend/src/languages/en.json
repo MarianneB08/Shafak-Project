@@ -36,7 +36,8 @@
   },
   "creationsPage": {
     "firstTitle": "Creations",
-    "documentationRequest": "Creations documentation only on request via the Contact page"
+    "documentationRequest": "Creations documentation only on request via the Contact page",
+    "moreButton": "Read more"
   },
   "archivesPage": {
     "kitButton": "Kit",

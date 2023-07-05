@@ -233,6 +233,7 @@ li {
   }
   .container .aboutDancers {
     margin-top: 12rem;
+    padding: 0;
   }
   .container .aboutDancers .sectionsContainer {
     display: flex;
@@ -252,8 +253,8 @@ li {
   }
   .container .aboutCompany h2,
   .container .aboutDancers h2 {
-    font-size: 1.3rem;
-    letter-spacing: 1.3rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.4rem;
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
@@ -271,6 +272,7 @@ li {
   }
   .container .aboutDancers {
     margin-top: 8rem;
+    padding: 0 1.5rem;
   }
   .container .aboutDancers .sectionsContainer {
     display: flex;
@@ -293,7 +295,9 @@ li {
   }
   .container .aboutDancers .sectionsContainer .larbiSection .pictureContainer p,
   .container .aboutDancers .sectionsContainer .margotSection .pictureContainer p {
-    display: block;
-    width: 8rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.1rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=Company_ltr.module.css.map */

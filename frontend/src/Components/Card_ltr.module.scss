@@ -82,16 +82,24 @@
           transform: scale(1.1);
         }
       }
-      button {
+      .buttons {
         margin-top: 2rem;
-        padding: 1rem 2rem;
-        font-size: 1.3rem;
-        color: globals.$color-2;
-        background-color: globals.$color-1;
-        border: 1px solid globals.$color-2;
-        transition: transform 300ms;
-        &:hover {
-          transform: scale(1.1);
+        a {
+          border: none;
+          cursor: pointer;
+        }
+        button {
+          margin: 2rem 2rem 0 2rem;
+          padding: 1rem 2rem;
+          font-size: 1.3rem;
+          color: globals.$color-2;
+          background-color: globals.$color-1;
+          border: 1px solid globals.$color-2;
+          transition: transform 300ms;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
       &:hover {

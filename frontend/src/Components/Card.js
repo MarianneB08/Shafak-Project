@@ -21,11 +21,18 @@ const Card = ({ filteredCreation }) => {
   const [buttonPopup, setButtonPopup] = useState(false);
   // State pour remonter l'information que le bouton "Dossier"/"Kit" a été cliqué
   const [isClicked, setIsClicked] = useState(false);
+  // State pour gérer l'affichage de la popup au clic sur le bouton "En savoir plus"/"Read more"
+  const [buttonMore, setButtonMore] = useState(false);
 
   // Fonction pour gérer le state isClicked
-  const clickHandler = () => {
+  const clickKitHandler = () => {
     setIsClicked(true);
   };
+
+  // Fonction pour gérer le state buttonMore
+  const clickMoreHandler = () => {
+    setButtonMore(true);
+  }
 
   return (
     <section className={styles.container}>
@@ -67,32 +74,46 @@ const Card = ({ filteredCreation }) => {
 
           <p className={styles.legals}>{filteredCreation.img.legals}</p>
 
-          {/* Affichage conditionnel du bouton "Teaser" dans le hover selon qu'un teaser existe ou non */}
-          {filteredCreation.teaser !== "" ? (
-            <a
-              href={filteredCreation.teaser}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Teaser
-            </a>
-          ) : null}
-          {/* Affichage conditionnel du bouton "Dossier"/"Kit" dans le hover selon qu'un kit existe ou non */}
-          {filteredCreation.kit !== "" ? (
-            <button
-              onClick={() => {
-                setButtonPopup(true);
-                clickHandler();
-              }}
-            >
-              {dictionary.archivesPage.kitButton}
-            </button>
-          ) : null}
+          <div className={styles.buttons}>
+            {/* Affichage conditionnel du bouton "Teaser" dans le hover selon qu'un teaser existe ou non */}
+            {filteredCreation.teaser !== "" ? (
+              <a
+                href={filteredCreation.teaser}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Teaser</button>
+              </a>
+            ) : null}
+            {/* Affichage conditionnel du bouton "Dossier"/"Kit" dans le hover selon qu'un kit existe ou non */}
+            {filteredCreation.kit !== "" ? (
+              <button
+                onClick={() => {
+                  setButtonPopup(true);
+                  clickKitHandler();
+                }}
+              >
+                {dictionary.archivesPage.kitButton}
+              </button>
+            ) : null}
+            {/* Affichage conditionnel du bouton "En savoir plus"/"Read more" dans le hover selon qu'il y ait du contenu supplémentaire ou non */}
+            {filteredCreation.more !== "" ? (
+              <button
+                onClick={() => {
+                  setButtonPopup(true);
+                  clickMoreHandler();
+                }}
+              >
+                {dictionary.creationsPage.moreButton}
+              </button>
+            ) : null}
+          </div>
         </div>
         <Popup
           trigger={buttonPopup}
           setTrigger={setButtonPopup}
           isClicked={isClicked}
+          buttonMore={buttonMore}
         />
       </article>
     </section>
