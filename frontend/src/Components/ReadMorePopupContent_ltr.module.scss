@@ -3,7 +3,60 @@
 // DESKTOP //
 
 .container {
+  @include globals.flexColumnCenter;
+  margin: 0 5rem;
   .popupTitle {
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
+  }
+  .logbookArticle {
+    @include globals.flexRowCenter;
+    margin-bottom: 7rem;
+    .addPicture {
+      width: 500px;
+      height: auto;
+      margin: 3rem 0;
+    }
+    .logbookText {
+      margin-left: 4.5rem;
+      p {
+        margin-bottom: 2rem;
+        font-family: globals.$font-family-2;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .workshopTitle {
+    @include globals.configh2;
+    margin-bottom: 7rem;
+  }
+  .workshopArticle {
+    @include globals.flexRowCenter;
+
+    p {
+      font-family: globals.$font-family-2;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-right: 4.5rem;
+    }
+    a {
+      color: globals.$color-2;
+      &:hover {
+        color: globals.$color-3;
+      }
+    }
+    .workshopPicture {
+      width: 600px;
+      height: auto;
+    }
+  }
+  .distributionAndPartnersArticle {
+    h2 {
+      @include globals.configh2;
+      margin: 7rem 0;
+    }
   }
 }

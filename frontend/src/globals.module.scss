@@ -17,6 +17,14 @@ $font-family-2: "Archivo", sans-serif;
   text-align: center;
 }
 
+@mixin configh2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1.5rem;
+  text-align: center;
+}
+
 @mixin positionAbsolute {
   position: absolute;
   top: 0;

@@ -39,12 +39,12 @@ const Popup = ({ trigger, setTrigger, isClicked, buttonMore }) => {
         {/* Contenu de la modale : si le state isClicked passé en props est à true (donc si on a cliqué sur le 
         bouton "Dossier" d'une archive), alors c'est la modale KitPopupContent qui s'ouvre. Si le state buttonMore passé en props est à true (donc si on a cliqué sur le bouton "En savoir plus" d'une création), alors c'est la modale ReadMorePopupContent qui s'ouvre.
         Sinon, c'est la modale LegalPopupContent qui s'ouvre.*/}
-        {!isClicked ? (
-          <LegalPopupContent />
+        {isClicked ? (
+          <KitPopupContent />
         ) : buttonMore ? (
           <ReadMorePopupContent />
         ) : (
-          <KitPopupContent />
+          <LegalPopupContent />
         )}
         {/* La fermeture de la modale au clic sur le bouton "Fermer" est gérée par le setter du hook useState passé en props au composant Popup.js
         depuis le composant parent Footer.js. */}
