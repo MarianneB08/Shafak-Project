@@ -6,8 +6,9 @@ import { useContext } from "react";
 import { LanguageContext } from "../store/languageContext.js";
 import ltrStyles from "./LegalPopupContent_ltr.module.scss";
 import rtlStyles from "./LegalPopupContent_rtl.module.scss";
+import CloseButton from "./CloseButton.js";
 
-const LegalPopupContent = () => {
+const LegalPopupContent = ({setTrigger}) => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
   const { dictionary, userLanguage } = useContext(LanguageContext);
@@ -76,6 +77,7 @@ const LegalPopupContent = () => {
           <p>{dictionary.legalNotice.popupCredits.creditsIcons}</p>
         </div>
       </div>
+      <CloseButton setTrigger={setTrigger}/>
     </section>
   );
 };

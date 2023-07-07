@@ -1,0 +1,15 @@
+@use "../globals.module.scss" as globals;
+
+.container {
+  .closeButton {
+    width: 100px;
+    margin-top: 8rem;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: globals.$color-1;
+    background-color: globals.$color-2;
+    border: 2px solid globals.$color-1;
+    cursor: pointer;
+  }
+}

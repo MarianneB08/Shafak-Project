@@ -13,8 +13,9 @@ import rtlStyles from "./KitPopupContent_rtl.module.scss";
 import dataFileFr from "../data/creations_fr.json";
 import dataFileEn from "../data/creations_en.json";
 import Slider from "./Slider.js";
+import CloseButton from "./CloseButton.js";
 
-const KitPopupContent = () => {
+const KitPopupContent = ({setTrigger}) => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
   const { dictionary, userLanguage } = useContext(LanguageContext);
@@ -98,6 +99,7 @@ const KitPopupContent = () => {
             </ div>
           )
         )}
+        <CloseButton setTrigger={setTrigger} className={styles.closeButton}/>
     </div>
   );
 };

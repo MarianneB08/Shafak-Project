@@ -7,8 +7,9 @@ import dataFileFr from "../data/creations_fr.json";
 import dataFileEn from "../data/creations_en.json";
 import add from "../assets/point_de_vue_manifestation.jpg";
 import workshop from "../assets/atelier.jpg";
+import CloseButton from "./CloseButton.js";
 
-const ReadMorePopupContent = () => {
+const ReadMorePopupContent = ({setTrigger}) => {
   // Utilisation du context pour récupérer les contenus en français/anglais et le choix de langage défini par l'utilisateur par
   // l'intermédiaire du composant LanguageSelector.js implémenté dans le composant Header.js.
   const { dictionary, userLanguage } = useContext(LanguageContext);
@@ -121,27 +122,37 @@ const ReadMorePopupContent = () => {
           alt="Atelier Tandem danse & peinture Compagnie Shafak Binic Plérin"
         />
       </article>
-      <article className={styles.distributionAndPartnersArticle}>
-        <h2>Distribution</h2>
-        <div className={styles.distributionText}>
-          <p>Chorégraphie et conception: Larbi Namouchi</p>
-          <p>Création sonore : Obvious. (Léo Libanga)</p>
-          <p>
-            Interprétation, danse : Alizée-Marie Provost, Audrey Chaen,
-            Bernadette Vallin, Delphine Léo, Emmelyne Perrot, Léa Ropars, Lubna
-            Mokhtar, Véronique Riehl
-          </p>
-          <p>Art sur toile : Bernadette Vallin</p>
-          <p>Production : Compagnie Shafak</p>
-          <p>Chargée de production : Margot Libanga</p>
-        </div>
-        <h2>Partenaires</h2>
+      <h2 className={styles.distributionTitle}>Distribution</h2>
+      <article className={styles.distributionArticle}>
+        {/* <div className={styles.distributionText}> */}
+        <p>Chorégraphie et conception : Larbi Namouchi</p>
+        <p>Création sonore : Obvious. (Léo Libanga)</p>
         <p>
-          Ministère de la Culture/Drac Bretagne dans le cadre de l'Été Culturel
-          2023, Saint-Brieuc Armor Agglo, Plérin-sur-Mer, Binic-Etables-sur-Mer,
-          Perros-Guirec, Lannion, Trégueux
+          Interprétation, danse : Alizée-Marie Provost, Audrey Chaen, Bernadette
+          Vallin, Delphine Léo, Emmelyne Perrot, Léa Ropars, Lubna Mokhtar,
+          Véronique Riehl
         </p>
+        <p>Art sur toile : Bernadette Vallin</p>
+        <p>Production : Compagnie Shafak</p>
+        <p>Chargée de production : Margot Libanga</p>
+        {/* </div> */}
       </article>
+      <h2 className={styles.partnersTitle}>Partenaires</h2>
+      <article className={styles.partnersArticle}>
+        <ul className={styles.partnersList}>
+          <li>
+            Ministère de la Culture/Drac Bretagne dans le cadre de l'Été
+            Culturel 2023
+          </li>
+          <li>Saint-Brieuc Armor Agglo</li>
+          <li>Plérin-sur-Mer</li>
+          <li>Binic-Étables-sur-Mer</li>
+          <li>Perros-Guirec</li>
+          <li>Lannion</li>
+          <li>Trégueux</li>
+        </ul>
+      </article>
+      <CloseButton setTrigger={setTrigger}/>
     </section>
   );
 };

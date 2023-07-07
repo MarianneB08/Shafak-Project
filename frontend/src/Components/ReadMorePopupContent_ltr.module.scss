@@ -35,7 +35,6 @@
   }
   .workshopArticle {
     @include globals.flexRowCenter;
-
     p {
       font-family: globals.$font-family-2;
       font-size: 1.4rem;
@@ -53,10 +52,30 @@
       height: auto;
     }
   }
-  .distributionAndPartnersArticle {
-    h2 {
-      @include globals.configh2;
-      margin: 7rem 0;
+  .distributionTitle {
+    @include globals.configh2;
+    margin: 7rem 0;
+  }
+  .distributionArticle {
+    @include globals.flexColumnCenter;
+    align-items: flex-start;
+    margin-bottom: 7rem;
+    width: 100%;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    font-family: globals.$font-family-2;
+  }
+  .partnersTitle {
+    @include globals.configh2;
+    margin-bottom: 7rem;
+  }
+  .partnersArticle {
+    margin-bottom: 12rem;
+    .partnersList {
+        @include globals.flexColumnCenter;
+        font-size: 1.4rem;
+        font-family: globals.$font-family-2;
+        line-height: 2rem;
     }
   }
 }

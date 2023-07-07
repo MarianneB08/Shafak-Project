@@ -1,3 +1,8 @@
+.legalPopupContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .legalPopupContentContainer .popupTitle {
   margin-bottom: 30px;
   font-size: 1.6rem;
