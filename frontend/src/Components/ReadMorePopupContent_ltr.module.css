@@ -54,7 +54,6 @@ li {
 }
 .container .logbookArticle .addPicture {
   width: 500px;
-  min-width: 300px;
   height: auto;
   margin: 3rem 0;
 }
@@ -91,13 +90,13 @@ li {
 }
 .container .workshopArticle a {
   color: white;
+  text-decoration: underline;
 }
 .container .workshopArticle a:hover {
   color: #666666;
 }
 .container .workshopArticle .workshopPicture {
   width: 600px;
-  min-width: 300px;
   height: auto;
 }
 .container .distributionTitle {

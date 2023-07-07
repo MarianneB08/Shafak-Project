@@ -107,7 +107,7 @@ const ReadMorePopupContent = ({setTrigger}) => {
           les participants sont invités à discuter avec les artistes du projet
           lors d'un goûter. La participation à l'atelier est gratuite et ouverte
           à tous, sans niveau requis. Inscriptions ouvertes par mail à
-          cieshafak@gmail.com ou par facebook :{" "}
+          cieshafak@gmail.com ou via Facebook :{" "}
           <a href={facebookPlerin} target="_blank" rel="noopener noreferrer">
             Plérin
           </a>{" "}
@@ -124,7 +124,6 @@ const ReadMorePopupContent = ({setTrigger}) => {
       </article>
       <h2 className={styles.distributionTitle}>Distribution</h2>
       <article className={styles.distributionArticle}>
-        {/* <div className={styles.distributionText}> */}
         <p>Chorégraphie et conception : Larbi Namouchi</p>
         <p>Création sonore : Obvious. (Léo Libanga)</p>
         <p>
@@ -135,7 +134,6 @@ const ReadMorePopupContent = ({setTrigger}) => {
         <p>Art sur toile : Bernadette Vallin</p>
         <p>Production : Compagnie Shafak</p>
         <p>Chargée de production : Margot Libanga</p>
-        {/* </div> */}
       </article>
       <h2 className={styles.partnersTitle}>Partenaires</h2>
       <article className={styles.partnersArticle}>

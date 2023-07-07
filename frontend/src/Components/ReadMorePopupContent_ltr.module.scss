@@ -13,7 +13,6 @@
     margin-bottom: 7rem;
     .addPicture {
       width: 500px;
-      min-width: 300px;
       height: auto;
       margin: 3rem 0;
     }
@@ -44,13 +43,13 @@
     }
     a {
       color: globals.$color-2;
+      text-decoration: underline;
       &:hover {
         color: globals.$color-3;
       }
     }
     .workshopPicture {
       width: 600px;
-      min-width: 300px;
       height: auto;
     }
   }
