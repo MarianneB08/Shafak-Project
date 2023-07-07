@@ -54,6 +54,7 @@ li {
 }
 .container .logbookArticle .addPicture {
   width: 500px;
+  min-width: 300px;
   height: auto;
   margin: 3rem 0;
 }
@@ -96,6 +97,7 @@ li {
 }
 .container .workshopArticle .workshopPicture {
   width: 600px;
+  min-width: 300px;
   height: auto;
 }
 .container .distributionTitle {
@@ -137,4 +139,151 @@ li {
   font-size: 1.4rem;
   font-family: "Archivo", sans-serif;
   line-height: 2rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container .logbookArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+  .container .logbookArticle .logbookText {
+    margin-left: 0;
+  }
+  .container .workshopArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+  .container .workshopArticle p {
+    margin-bottom: 3rem;
+    margin-right: 0;
+  }
+  .container .workshopArticle .workshopPicture {
+    width: 500px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .container .logbookArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+  .container .logbookArticle .logbookText {
+    margin-left: 0;
+  }
+  .container .workshopArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+  .container .workshopArticle p {
+    margin-bottom: 3rem;
+    margin-right: 0;
+  }
+  .container .workshopArticle .workshopPicture {
+    width: 500px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  .container .logbookArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+  .container .logbookArticle .addPicture {
+    width: 300px;
+    height: auto;
+    margin: 3rem 0;
+  }
+  .container .logbookArticle .logbookText {
+    margin-left: 0;
+  }
+  .container .workshopArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+  .container .workshopArticle p {
+    margin-bottom: 3rem;
+    margin-right: 0;
+  }
+  .container .workshopArticle .workshopPicture {
+    width: 300px;
+    height: auto;
+  }
+  .container .partnersArticle .partnersList li {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container .logbookArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+  .container .logbookArticle .addPicture {
+    width: 280px;
+    height: auto;
+    margin: 3rem 0;
+  }
+  .container .logbookArticle .logbookText {
+    margin-left: 0;
+  }
+  .container .logbookArticle .logbookText p {
+    font-size: 1.2rem;
+  }
+  .container .workshopTitle {
+    font-size: 1.5rem;
+    letter-spacing: 1.2rem;
+  }
+  .container .workshopArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .container .workshopArticle p {
+    margin-bottom: 3rem;
+    margin-right: 0;
+    font-size: 1.2rem;
+  }
+  .container .workshopArticle .workshopPicture {
+    width: 280px;
+    height: auto;
+  }
+  .container .distributionTitle {
+    font-size: 1.5rem;
+    letter-spacing: 1.2rem;
+    word-break: keep-all;
+  }
+  .container .distributionArticle p {
+    font-size: 1.2rem;
+  }
+  .container .partnersTitle {
+    font-size: 1.5rem;
+    letter-spacing: 1.2rem;
+    word-break: keep-all;
+  }
+  .container .partnersArticle .partnersList li {
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=ReadMorePopupContent_ltr.module.css.map */
