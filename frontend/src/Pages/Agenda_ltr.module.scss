@@ -9,7 +9,7 @@
   padding: 0 5rem;
   h1 {
     @include globals.configh1;
-    margin: 7rem 0 4rem 0;
+    margin: 7rem 0 7rem 0;
   }
   .datesList {
     display: flex;
@@ -17,7 +17,7 @@
     justify-content: center;
     width: fit-content;
     height: 600px;
-    margin: 0 auto;
+    margin: 19rem auto;
     .date {
       display: flex;
       justify-content: space-between;

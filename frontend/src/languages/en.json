@@ -94,6 +94,16 @@
       "heighthDateMonthAndYear": "19th July 2023, 6 p.m.",
       "heighthDateTitle": "Point Of View : Workshop Tandem dance & painting",
       "heighthDateLocation": "Belle Issue park, Binic-Étables-sur-Mer, France"
+    },
+    "ninthDate":{
+      "ninthDateMonthAndYear": "28th & 29th May 2024, 7:30 p.m.",
+      "ninthDateTitle": "The Wolf",
+      "ninthDateLocation": "Festival CAPAS 2024, Deutsches Theater DT2, Göttingen, Germany"
+    },
+    "tenthDate":{
+      "tenthDateMonthAndYear": "29th May 2024, 13:00 p.m. - 14:30 p.m.",
+      "tenthDateTitle": "Workshop",
+      "tenthDateLocation": "Festival CAPAS 2024, Deutsches Theater DT2, Göttingen, Germany"
     }
   },
   "partnersPage": {

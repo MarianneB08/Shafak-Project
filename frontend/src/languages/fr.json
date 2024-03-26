@@ -94,6 +94,16 @@
       "heighthDateMonthAndYear": "19 juillet 2023, 18h00",
       "heighthDateTitle": "Point de vue : Atelier Tandem danse & peinture",
       "heighthDateLocation": "parc de la Belle Issue, Binic-Étables-sur-Mer, France"
+    },
+    "ninthDate":{
+      "ninthDateMonthAndYear": "28 & 29 mai 2024, 19h30",
+      "ninthDateTitle": "Le Loup",
+      "ninthDateLocation": "Festival CAPAS 2024, Deutsches Theater DT2, Göttingen, Allemagne"
+    },
+    "tenthDate":{
+      "tenthDateMonthAndYear": "29 mai 2024, 13h00 - 14h30",
+      "tenthDateTitle": "Atelier",
+      "tenthDateLocation": "Festival CAPAS 2024, Deutsches Theater DT2, Göttingen, Allemagne"
     }
   },
   "partnersPage": {
