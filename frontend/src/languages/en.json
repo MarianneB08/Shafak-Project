@@ -121,12 +121,12 @@
     "popupTitle": "Legal notice",
     "popupIdentity": {
       "identityTitle": "Identity",
-      "siteName": "Site web name : Compagnie Shafak",
-      "siteUrl": "Address : shafak.fr",
-      "siteOwner": "Owner : Compagnie Shafak",
-      "siteEditor": "Publication manager : Compagnie Shafak",
-      "siteDesigner": "Conception et implementation : Marianne Boyer",
-      "siteHosting": "Hosting : Netlify"
+      "siteName": "Site web name: Compagnie Shafak",
+      "siteUrl": "Address: shafak.fr",
+      "siteOwner": "Owner: Compagnie Shafak - SIRET : 851 268 672 00025 - APE : 9001Z",
+      "siteEditor": "Publication manager: Compagnie Shafak",
+      "siteDesigner": "Conception and implementation: Marianne Boyer",
+      "siteHosting": "Hosting: Netlify"
     },
     "popupConditions": {
       "conditionsTitle": "Terms of use",

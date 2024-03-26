@@ -38,14 +38,6 @@ const Contact = () => {
           admi.shafak@gmail.com
         </a>
         <p className={styles.administrationPhone}>07 67 34 83 62</p>
-        <div className={styles.adress}>
-          <p>10, rue des Terre Neuvas</p>
-          <p>22520 Binic-Étables-sur-Mer</p>
-        </div>
-        <div className={styles.society}>
-          <p>SIRET : 851 268 672 00025</p>
-          <p>APE : 9001Z</p>
-        </div>
       </section>
     </main>
   );

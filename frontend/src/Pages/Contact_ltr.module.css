@@ -74,8 +74,7 @@ li {
   cursor: pointer;
 }
 .container .details .directorsEmailContainer,
-.container .details .administrationPhone,
-.container .details .adress {
+.container .details .administrationPhone {
   margin-bottom: 2rem;
 }
 .container .details .administration {
@@ -84,13 +83,8 @@ li {
 }
 .container .details .directorsEmailContainer .directorsEmail,
 .container .details .administrationEmail,
-.container .details .administrationPhone,
-.container .details .adress {
+.container .details .administrationPhone {
   font-size: 1.8rem;
-  font-weight: 300;
-}
-.container .details .society {
-  font-size: 1.4rem;
   font-weight: 300;
 }
 
@@ -106,12 +100,8 @@ li {
   }
   .container .details .directorsEmailContainer .directorsEmail,
   .container .details .administrationEmail,
-  .container .details .administrationPhone,
-  .container .details .adress {
+  .container .details .administrationPhone {
     font-size: 1.6rem;
-  }
-  .container .details .society {
-    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -129,12 +119,8 @@ li {
   }
   .container .details .directorsEmailContainer .directorsEmail,
   .container .details .administrationEmail,
-  .container .details .administrationPhone,
-  .container .details .adress {
+  .container .details .administrationPhone {
     font-size: 1.4rem;
-  }
-  .container .details .society {
-    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 280px) and (max-width: 480px) {
@@ -152,10 +138,6 @@ li {
   .container .details .directorsEmailContainer .directorsEmail,
   .container .details .administrationEmail,
   .container .details .administrationPhone,
-  .container .details .adress,
-  .container .details .society {
-    font-size: 1.2rem;
-  }
   .container .details .administration {
     font-size: 1.4rem;
   }

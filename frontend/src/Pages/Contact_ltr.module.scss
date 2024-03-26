@@ -34,8 +34,7 @@
       cursor: pointer;
     }
     .directorsEmailContainer,
-    .administrationPhone,
-    .adress {
+    .administrationPhone{
       margin-bottom: 2rem;
     }
     .administration {
@@ -44,13 +43,8 @@
     }
     .directorsEmailContainer .directorsEmail,
     .administrationEmail,
-    .administrationPhone,
-    .adress {
+    .administrationPhone{
       font-size: 1.8rem;
-      font-weight: 300;
-    }
-    .society {
-      font-size: 1.4rem;
       font-weight: 300;
     }
   }
@@ -72,12 +66,8 @@
       }
       .directorsEmailContainer .directorsEmail,
       .administrationEmail,
-      .administrationPhone,
-      .adress {
+      .administrationPhone {
         font-size: 1.6rem;
-      }
-      .society {
-        font-size: 1.2rem;
       }
     }
   }
@@ -102,12 +92,8 @@
       }
       .directorsEmailContainer .directorsEmail,
       .administrationEmail,
-      .administrationPhone,
-      .adress {
+      .administrationPhone {
         font-size: 1.4rem;
-      }
-      .society {
-        font-size: 1.2rem;
       }
     }
   }
@@ -132,10 +118,6 @@
       .directorsEmailContainer .directorsEmail,
       .administrationEmail,
       .administrationPhone,
-      .adress,
-      .society {
-        font-size: 1.2rem;
-      }
       .administration {
         font-size: 1.4rem;
       }

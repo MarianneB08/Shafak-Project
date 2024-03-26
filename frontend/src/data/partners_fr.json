@@ -103,9 +103,9 @@
   },
   {
     "id": "18",
-    "partnerName": "uFaFabrik - Berlin",
-    "partnerUrl": "https://www.ufafabrik.de/en",
-    "partnerLogo": "./img/partners/logo_ufafabrik.png"
+    "partnerName": "Caisse des Dépôts Groupe Mécénat",
+    "partnerUrl": "https://www.caissedesdepots.fr/mecenat",
+    "partnerLogo": "./img/partners/logo_caisse_depots.png"
   }, 
   {
     "id": "19",
@@ -130,5 +130,11 @@
     "partnerName": "Akropoditi Dance Center, Syros, Grèce",
     "partnerUrl": "https://akropoditi.com/dancecentre/en/",
     "partnerLogo": "./img/partners/logo_akropoditi.png"
+  },
+  {
+    "id": "23",
+    "partnerName": "Dispositif Récif",
+    "partnerUrl": "https://karukera-ballet.com/presentation/",
+    "partnerLogo": "./img/partners/logo_dispositif_recif.png"
   }
 ]
