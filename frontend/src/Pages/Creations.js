@@ -24,6 +24,7 @@ const Creations = () => {
     <main className={styles.container}>
       <h1>{dictionary.creationsPage.firstTitle}</h1>
       <p className={styles.docRequest}>{dictionary.creationsPage.documentationRequest}</p>
+      <h2 className={styles.subtitle}>{dictionary.creationsPage.subtitle}</h2>
       <section className={styles.cards}>
         {dataFile
           .filter(function (creation) {
