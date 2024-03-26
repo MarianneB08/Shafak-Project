@@ -114,7 +114,7 @@
     "administration": "Administration"
   },
   "footer": {
-    "copyright": "© 2023 Compagnie Shafak. All rights reserved.",
+    "copyright": "© 2024 Compagnie Shafak. All rights reserved.",
     "legals": "Legal notice"
   },
   "legalNotice": {
@@ -123,7 +123,7 @@
       "identityTitle": "Identity",
       "siteName": "Site web name: Compagnie Shafak",
       "siteUrl": "Address: shafak.fr",
-      "siteOwner": "Owner: Compagnie Shafak - SIRET : 851 268 672 00025 - APE : 9001Z",
+      "siteOwner": "Owner: Compagnie Shafak - SIRET: 851 268 672 00025 - APE: 9001Z",
       "siteEditor": "Publication manager: Compagnie Shafak",
       "siteDesigner": "Conception and implementation: Marianne Boyer",
       "siteHosting": "Hosting: Netlify"
