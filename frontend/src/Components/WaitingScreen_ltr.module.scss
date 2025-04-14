@@ -1,0 +1,57 @@
+@use "../globals.module.scss" as globals;
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    .picture {
+        @include globals.WH100_cover;
+        object-fit:fill;
+    }
+    .text {
+        @include globals.configh1;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        color: white;
+    }
+}
+
+// SMALL SCREENS, LAPTOPS //
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        .picture {
+            object-fit:cover;
+        }
+      .text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+  // IPADS, TABLETS //
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        .picture {
+            object-fit:cover;
+        }
+      .text {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  
+  // MOBILE DEVICES //
+  
+  @media screen and (max-width: 480px) {
+    .container {
+        .picture {
+            object-fit:cover;
+        }
+      .text {
+        font-size: 1.2rem;
+      }
+    }
+  }

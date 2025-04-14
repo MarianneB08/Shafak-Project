@@ -1,4 +1,8 @@
 {
+  "waitingScreenText": {
+    "text": "In progress"
+  },
+
   "navbarItems": {
     "home": "Home",
     "company": "Company",
@@ -114,7 +118,7 @@
     "administration": "Administration"
   },
   "footer": {
-    "copyright": "© 2024 Compagnie Shafak. All rights reserved.",
+    "copyright": "© 2025 Compagnie Shafak. All rights reserved.",
     "legals": "Legal notice"
   },
   "legalNotice": {

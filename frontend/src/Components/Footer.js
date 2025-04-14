@@ -46,13 +46,13 @@ const Footer = () => {
         >
           <FontAwesomeIcon icon={faInstagramSquare} />
         </a>
-        <a
+        {/* <a
           href={`https://www.facebook.com/cieshafak/?locale=hi_IN`}
           target="_blank"
           rel="noreferrer noopener"
         >
           <FontAwesomeIcon icon={faFacebookSquare} />
-        </a>
+        </a> */}
         <a
           href={`https://vimeo.com/user9763163`}
           target="_blank"

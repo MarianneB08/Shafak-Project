@@ -1,4 +1,8 @@
 {
+  "waitingScreenText": {
+    "text": "En chantier"
+  },
+
   "navbarItems": {
     "home": "Accueil",
     "company": "La compagnie",
@@ -114,7 +118,7 @@
     "administration": "Administration"
   },
   "footer": {
-    "copyright": "© 2024 Compagnie Shafak. Tous droits réservés.",
+    "copyright": "© 2025 Compagnie Shafak. Tous droits réservés.",
     "legals": "Mentions légales"
   },
   "legalNotice": {
